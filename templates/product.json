@@ -1529,7 +1529,6 @@
             },
             "accordion_row_XgQcC3": {
               "type": "_accordion-row",
-              "name": "t:names.accordion_dash_row",
               "settings": {
                 "heading": "When will I get my order?",
                 "open_by_default": false,
@@ -1570,7 +1569,6 @@
             },
             "accordion_row_DEQzEG": {
               "type": "_accordion-row",
-              "name": "t:names.accordion_dash_row",
               "settings": {
                 "heading": "Where are your products manufactured?",
                 "open_by_default": false,
@@ -1611,7 +1609,6 @@
             },
             "accordion_row_GxJhin": {
               "type": "_accordion-row",
-              "name": "t:names.accordion_dash_row",
               "settings": {
                 "heading": "How much does shipping cost?",
                 "open_by_default": false,
