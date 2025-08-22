@@ -98,6 +98,7 @@ select {
 
 .product-card__content slideshow-component {
   --cursor: pointer;
+  background: #fbfbfb;
 }
 
 .predictive-search-results__card .product-card,
@@ -3770,6 +3771,11 @@ slideshow-arrows .slideshow-control {
 
 slideshow-arrows .slideshow-control.slideshow-control--style-none {
   display: none;
+}
+.media-gallery--carousel {
+  .product-media {
+    background: #fbfbfb;
+  }
 }
 
 .media-gallery--carousel slideshow-arrows .slideshow-control {
