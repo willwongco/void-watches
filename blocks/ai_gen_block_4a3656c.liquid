@@ -1,0 +1,981 @@
+{% doc %}
+  @prompt
+    Create a custom section or block for displaying content on your Shopify store, i want a ggrid layout with all available blog posts in chronological order
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-blog-grid-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding_top }}px {{ block.settings.padding_horizontal }}px {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-blog-grid__header-{{ ai_gen_id }} {
+    text-align: {{ block.settings.text_alignment }};
+    margin-bottom: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-blog-grid__title-{{ ai_gen_id }} {
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: {{ block.settings.heading_weight }};
+    margin: 0 0 {{ block.settings.title_spacing }}px;
+  }
+
+  .ai-blog-grid__description-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    margin: 0;
+  }
+
+  .ai-blog-grid__container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    gap: {{ block.settings.grid_gap }}px;
+    margin-bottom: {{ block.settings.pagination_spacing }}px;
+  }
+
+  .ai-blog-grid__article-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;border: {{ block.settings.card_border_width }}px solid {{ block.settings.card_border_color }};
+  }
+
+  .ai-blog-grid__article-{{ ai_gen_id }}:hover {
+    transform: translateY(-{{ block.settings.hover_lift }}px);
+    box-shadow: 0 {{ block.settings.hover_shadow }}px {{ block.settings.hover_shadow | times: 2 }}px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-blog-grid__image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.image_height }}px;
+    overflow: hidden;
+  }
+
+  .ai-blog-grid__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-blog-grid__article-{{ ai_gen_id }}:hover .ai-blog-grid__image-{{ ai_gen_id }} {
+    transform: scale(1.05);
+  }
+
+  .ai-blog-grid__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-blog-grid__image-placeholder-{{ ai_gen_id }} svg {
+    width: 40%;
+    height: 40%;
+    opacity: 0.3;
+  }
+
+  .ai-blog-grid__content-{{ ai_gen_id }} {
+    padding: {{ block.settings.card_padding }}px;}
+
+  .ai-blog-grid__date-{{ ai_gen_id }} {
+    color: {{ block.settings.date_color }};
+    font-size: {{ block.settings.date_size }}px;
+    margin-bottom: {{ block.settings.date_spacing }}px;
+    display: block;
+  }
+
+  .ai-blog-grid__article-title-{{ ai_gen_id }} {
+    color: {{ block.settings.article_title_color }};
+    font-size: {{ block.settings.article_title_size }}px;
+    font-weight: {{ block.settings.article_title_weight }};
+    margin: 0 0 {{ block.settings.article_title_spacing }}px;line-height: 1.3;
+  }
+
+  .ai-blog-grid__article-title-{{ ai_gen_id }} a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .ai-blog-grid__article-title-{{ ai_gen_id }} a:hover {
+    color: {{ block.settings.link_hover_color }};
+  }
+
+  .ai-blog-grid__excerpt-{{ ai_gen_id }} {
+    color: {{ block.settings.excerpt_color }};
+    font-size: {{ block.settings.excerpt_size }}px;
+    line-height: 1.5;
+    margin-bottom: {{ block.settings.excerpt_spacing }}px;
+  }
+
+  .ai-blog-grid__read-more-{{ ai_gen_id }} {
+    color: {{ block.settings.read_more_color }};
+    font-size: {{ block.settings.read_more_size }}px;
+    font-weight: {{ block.settings.read_more_weight }};
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+  }
+
+  .ai-blog-grid__read-more-{{ ai_gen_id }}:hover {
+    color: {{ block.settings.read_more_hover_color }};
+  }
+
+  .ai-blog-grid__read-more-{{ ai_gen_id }} svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-blog-grid__read-more-{{ ai_gen_id }}:hover svg {
+    transform: translateX(4px);
+  }
+
+  .ai-blog-grid__pagination-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .ai-blog-grid__pagination-link-{{ ai_gen_id }} {
+    padding: 12px 20px;
+    background-color: {{ block.settings.pagination_bg }};
+    color: {{ block.settings.pagination_text }};
+    text-decoration: none;
+    border-radius: {{ block.settings.pagination_border_radius }}px;
+    border: {{ block.settings.pagination_border_width }}px solid {{ block.settings.pagination_border }};
+    transition: all 0.3s ease;
+  }
+
+  .ai-blog-grid__pagination-link-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.pagination_hover_bg }};
+    color: {{ block.settings.pagination_hover_text }};
+    border-color: {{ block.settings.pagination_hover_border }};
+  }
+
+  .ai-blog-grid__pagination-current-{{ ai_gen_id }} {
+    padding: 12px 20px;
+    background-color: {{ block.settings.pagination_active_bg }};
+    color: {{ block.settings.pagination_active_text }};
+    border-radius: {{ block.settings.pagination_border_radius }}px;
+    border: {{ block.settings.pagination_border_width }}px solid {{ block.settings.pagination_active_border }};
+  }
+
+  @media screen and (max-width: 990px) {
+    .ai-blog-grid__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_tablet }}, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-blog-grid__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+      gap: {{ block.settings.mobile_grid_gap }}px;
+    }
+
+    .ai-blog-grid__article-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.article_title_size | times: 0.9 }}px;
+    }
+
+    .ai-blog-grid__content-{{ ai_gen_id }} {
+      padding: {{ block.settings.card_padding | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-blog-grid-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.show_header %}
+    <div class="ai-blog-grid__header-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-blog-grid__title-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+      {% endif %}
+      {% if block.settings.description != blank %}
+        <div class="ai-blog-grid__description-{{ ai_gen_id }}">{{ block.settings.description }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if block.settings.selected_blog != blank %}
+    {% paginate block.settings.selected_blog.articles by block.settings.articles_per_page %}
+      {% assign sorted_articles = block.settings.selected_blog.articles %}
+      {% if block.settings.sort_order == 'oldest_first' %}
+        {% assign sorted_articles = block.settings.selected_blog.articles | reverse %}
+      {% endif %}<div class="ai-blog-grid__container-{{ ai_gen_id }}">
+        {% for article in sorted_articles %}<article class="ai-blog-grid__article-{{ ai_gen_id }}">
+            {% if block.settings.show_images %}
+              <div class="ai-blog-grid__image-wrapper-{{ ai_gen_id }}">
+                {% if article.image %}
+                  <img
+                    src="{{ article.image | image_url: width: 600 }}"
+                    alt="{{ article.image.alt | escape }}"
+                    class="ai-blog-grid__image-{{ ai_gen_id }}"
+                    loading="lazy"width="{{ article.image.width }}"
+                    height="{{ article.image.height }}"
+                  >
+                {% else %}
+                  <div class="ai-blog-grid__image-placeholder-{{ ai_gen_id }}">
+                    {{ 'blog-apparel-1' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+              </div>
+            {% endif %}
+
+            <div class="ai-blog-grid__content-{{ ai_gen_id }}">
+              {% if block.settings.show_date %}
+                <time class="ai-blog-grid__date-{{ ai_gen_id }}" datetime="{{ article.published_at | date: '%Y-%m-%d' }}">
+                  {{ article.published_at | date: block.settings.date_format }}
+                </time>
+              {% endif %}
+
+              <h3 class="ai-blog-grid__article-title-{{ ai_gen_id }}">
+                <a href="{{ article.url }}">{{ article.title }}</a>
+              </h3>
+
+              {% if block.settings.show_excerpt and article.excerpt != blank %}
+                <div class="ai-blog-grid__excerpt-{{ ai_gen_id }}">
+                  {{ article.excerpt | truncate: block.settings.excerpt_length }}
+                </div>
+              {% endif %}
+
+              {% if block.settings.show_read_more %}
+                <a href="{{ article.url }}" class="ai-blog-grid__read-more-{{ ai_gen_id }}">
+                  {{ block.settings.read_more_text }}
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14"></path>
+                    <path d="M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+
+      {% if paginate.pages > 1 %}
+        <div class="ai-blog-grid__pagination-{{ ai_gen_id }}">
+          {% if paginate.previous %}
+            <a href="{{ paginate.previous.url }}" class="ai-blog-grid__pagination-link-{{ ai_gen_id }}">
+              {{ block.settings.previous_text }}
+            </a>
+          {% endif %}
+
+          {% for part in paginate.parts %}
+            {% if part.is_link %}
+              <a href="{{ part.url }}" class="ai-blog-grid__pagination-link-{{ ai_gen_id }}">
+                {{ part.title }}
+              </a>
+            {% else %}
+              {% if part.title == paginate.current_page %}
+                <span class="ai-blog-grid__pagination-current-{{ ai_gen_id }}">
+                  {{ part.title }}
+                </span>
+              {% else %}
+                <span class="ai-blog-grid__pagination-link-{{ ai_gen_id }}">
+                  {{ part.title }}
+                </span>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+
+          {% if paginate.next %}
+            <a href="{{ paginate.next.url }}" class="ai-blog-grid__pagination-link-{{ ai_gen_id }}">
+              {{ block.settings.next_text }}
+            </a>
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endpaginate %}
+  {% else %}
+    <div class="ai-blog-grid__container-{{ ai_gen_id }}">
+      {% for i in (1..6) %}
+        <article class="ai-blog-grid__article-{{ ai_gen_id }}">
+          <div class="ai-blog-grid__image-wrapper-{{ ai_gen_id }}">
+            <div class="ai-blog-grid__image-placeholder-{{ ai_gen_id }}">
+              {{ 'blog-apparel-1' | placeholder_svg_tag }}
+            </div>
+          </div>
+          <div class="ai-blog-grid__content-{{ ai_gen_id }}">
+            <time class="ai-blog-grid__date-{{ ai_gen_id }}">January {{ i }}, 2024</time>
+            <h3 class="ai-blog-grid__article-title-{{ ai_gen_id }}">
+              <a href="#">Sample Blog Post {{ i }}</a>
+            </h3>
+            <div class="ai-blog-grid__excerpt-{{ ai_gen_id }}">
+              This is a sample excerpt for blog post {{ i }}. Select a blog to display real content.
+            </div>
+            <a href="#" class="ai-blog-grid__read-more-{{ ai_gen_id }}">
+              {{ block.settings.read_more_text }}
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"></path>
+                <path d="M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Blog Grid",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Blog selection"
+    },
+    {
+      "type": "blog",
+      "id": "selected_blog",
+      "label": "Blog"
+    },
+    {
+      "type": "select",
+      "id": "sort_order",
+      "label": "Sort order",
+      "options": [
+        {
+          "value": "newest_first",
+          "label": "Newest first"
+        },
+        {
+          "value": "oldest_first",
+          "label": "Oldest first"
+        }
+      ],
+      "default": "newest_first"
+    },
+    {
+      "type": "range",
+      "id": "articles_per_page",
+      "min": 6,
+      "max": 24,
+      "step": 3,
+      "label": "Articles per page",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Header"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_header",
+      "label": "Show header",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Latest Blog Posts"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Stay updated with our latest news and insights</p>"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Grid layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Desktop columns",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Tablet columns",
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Mobile columns",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 16,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Grid gap",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "mobile_grid_gap",
+      "min": 12,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile grid gap",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Article display"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_images",
+      "label": "Show images",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show date",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "date_format",
+      "label": "Date format",
+      "default": "%B %d, %Y"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_excerpt",
+      "label": "Show excerpt",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "excerpt_length",
+      "min": 50,
+      "max": 200,
+      "step": 10,
+      "label": "Excerpt length",
+      "default": 120
+    },
+    {
+      "type": "checkbox",
+      "id": "show_read_more",
+      "label": "Show read more link",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "read_more_text",
+      "label": "Read more text",
+      "default": "Read more"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 150,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Image height",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Card padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "card_border_width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Card border width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "hover_lift",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Hover lift effect",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "hover_shadow",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Hover shadow",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Pagination"
+    },
+    {
+      "type": "text",
+      "id": "previous_text",
+      "label": "Previous text",
+      "default": "Previous"
+    },
+    {
+      "type": "text",
+      "id": "next_text",
+      "label": "Next text",
+      "default": "Next"
+    },
+    {
+      "type": "range",
+      "id": "pagination_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Pagination border radius",
+      "default": 6
+    },
+    {
+      "type": "range",
+      "id": "pagination_border_width",
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "unit": "px",
+      "label": "Pagination border width",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "color",
+      "id": "date_color",
+      "label": "Date",
+      "default": "#999999"
+    },
+    {
+      "type": "color",
+      "id": "article_title_color",
+      "label": "Article title",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "excerpt_color",
+      "label": "Excerpt",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "read_more_color",
+      "label": "Read more link",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "read_more_hover_color",
+      "label": "Read more hover",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "link_hover_color",
+      "label": "Link hover",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Pagination colors"
+    },
+    {
+      "type": "color",
+      "id": "pagination_bg",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "pagination_text",
+      "label": "Text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "pagination_border",
+      "label": "Border",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "color",
+      "id": "pagination_hover_bg",
+      "label": "Hover background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "pagination_hover_text",
+      "label": "Hover text",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "pagination_hover_border",
+      "label": "Hover border",
+      "default": "#cccccc"
+    },
+    {
+      "type": "color",
+      "id": "pagination_active_bg",
+      "label": "Active background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "pagination_active_text",
+      "label": "Active text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "pagination_active_border",
+      "label": "Active border",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "date_size",
+      "min": 12,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Date size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "article_title_size",
+      "min": 16,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Article title size",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "article_title_weight",
+      "label": "Article title weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "excerpt_size",
+      "min": 12,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Excerpt size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "read_more_size",
+      "min": 12,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Read more size",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "read_more_weight",
+      "label": "Read more weight",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Medium"
+        },
+        {
+          "value": "600",
+          "label": "Semi-bold"
+        },
+        {
+          "value": "700",
+          "label": "Bold"
+        }
+      ],
+      "default": "500"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Header spacing",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Title spacing",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "date_spacing",
+      "min": 8,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Date spacing",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "article_title_spacing",
+      "min": 8,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Article title spacing",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "excerpt_spacing",
+      "min": 12,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Excerpt spacing",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "pagination_spacing",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Pagination spacing",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog Grid"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}
