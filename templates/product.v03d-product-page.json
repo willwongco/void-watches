@@ -947,6 +947,20 @@
         "padding-block-end": 0
       }
     },
+    "divider_PjPbrQ": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
+    },
     "hero_CkRK8x": {
       "type": "hero",
       "name": "t:names.hero",
@@ -1414,6 +1428,7 @@
     "section_J9XNjK",
     "media_with_content_pabj4W",
     "media_with_content_ME7Gpr",
+    "divider_PjPbrQ",
     "hero_CkRK8x",
     "product_recommendations_qggXJq",
     "section_c3mftC"
