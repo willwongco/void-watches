@@ -761,8 +761,8 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "media_with_content_ME7Gpr": {
