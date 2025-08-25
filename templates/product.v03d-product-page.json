@@ -753,7 +753,7 @@
           ]
         }
       },
-      "name": "Editorial PXR5 Straps",
+      "name": "Editorial V03D Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -1232,6 +1232,7 @@
         "video_VgVBwE",
         "group_krXkWH"
       ],
+      "disabled": true,
       "name": "t:names.video_section",
       "settings": {
         "content_direction": "column",
