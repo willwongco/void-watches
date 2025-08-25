@@ -1138,7 +1138,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "url",
-            "video_url": "https://vimeo.com/125405317?fl=pl&fe=vl&pgroup=plv",
+            "video_url": "https://vimeo.com/156220912?fl=pl&fe=sh",
             "video_autoplay": false,
             "video_loop": true,
             "alt": "",
