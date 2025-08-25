@@ -705,7 +705,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Key Feature: The Strap</p>",
+                "text": "<p>Plenty of Strap Options</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
