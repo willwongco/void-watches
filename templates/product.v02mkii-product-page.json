@@ -1070,7 +1070,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Attention to Detail</p>",
+                "text": "<p>How it Works</p><p></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1135,7 +1135,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>All Custom Components</h2>",
+                    "text": "<p><em>\"That's a great looking watch! How does it work?\"</em></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1160,7 +1160,7 @@
                 "text_Lb6dTW": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
+                    "text": "<p>The V02MKII uses three ‘compass needle’ hands, the short hand representing the hours and the long hands the minutes and seconds, as on any other watch. The short and long hands, in either red or white, represent the minutes and the hours; the black hand, with the red or white tip, represents the seconds. Match the colour of the needle shown to the number with the same colour on the dial.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
