@@ -206,6 +206,7 @@
               "settings": {
                 "stacking": true,
                 "show_pickup_availability": false,
+                "gift_card_form": true,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -591,7 +592,7 @@
             "media_type": "video",
             "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
             "link": "",
-            "video": "shopify://files/videos/VOID-Watches-PXR5-Straps-Video-Low-Res.mp4",
+            "video": "shopify://files/videos/VOID-Watches-V03D-Straps-Video.mp4",
             "video_loop": true,
             "video_autoplay": true,
             "image_position": "cover",
