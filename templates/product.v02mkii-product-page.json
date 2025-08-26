@@ -1192,7 +1192,7 @@
               "type": "button",
               "settings": {
                 "label": "Learn More",
-                "link": "shopify://collections/all",
+                "link": "shopify://blogs/news/v02mkii-how-it-works",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
