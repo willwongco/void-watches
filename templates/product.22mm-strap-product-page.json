@@ -761,8 +761,8 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "media_with_content_ME7Gpr": {
@@ -956,7 +956,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-Components-2000x2000.jpg",
+            "image": "shopify://shop_images/VOID-Watches-How-to-change-a-watch-strap-Main-1800x1200.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -978,7 +978,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Attention to Detail</p>",
+                "text": "<p>Instructions</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1043,7 +1043,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>All Custom Components</h2>",
+                    "text": "<h2>How to change your strap</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1068,7 +1068,7 @@
                 "text_Lb6dTW": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
+                    "text": "<p>Changing your watch strap is not rocket science. This article will guide you.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
