@@ -542,15 +542,24 @@
               },
               "blocks": {}
             },
-            "icon_EQKJBV": {
-              "type": "icon",
-              "name": "t:names.icon",
+            "ai_gen_block_3f36afb_CiEUaP": {
+              "type": "ai_gen_block_3f36afb",
               "settings": {
-                "icon": "price_tag",
-                "image_upload": "shopify://shop_images/Manual-Icon.jpg",
-                "width": 50,
-                "link": "",
-                "open_in_new_tab": true
+                "icon": "shopify://shop_images/Manual-Icon.jpg",
+                "icon_link": "",
+                "icon_size": 52,
+                "title": "MANUAL",
+                "description": "Download PDF",
+                "vertical_alignment": "center",
+                "spacing": 16,
+                "padding": 16,
+                "background_color": "#ffffff",
+                "text_color": "#000000",
+                "border_radius": 0,
+                "title_size": 16,
+                "title_weight": "600",
+                "title_description_spacing": 2,
+                "description_size": 12
               },
               "blocks": {}
             }
@@ -558,7 +567,7 @@
           "block_order": [
             "text_4aAqif",
             "text_EHaHKr",
-            "icon_EQKJBV"
+            "ai_gen_block_3f36afb_CiEUaP"
           ]
         }
       },
