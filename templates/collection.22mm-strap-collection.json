@@ -409,7 +409,7 @@
             "button_ECpdCR": {
               "type": "button",
               "settings": {
-                "label": "Size Guide",
+                "label": "Detailed Guide",
                 "link": "shopify://blogs/news/how-to-change-your-watch-strap",
                 "open_in_new_tab": false,
                 "style_class": "button",
