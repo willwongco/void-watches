@@ -1,6 +1,220 @@
+{% doc %}
+  @prompt
+    Copy the block "Download Manual" but make the link open in a new window.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-download-manual-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: {{ block.settings.padding_vertical }}px {{ block.settings.padding_horizontal }}px;
+    background-color: {{ block.settings.background_color }};
+    color: {{ block.settings.text_color }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    text-decoration: none;
+    font-size: {{ block.settings.font_size }}px;
+    font-weight: {{ block.settings.font_weight }};
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .ai-download-manual-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.hover_background_color }};
+    color: {{ block.settings.hover_text_color }};
+    border-color: {{ block.settings.hover_border_color }};
+    transform: translateY(-2px);
+  }
+
+  .ai-download-manual-icon-{{ ai_gen_id }} {
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    flex-shrink: 0;
+  }
+
+  .ai-download-manual-text-{{ ai_gen_id }} {
+    font-size: inherit;
+    font-weight: inherit;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-download-manual-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_vertical | times: 0.8 }}px {{ block.settings.padding_horizontal | times: 0.8 }}px;
+      font-size: {{ block.settings.font_size | times: 0.9 }}px;
+    }
+    
+    .ai-download-manual-icon-{{ ai_gen_id }} {
+      width: {{ block.settings.icon_size | times: 0.9 }}px;
+      height: {{ block.settings.icon_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<a
+  href="{{ block.settings.manual_link }}"
+  class="ai-download-manual-{{ ai_gen_id }}"
+  target="_blank"
+  rel="noopener noreferrer"
+  {{ block.shopify_attributes }}
+>
+  <svg
+    class="ai-download-manual-icon-{{ ai_gen_id }}"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+    <polyline points="7,10 12,15 17,10"></polyline>
+    <line x1="12" y1="15" x2="12" y2="3"></line>
+  </svg>
+  <span class="ai-download-manual-text-{{ ai_gen_id }}">
+    {{ block.settings.button_text }}
+  </span>
+</a>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Download manual",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Download manual"
+    },
+    {
+      "type": "url",
+      "id": "manual_link",
+      "label": "Manual link"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "hover_background_color",
+      "label": "Hover background color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "hover_text_color",
+      "label": "Hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "hover_border_color",
+      "label": "Hover border color",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        {"value": "400", "label": "Normal"},
+        {"value": "500", "label": "Medium"},
+        {"value": "600", "label": "Semibold"},
+        {"value": "700", "label": "Bold"}
+      ],
+      "default": "500"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 12,
+      "max": 36,
+      "step": 2,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 6
+    }
+  ],
+  "presets": [
+    {
+      "name": "Download manual"
+    }
+  ]
+}
 {% endschema %}
