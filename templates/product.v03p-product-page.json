@@ -544,9 +544,10 @@
             },
             "ai_gen_block_3f36afb_CiEUaP": {
               "type": "ai_gen_block_3f36afb",
+              "name": "Download Manual",
               "settings": {
                 "icon": "shopify://shop_images/Manual-Icon.jpg",
-                "icon_link": "",
+                "icon_link": "https://cdn.shopify.com/s/files/1/0698/5904/9517/files/VOID-Watches-V03P-Instructions.pdf?v=1756378121",
                 "icon_size": 52,
                 "title": "MANUAL",
                 "description": "Download PDF",
