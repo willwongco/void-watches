@@ -541,11 +541,24 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "icon_EQKJBV": {
+              "type": "icon",
+              "name": "t:names.icon",
+              "settings": {
+                "icon": "price_tag",
+                "image_upload": "shopify://shop_images/Manual-Icon.jpg",
+                "width": 50,
+                "link": "",
+                "open_in_new_tab": true
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_4aAqif",
-            "text_EHaHKr"
+            "text_EHaHKr",
+            "icon_EQKJBV"
           ]
         }
       },
