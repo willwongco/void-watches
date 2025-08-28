@@ -264,8 +264,8 @@
           "type": "_media-without-appearance",
           "static": true,
           "settings": {
-            "media_type": "video",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
+            "media_type": "image",
+            "image": "shopify://shop_images/22mm-Strap-Fits-V01MKII-V02MKII_98a9b87f-4da7-4373-8788-78f12bb35b99.jpg",
             "link": "",
             "video": "shopify://files/videos/VOID-Watches-PXR5-Straps-Video-Low-Res.mp4",
             "video_loop": true,
