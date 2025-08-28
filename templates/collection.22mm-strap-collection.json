@@ -717,9 +717,9 @@
               "type": "collection-title",
               "name": "t:names.collection_title",
               "settings": {
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -767,11 +767,9 @@
       "name": "t:names.collections_carousel",
       "settings": {
         "collection_list": [
-          "pkg01",
-          "v01mkii",
-          "v02mkii",
-          "v03d",
-          "v03p"
+          "18mm-straps",
+          "22mm-straps",
+          "pxr5-straps"
         ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
