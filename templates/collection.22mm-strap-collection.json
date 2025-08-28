@@ -378,7 +378,7 @@
                 "text_kpwDBJ": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We strongly recommend to get at least one extra strap for your PXR5 to take full advantage of your watch. Switch in seconds.</p>",
+                    "text": "<p>Our 22mm straps and bracelets fit our V01MKII and V02MKII collections.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -409,8 +409,8 @@
             "button_ECpdCR": {
               "type": "button",
               "settings": {
-                "label": "Shop Straps",
-                "link": "shopify://collections/pxr5-straps",
+                "label": "Size Guide",
+                "link": "shopify://blogs/news/how-to-change-your-watch-strap",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
