@@ -541,11 +541,34 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "ai_gen_block_bdcbbf7_t8HNRa": {
+              "type": "ai_gen_block_bdcbbf7",
+              "name": "Download Manual",
+              "settings": {
+                "button_text": "Download Manual",
+                "manual_link": "https://cdn.shopify.com/s/files/1/0698/5904/9517/files/VOID-Watches-V02MKII-Instructions.pdf?v=1756379148",
+                "background_color": "#ffffff",
+                "text_color": "#000000",
+                "border_color": "#000000",
+                "hover_background_color": "#333333",
+                "hover_text_color": "#ffffff",
+                "hover_border_color": "#333333",
+                "font_size": 16,
+                "font_weight": "500",
+                "icon_size": 20,
+                "padding_vertical": 12,
+                "padding_horizontal": 20,
+                "border_width": 2,
+                "border_radius": 0
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_4aAqif",
-            "text_EHaHKr"
+            "text_EHaHKr",
+            "ai_gen_block_bdcbbf7_t8HNRa"
           ]
         }
       },
