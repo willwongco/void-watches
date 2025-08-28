@@ -669,7 +669,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>View our other collections</h3>",
+                "text": "<h3>View our other strap collections</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
