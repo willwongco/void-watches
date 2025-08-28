@@ -288,7 +288,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Key Feature: The Strap</p>",
+                "text": "<p>Size Guide</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -353,7 +353,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Endless Color Combinations</h2>",
+                    "text": "<h2>Fits V01MKII & V02MKII</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
