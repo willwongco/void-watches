@@ -428,7 +428,7 @@
           ]
         }
       },
-      "name": "Editorial - PXR5 Straps",
+      "name": "Editorial - 22mm Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -436,8 +436,8 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "media_with_content_Jmgcri": {
@@ -592,7 +592,7 @@
               "type": "button",
               "settings": {
                 "label": "Learn More",
-                "link": "shopify://collections/all",
+                "link": "shopify://blogs/news/how-to-change-your-watch-strap",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -610,7 +610,7 @@
           ]
         }
       },
-      "name": "Editorial - PXR5 Components",
+      "name": "Editorial - How to Change your strap",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
