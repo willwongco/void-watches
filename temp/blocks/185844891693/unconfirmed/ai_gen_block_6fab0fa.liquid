@@ -1,6 +1,373 @@
+{% doc %}
+  @prompt
+    Generate marquee where i can add my own images, Add captions under each image
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-marquee-container-{{ ai_gen_id }} {
+    width: 100%;
+    overflow: hidden;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_vertical }}px 0;
+  }
+
+  .ai-marquee-track-{{ ai_gen_id }} {
+    display: flex;
+    width: max-content;
+    animation: ai-marquee-scroll-{{ ai_gen_id }} {{ block.settings.speed }}s linear infinite;
+    gap: {{ block.settings.image_spacing }}px;
+  }
+
+  .ai-marquee-track-{{ ai_gen_id }}:hover {
+    animation-play-state: {{ block.settings.pause_on_hover | default: true }};
+  }
+
+  .ai-marquee-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    gap: {{ block.settings.caption_spacing }}px;
+  }
+
+  .ai-marquee-image-{{ ai_gen_id }} {
+    height: {{ block.settings.image_height }}px;
+    width: auto;
+    object-fit: cover;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-marquee-caption-{{ ai_gen_id }} {
+    font-size: {{ block.settings.caption_font_size }}px;
+    color: {{ block.settings.caption_color }};
+    text-align: center;
+    max-width: 200px;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .ai-marquee-placeholder-{{ ai_gen_id }} {
+    height: {{ block.settings.image_height }}px;
+    width: 200px;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-marquee-placeholder-{{ ai_gen_id }} svg {
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+  }
+
+  .ai-marquee-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .ai-marquee-placeholder-caption-{{ ai_gen_id }} {
+    font-size: {{ block.settings.caption_font_size }}px;
+    color: #999;
+    text-align: center;
+    font-style: italic;
+  }
+
+  @keyframes ai-marquee-scroll-{{ ai_gen_id }} {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  {% if block.settings.direction == 'right' %}
+    .ai-marquee-track-{{ ai_gen_id }} {
+      animation-direction: reverse;
+    }
+  {% endif %}
+
+  @media screen and (max-width: 749px) {
+    .ai-marquee-image-{{ ai_gen_id }},
+    .ai-marquee-placeholder-{{ ai_gen_id }} {
+      height: {{ block.settings.image_height | times: 0.7 }}px;
+    }
+
+    .ai-marquee-caption-{{ ai_gen_id }} {
+      font-size: {{ block.settings.caption_font_size | times: 0.9 }}px;
+      max-width: 150px;
+    }
+  }
+{% endstyle %}<div class="ai-marquee-container-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-marquee-track-{{ ai_gen_id }}">
+    {% liquid
+      assign has_images = false
+      for i in (1..8)
+        assign image_key = 'image_' | append: i
+        if block.settings[image_key] != blank
+          assign has_images = true
+          break
+        endif
+      endfor
+    %}
+
+    {% if has_images %}
+      {% for duplicate in (1..2) %}
+        {% for i in (1..8) %}
+          {% assign image_key = 'image_' | append: i %}
+          {% assign caption_key = 'caption_' | append: i %}
+          {% if block.settings[image_key] != blank %}<div class="ai-marquee-item-{{ ai_gen_id }}">
+              <img
+                src="{{ block.settings[image_key] | image_url: width: 400}}"
+                alt="{{ block.settings[image_key].alt | escape }}"
+                class="ai-marquee-image-{{ ai_gen_id }}"loading="lazy"
+                width="{{ block.settings[image_key].width }}"
+                height="{{ block.settings[image_key].height }}"
+              >
+              {% if block.settings[caption_key] != blank %}
+                <p class="ai-marquee-caption-{{ ai_gen_id }}">{{ block.settings[caption_key] }}</p>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    {% else %}
+      {% for i in (1..6) %}
+        <div class="ai-marquee-item-{{ ai_gen_id }}">
+          <div class="ai-marquee-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}{% if forloop.first %}
+              <div class="ai-marquee-empty-state-{{ ai_gen_id }}">
+                Add images below
+              </div>
+            {% endif %}
+          </div><p class="ai-marquee-placeholder-caption-{{ ai_gen_id }}">Caption text</p>
+        </div>
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image marquee",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Images and captions"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "text",
+      "id": "caption_1",
+      "label": "Caption 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "text",
+      "id": "caption_2",
+      "label": "Caption 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "text",
+      "id": "caption_3",
+      "label": "Caption 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4"
+    },
+    {
+      "type": "text",
+      "id": "caption_4",
+      "label": "Caption 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "Image 5"
+    },
+    {
+      "type": "text",
+      "id": "caption_5",
+      "label": "Caption 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "Image 6"
+    },
+    {
+      "type": "text",
+      "id": "caption_6",
+      "label": "Caption 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_7",
+      "label": "Image 7"
+    },
+    {
+      "type": "text",
+      "id": "caption_7",
+      "label": "Caption 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_8",
+      "label": "Image 8"
+    },
+    {
+      "type": "text",
+      "id": "caption_8",
+      "label": "Caption 8"
+    },
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "label": "Direction",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "s",
+      "label": "Speed",
+      "default": 30
+    },
+    {
+      "type": "checkbox",
+      "id": "pause_on_hover",
+      "label": "Pause on hover",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "label": "Image height",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "image_spacing",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Image spacing",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "padding_vertical",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Caption style"
+    },
+    {
+      "type": "color",
+      "id": "caption_color",
+      "label": "Caption color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "caption_font_size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Caption font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "caption_spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Caption spacing",
+      "default": 10
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image marquee"
+    }
+  ],
+  "tag": null
+}
 {% endschema %}
