@@ -1634,7 +1634,7 @@
             "accordion_row_GxJhin": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "How much does shipping cost?",
+                "heading": "What's your return policy?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1644,7 +1644,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
+                    "text": "<p>You can return the watch for a full refund within 30 days. The watch has to be unworn and in it's complete original packaging.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
