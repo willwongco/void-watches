@@ -993,6 +993,7 @@
           "settings": {
             "source": "uploaded",
             "video": "shopify://files/videos/VOID-Watches-V01MKII-Video.mp4",
+            "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
             "alt": "",
@@ -1054,7 +1055,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Take a look behind the scenes of our latest product launch.</p>",
+                "text": "<p>Functions: Time (12h), Date and Backlight</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
