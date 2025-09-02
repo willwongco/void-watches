@@ -1480,7 +1480,7 @@
             "accordion_row_GxJhin": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "How much does shipping cost?",
+                "heading": "How long will a strap normally last?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1490,7 +1490,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
+                    "text": "<p>This is of course very individual but if you keep your strap dry most of its life a strap should last at least two years of daily wear. Often much longer.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
