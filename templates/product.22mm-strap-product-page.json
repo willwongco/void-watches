@@ -1440,7 +1440,7 @@
             "accordion_row_DEQzEG": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Where are your products manufactured?",
+                "heading": "Do you offer different buckle colours?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1450,7 +1450,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
+                    "text": "<p>Yes, for the most common colours we do offer straps with different coloured buckles. If you can't find the combination you're looking for you can reuse your original buckle from your own strap.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
