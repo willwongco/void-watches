@@ -1331,7 +1331,7 @@
                 "text_jkNLER": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We have a few different strap sizes but they all have a number on the back. These 18mm straps and bracelets fit our PKG01 and V03D collections.</p>",
+                    "text": "<p>We have a few different strap sizes but they all have a number on the back. These 18mm straps and bracelets fit our PKG01 and V03D collections.</p><p><em>*The 18mm straps also fit our legacy V03A, V03B, V03C, V03M and V03W models.</em></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
