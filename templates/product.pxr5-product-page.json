@@ -1554,7 +1554,7 @@
             "accordion_row_XgQcC3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "How do I change the strap?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1564,7 +1564,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>The strap is attached with velcro and it's so simple to change we haven't even made an instruction for it!</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
