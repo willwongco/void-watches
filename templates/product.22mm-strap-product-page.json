@@ -1400,7 +1400,7 @@
             "accordion_row_XgQcC3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "What's your return policy?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1410,7 +1410,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>Straps can be returned or exchanged within 30 days but please note that they have to be returned unworn and in their original packaging.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
