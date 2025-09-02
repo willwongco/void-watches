@@ -1432,9 +1432,9 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Frequently asked questions - PXR5</h3>",
-            "width": "fit-content",
-            "max_width": "narrow",
+            "text": "<h4>Frequently asked questions</h4>",
+            "width": "100%",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
