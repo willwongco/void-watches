@@ -1591,46 +1591,6 @@
                 "text_tqtafA"
               ]
             },
-            "accordion_row_DEQzEG": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Where are your products manufactured?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_xBeBe8": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xBeBe8"
-              ]
-            },
             "accordion_row_GxJhin": {
               "type": "_accordion-row",
               "settings": {
@@ -1676,7 +1636,6 @@
             "accordion_row_9bxPHN",
             "accordion_row_PxMbPm",
             "accordion_row_XgQcC3",
-            "accordion_row_DEQzEG",
             "accordion_row_GxJhin"
           ]
         }
@@ -1685,7 +1644,7 @@
         "text_tedw79",
         "accordion_LhYUXH"
       ],
-      "name": "t:names.faq_section",
+      "name": "FAQ - PXR5",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
