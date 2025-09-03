@@ -702,7 +702,7 @@
                 "text_DTXcnr": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>These straps are custom made for our PXR5 collection. We recommend getting a few different colours.</p>",
+                    "text": "<p>These straps are custom made for our PXR5 collection.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -1068,7 +1068,7 @@
                 "text_NPr3qj": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>The PXR5 straps are safely attached with velcro and can be changed in seconds.</p>",
+                    "text": "<p>The PXR5 straps are safely attached with velcro and can be changed in seconds. We recommend getting a few different colours.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
