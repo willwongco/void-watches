@@ -427,6 +427,60 @@
         "padding-block-end": 20
       }
     },
+    "marquee_GawRFn": {
+      "type": "marquee",
+      "blocks": {
+        "icon_fyKy9c": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Shipping-Icon-100x100.png",
+            "width": 56,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "text_tfk96U": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free Shipping Available</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "icon_fyKy9c",
+        "text_tfk96U"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-3",
+        "padding-block-start": 10,
+        "padding-block-end": 10,
+        "gap_between_elements": 24
+      }
+    },
     "section_J9XNjK": {
       "type": "section",
       "blocks": {
@@ -1676,6 +1730,7 @@
   },
   "order": [
     "main",
+    "marquee_GawRFn",
     "section_J9XNjK",
     "media_with_content_pabj4W",
     "media_with_content_ME7Gpr",
