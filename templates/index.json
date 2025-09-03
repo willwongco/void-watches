@@ -308,7 +308,7 @@
             "cta_text_2": "Learn more",
             "cta_link_2": "shopify://collections/pkg01",
             "columns_desktop": "2",
-            "columns_mobile": "2",
+            "columns_mobile": "1",
             "gap": 40,
             "text_alignment": "left",
             "image_height": 600,
