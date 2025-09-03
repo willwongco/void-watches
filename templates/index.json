@@ -260,38 +260,6 @@
     "1756909017f2797ec7": {
       "type": "_blocks",
       "blocks": {
-        "ai_gen_block_7bab125_JtN4hn": {
-          "type": "ai_gen_block_7bab125",
-          "settings": {
-            "heading": "Featured collection",
-            "description": "<p>Discover our latest products and find your perfect match.</p>",
-            "button_text": "View all",
-            "button_link": "",
-            "collection": "",
-            "products_limit": 8,
-            "text_width": 40,
-            "gap": 40,
-            "padding": 60,
-            "heading_size": 32,
-            "text_size": 16,
-            "heading_color": "#000000",
-            "text_color": "#666666",
-            "button_color": "#000000",
-            "button_text_color": "#ffffff",
-            "button_hover_color": "#333333",
-            "button_radius": 6,
-            "card_width": 280,
-            "image_height": 300,
-            "card_radius": 8,
-            "card_background": "#ffffff",
-            "card_text_color": "#000000",
-            "price_color": "#000000",
-            "nav_color": "#ffffff",
-            "nav_hover_color": "#f5f5f5",
-            "nav_icon_color": "#000000"
-          },
-          "blocks": {}
-        },
         "ai_gen_block_30a7262_ftjAgE": {
           "type": "ai_gen_block_30a7262",
           "settings": {
@@ -331,7 +299,6 @@
         }
       },
       "block_order": [
-        "ai_gen_block_7bab125_JtN4hn",
         "ai_gen_block_30a7262_ftjAgE"
       ],
       "name": "Two Column Section",
