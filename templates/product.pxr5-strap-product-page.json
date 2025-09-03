@@ -589,7 +589,7 @@
           "type": "_media-without-appearance",
           "static": true,
           "settings": {
-            "media_type": "image",
+            "media_type": "video",
             "image": "shopify://shop_images/22mm-Strap-Fits-V01MKII-V02MKII.jpg",
             "link": "",
             "video": "shopify://files/videos/VOID-Watches-PXR5-Straps-Video-Low-Res.mp4",
@@ -678,7 +678,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Fits V01MKII & V02MKII</h2>",
+                    "text": "<h2>Fits the PXR5</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -703,7 +703,7 @@
                 "text_qUxQ4F": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our 22mm straps and bracelets fit our V01MKII and V02MKII collections.</p>",
+                    "text": "<p>These straps are custom made for our PXr5 collection.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
