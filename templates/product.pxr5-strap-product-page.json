@@ -679,9 +679,9 @@
                   "name": "t:names.heading",
                   "settings": {
                     "text": "<h2>Fits the PXR5</h2>",
-                    "width": "fit-content",
+                    "width": "100%",
                     "max_width": "normal",
-                    "alignment": "left",
+                    "alignment": "center",
                     "type_preset": "h3",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -719,7 +719,7 @@
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-end": 100,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -730,26 +730,11 @@
                 "text_fYUtUh",
                 "text_qUxQ4F"
               ]
-            },
-            "button_XMjf98": {
-              "type": "button",
-              "settings": {
-                "label": "Learn More",
-                "link": "shopify://blogs/news/straps-a-size-guide",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_3cYV9Y",
-            "group_MtnX3t",
-            "button_XMjf98"
+            "group_MtnX3t"
           ]
         }
       },
