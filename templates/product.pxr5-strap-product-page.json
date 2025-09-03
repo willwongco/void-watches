@@ -1332,7 +1332,7 @@
                 "text_jkNLER": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We have a few different strap sizes but they all have a number on the back. These 22mm straps and bracelets fit our V01MKII and V02MKII collections.</p>",
+                    "text": "<p>These straps fit our PXR5 collection only.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
