@@ -702,7 +702,7 @@
                 "text_DTXcnr": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>These straps are custom made for our PXR5 collection. Switch in Seconds.</p>",
+                    "text": "<p>These straps are custom made for our PXR5 collection.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
