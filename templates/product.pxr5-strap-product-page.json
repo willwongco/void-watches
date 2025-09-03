@@ -732,6 +732,7 @@
             },
             "button_aX94YM": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Shop now",
                 "link": "shopify://collections/all",
