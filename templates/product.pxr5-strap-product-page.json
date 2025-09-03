@@ -948,7 +948,7 @@
         "padding-block-end": 0
       }
     },
-    "media_with_content_KKLz8B": {
+    "media_with_content_mftf7P": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -956,7 +956,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-How-to-change-a-watch-strap-Main-1800x1200.jpg",
+            "image": "shopify://shop_images/VOID-Watches-PXR5-SIGY-Still-Life-1600x1000.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -969,16 +969,16 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 24
           },
           "blocks": {
-            "text_hNDW4F": {
+            "text_L4an86": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Instructions</p>",
+                "text": "<p>Bestseller</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1000,7 +1000,7 @@
               },
               "blocks": {}
             },
-            "group_rYUXDi": {
+            "group_BcLrca": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -1039,14 +1039,14 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_tPz3GR": {
+                "text_4NXcbV": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>How to change your strap</h2>",
-                    "width": "100%",
+                    "text": "<h2>Our signature product</h2>",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "h3",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1065,13 +1065,13 @@
                   },
                   "blocks": {}
                 },
-                "text_Lb6dTW": {
+                "text_NPr3qj": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Changing your watch strap is not rocket science. This article will guide you.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
+                    "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
+                    "width": "fit-content",
+                    "max_width": "narrow",
+                    "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1092,17 +1092,17 @@
                 }
               },
               "block_order": [
-                "text_tPz3GR",
-                "text_Lb6dTW"
+                "text_4NXcbV",
+                "text_NPr3qj"
               ]
             },
-            "button_6NUXq3": {
+            "button_yHXtYU": {
               "type": "button",
               "settings": {
-                "label": "Learn More",
-                "link": "shopify://blogs/news/how-to-change-your-watch-strap",
+                "label": "Shop now",
+                "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -1112,13 +1112,13 @@
             }
           },
           "block_order": [
-            "text_hNDW4F",
-            "group_rYUXDi",
-            "button_6NUXq3"
+            "text_L4an86",
+            "group_BcLrca",
+            "button_yHXtYU"
           ]
         }
       },
-      "name": "Editorial - PXR5 Components",
+      "name": "t:names.editorial",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
@@ -1566,7 +1566,7 @@
     "section_J9XNjK",
     "media_with_content_qNKCBF",
     "media_with_content_ME7Gpr",
-    "media_with_content_KKLz8B",
+    "media_with_content_mftf7P",
     "product_recommendations_qggXJq",
     "section_c3mftC"
   ]
