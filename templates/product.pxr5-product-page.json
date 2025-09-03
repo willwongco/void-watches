@@ -463,7 +463,7 @@
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 40
+            "padding-inline-end": 50
           },
           "blocks": {}
         },
@@ -501,7 +501,45 @@
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
-            "padding-inline-end": 40
+            "padding-inline-end": 50
+          },
+          "blocks": {}
+        },
+        "icon_kz8W8B": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Warranty-Icon-100x100.png",
+            "width": 38,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "text_RMAYmK": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>2 Year Warranty</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 50
           },
           "blocks": {}
         }
@@ -510,9 +548,11 @@
         "icon_fyKy9c",
         "text_tfk96U",
         "icon_qMAU8Q",
-        "text_jtj8mP"
+        "text_jtj8mP",
+        "icon_kz8W8B",
+        "text_RMAYmK"
       ],
-      "name": "t:names.marquee_section",
+      "name": "Icons - Marquee",
       "settings": {
         "movement_direction": "normal",
         "color_scheme": "scheme-3",
@@ -1771,10 +1811,10 @@
   "order": [
     "main",
     "marquee_GawRFn",
-    "section_J9XNjK",
     "media_with_content_pabj4W",
     "media_with_content_ME7Gpr",
     "media_with_content_KKLz8B",
+    "section_J9XNjK",
     "section_jcVzQ4",
     "product_recommendations_qggXJq",
     "section_c3mftC"
