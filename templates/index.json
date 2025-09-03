@@ -334,6 +334,7 @@
         "ai_gen_block_7bab125_JtN4hn",
         "ai_gen_block_30a7262_ftjAgE"
       ],
+      "name": "Two Column Section",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
