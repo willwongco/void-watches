@@ -796,7 +796,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-V03D-Components-2000x1333.jpg",
+            "image": "shopify://shop_images/VOID-Watches-V01MKII-SILB-Still-Life-1600x1067.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -958,7 +958,7 @@
           ]
         }
       },
-      "name": "Editorial - V03D",
+      "name": "Editorial - V01MKII",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
