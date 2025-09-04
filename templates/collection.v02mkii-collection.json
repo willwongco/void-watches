@@ -158,6 +158,7 @@
       "block_order": [
         "ai_gen_block_4bdd5a4_4TNe4x"
       ],
+      "name": "Header Section",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
