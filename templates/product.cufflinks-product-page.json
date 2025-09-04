@@ -705,7 +705,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Vegetable Tanned Leather</h2>",
+                    "text": "<h2>Minimal. Industrial.</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -730,7 +730,7 @@
                 "text_RFCmTA": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our wallets and card holder are made from Swedish vegetable tanned leather that over time will develop a beautiful patina from wear and tear.</p>",
+                    "text": "<p>Inspired by the tooling and machinery that made them. These cufflinks are designed to fit the tools, not the other way around.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
