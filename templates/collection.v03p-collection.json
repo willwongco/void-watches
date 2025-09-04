@@ -315,7 +315,7 @@
         "padding-block-end": 32
       }
     },
-    "media_with_content_NiJTyb": {
+    "media_with_content_LfaxUX": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -325,7 +325,7 @@
             "media_type": "video",
             "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
             "link": "",
-            "video": "shopify://files/videos/VOID-Watches-V03D-Straps-Video.mp4",
+            "video": "shopify://files/videos/VOID-Watches-V03P-Straps-Video.mp4",
             "video_loop": true,
             "video_autoplay": true,
             "image_position": "cover",
@@ -342,7 +342,7 @@
             "gap": 24
           },
           "blocks": {
-            "text_XrXkxJ": {
+            "text_8gnKte": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
@@ -368,7 +368,7 @@
               },
               "blocks": {}
             },
-            "group_c4XV4N": {
+            "group_wmktRQ": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -407,7 +407,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_KUBFKQ": {
+                "text_t69Fh8": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
@@ -433,7 +433,7 @@
                   },
                   "blocks": {}
                 },
-                "text_LEeTxF": {
+                "text_zE8Qqz": {
                   "type": "text",
                   "settings": {
                     "text": "<p>All watches are fitted with a quick release system for the straps and bracelets. You can easily change between straps or bracelets to give your watch a whole new look. No tools required.</p>",
@@ -460,11 +460,11 @@
                 }
               },
               "block_order": [
-                "text_KUBFKQ",
-                "text_LEeTxF"
+                "text_t69Fh8",
+                "text_zE8Qqz"
               ]
             },
-            "button_4W6T3Q": {
+            "button_FV6F7P": {
               "type": "button",
               "settings": {
                 "label": "Shop Straps",
@@ -480,13 +480,13 @@
             }
           },
           "block_order": [
-            "text_XrXkxJ",
-            "group_c4XV4N",
-            "button_4W6T3Q"
+            "text_8gnKte",
+            "group_wmktRQ",
+            "button_FV6F7P"
           ]
         }
       },
-      "name": "Editorial V03D Straps",
+      "name": "Editorial V03P Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -856,7 +856,7 @@
     "section",
     "1757006021194c4fd5",
     "main",
-    "media_with_content_NiJTyb",
+    "media_with_content_LfaxUX",
     "media_with_content_4wW84K",
     "collection_list_WhEYP8"
   ]
