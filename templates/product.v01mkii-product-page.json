@@ -776,7 +776,7 @@
           ]
         }
       },
-      "name": "Editorial V03D Straps",
+      "name": "Editorial V01MKII Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -1156,6 +1156,7 @@
           "settings": {
             "source": "uploaded",
             "video": "shopify://files/videos/_V01MKII-Strap-Lineup.mp4",
+            "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
             "alt": "",
