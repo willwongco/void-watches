@@ -435,7 +435,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-Card-Holder-2000x2000.jpg",
+            "image": "shopify://shop_images/VOID-Watches-VC1-Manufacturing-2000x2000.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -457,7 +457,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Leather Goods</p>",
+                "text": "<p>Manufacturing</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -522,7 +522,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>The Perfect Companion</h2>",
+                    "text": "<h2>Built to Last</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -547,7 +547,7 @@
                 "text_f4XaTf": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our wallets and card cases are made for everyday use. A slim profile that will fit more than you think.</p>",
+                    "text": "<p>The VC1 cufflinks are produced by a CNC lathe and made of 100% recyclable aluminium and will last a lifetime.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -618,7 +618,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-Tarnsjo-Leather-2000x2000.jpg",
+            "image": "shopify://shop_images/VOID-Watches-VC1-Sketch-2000x2000.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
