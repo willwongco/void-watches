@@ -257,7 +257,7 @@
         "padding-block-end": 32
       }
     },
-    "media_with_content_YxMyjr": {
+    "media_with_content_XCBLr6": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -267,7 +267,7 @@
             "media_type": "video",
             "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
             "link": "",
-            "video": "shopify://files/videos/VOID-Watches-PXR5-Straps-Video-Low-Res.mp4",
+            "video": "shopify://files/videos/VOID-Watches-V01MKII-Straps-Video.mp4",
             "video_loop": true,
             "video_autoplay": true,
             "image_position": "cover",
@@ -284,11 +284,11 @@
             "gap": 24
           },
           "blocks": {
-            "text_DUGyQ6": {
+            "text_Mf7rAj": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Key Feature: The Strap</p>",
+                "text": "<p>Wide Selection of Straps</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -310,7 +310,7 @@
               },
               "blocks": {}
             },
-            "group_wBhW94": {
+            "group_hNEYUT": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -349,11 +349,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_hJWakc": {
+                "text_PCx94Y": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Endless Color Combinations</h2>",
+                    "text": "<h2>New Look in Seconds</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -375,10 +375,10 @@
                   },
                   "blocks": {}
                 },
-                "text_kpwDBJ": {
+                "text_ThFDML": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We strongly recommend to get at least one extra strap for your PXR5 to take full advantage of your watch. Switch in seconds.</p>",
+                    "text": "<p>All watches are fitted with a quick release system for the straps and bracelets. You can easily change between straps or bracelets to give your watch a whole new look. No tools required.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -402,15 +402,15 @@
                 }
               },
               "block_order": [
-                "text_hJWakc",
-                "text_kpwDBJ"
+                "text_PCx94Y",
+                "text_ThFDML"
               ]
             },
-            "button_ECpdCR": {
+            "button_Mbfaqr": {
               "type": "button",
               "settings": {
                 "label": "Shop Straps",
-                "link": "shopify://collections/pxr5-straps",
+                "link": "shopify://collections/18mm-straps",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -422,13 +422,13 @@
             }
           },
           "block_order": [
-            "text_DUGyQ6",
-            "group_wBhW94",
-            "button_ECpdCR"
+            "text_Mf7rAj",
+            "group_hNEYUT",
+            "button_Mbfaqr"
           ]
         }
       },
-      "name": "Editorial - PXR5 Straps",
+      "name": "Editorial V01MKII Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -436,8 +436,8 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "media_with_content_Jmgcri": {
@@ -796,7 +796,7 @@
     "hero_Qh8VN4",
     "section",
     "main",
-    "media_with_content_YxMyjr",
+    "media_with_content_XCBLr6",
     "media_with_content_Jmgcri",
     "collection_list_WhEYP8"
   ]
