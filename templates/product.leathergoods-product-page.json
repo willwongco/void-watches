@@ -688,7 +688,7 @@
         "padding-block-end": 40
       }
     },
-    "media_with_content_pabj4W": {
+    "media_with_content_mrMmQN": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -696,11 +696,10 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-Card-Holder-900x600.jpg",
+            "image": "shopify://shop_images/VOID-Watches-Card-Holder-2000x2000.jpg",
             "link": "",
-            "video": "shopify://files/videos/VOID-Watches-PXR5-Straps-Video-Low-Res.mp4",
             "video_loop": true,
-            "video_autoplay": true,
+            "video_autoplay": false,
             "image_position": "cover",
             "video_position": "cover"
           },
@@ -710,16 +709,16 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 24
           },
           "blocks": {
-            "text_3cYV9Y": {
+            "text_Bf9Mrq": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Size Guide</p>",
+                "text": "<p>Bestseller</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -741,7 +740,7 @@
               },
               "blocks": {}
             },
-            "group_MtnX3t": {
+            "group_V9qHmQ": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -751,7 +750,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "fill",
@@ -780,11 +779,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_fYUtUh": {
+                "text_MfwLzL": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Fits the V03P</h2>",
+                    "text": "<h2>The Perfect Companion</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -806,12 +805,12 @@
                   },
                   "blocks": {}
                 },
-                "text_qUxQ4F": {
+                "text_f4XaTf": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our 14mm straps and bracelets fit our V03P collection.</p>",
+                    "text": "<p>Our wallets and card cases are made for everyday use. A slim profile that will fit more than you think.</p>",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "narrow",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -833,17 +832,18 @@
                 }
               },
               "block_order": [
-                "text_fYUtUh",
-                "text_qUxQ4F"
+                "text_MfwLzL",
+                "text_f4XaTf"
               ]
             },
-            "button_XMjf98": {
+            "button_cEpYkU": {
               "type": "button",
+              "disabled": true,
               "settings": {
-                "label": "Learn More",
-                "link": "shopify://blogs/news/straps-a-size-guide",
+                "label": "Shop now",
+                "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -853,20 +853,20 @@
             }
           },
           "block_order": [
-            "text_3cYV9Y",
-            "group_MtnX3t",
-            "button_XMjf98"
+            "text_Bf9Mrq",
+            "group_V9qHmQ",
+            "button_cEpYkU"
           ]
         }
       },
-      "name": "Editorial PXR5 Straps",
+      "name": "t:names.editorial",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -1671,7 +1671,7 @@
     "main",
     "section_J9XNjK",
     "hero_H3mcBR",
-    "media_with_content_pabj4W",
+    "media_with_content_mrMmQN",
     "media_with_content_ME7Gpr",
     "media_with_content_KKLz8B",
     "product_recommendations_qggXJq",
