@@ -850,7 +850,7 @@
               "type": "button",
               "settings": {
                 "label": "Shop Straps",
-                "link": "shopify://collections/sl22",
+                "link": "shopify://collections/22mm-straps",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
