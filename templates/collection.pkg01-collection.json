@@ -315,7 +315,7 @@
         "padding-block-end": 32
       }
     },
-    "media_with_content_rHKP7q": {
+    "media_with_content_3RwCNU": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -325,7 +325,7 @@
             "media_type": "video",
             "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
             "link": "",
-            "video": "shopify://files/videos/VOID-Watches-V02MKII-Straps-Video.mp4",
+            "video": "shopify://files/videos/VOID-Watches-PKG01-Straps-Video.mp4",
             "video_loop": true,
             "video_autoplay": true,
             "image_position": "cover",
@@ -342,11 +342,11 @@
             "gap": 24
           },
           "blocks": {
-            "text_KxrcFd": {
+            "text_TEprDr": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Plenty of Strap Options</p>",
+                "text": "<p>Wide Selection of Straps</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -368,7 +368,7 @@
               },
               "blocks": {}
             },
-            "group_rHrHaN": {
+            "group_KgnRab": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -407,11 +407,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_N8AGM8": {
+                "text_Rj6JAU": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>New look in seconds</h2>",
+                    "text": "<h2>New Look in Seconds</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -433,7 +433,7 @@
                   },
                   "blocks": {}
                 },
-                "text_LMDDaH": {
+                "text_jMWVwL": {
                   "type": "text",
                   "settings": {
                     "text": "<p>All watches are fitted with a quick release system for the straps and bracelets. You can easily change between straps or bracelets to give your watch a whole new look. No tools required.</p>",
@@ -460,15 +460,15 @@
                 }
               },
               "block_order": [
-                "text_N8AGM8",
-                "text_LMDDaH"
+                "text_Rj6JAU",
+                "text_jMWVwL"
               ]
             },
-            "button_AGJgXC": {
+            "button_44tm4p": {
               "type": "button",
               "settings": {
                 "label": "Shop Straps",
-                "link": "shopify://collections/22mm-straps",
+                "link": "shopify://collections/18mm-straps",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -480,13 +480,13 @@
             }
           },
           "block_order": [
-            "text_KxrcFd",
-            "group_rHrHaN",
-            "button_AGJgXC"
+            "text_TEprDr",
+            "group_KgnRab",
+            "button_44tm4p"
           ]
         }
       },
-      "name": "Editorial V02MKII Straps",
+      "name": "Editorial PKG01 Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -1171,7 +1171,7 @@
     "section",
     "1757006021194c4fd5",
     "main",
-    "media_with_content_rHKP7q",
+    "media_with_content_3RwCNU",
     "media_with_content_UcEdDw",
     "media_with_content_PUQG8X",
     "section_j8hg3m",
