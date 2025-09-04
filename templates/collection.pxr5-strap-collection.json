@@ -440,7 +440,7 @@
         "padding-block-end": 0
       }
     },
-    "media_with_content_Jmgcri": {
+    "media_with_content_RgLRmR": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -448,7 +448,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-Components-2000x2000.jpg",
+            "image": "shopify://shop_images/VOID-Watches-PXR5-SIGY-Still-Life-1600x1000.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -461,16 +461,16 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 24
           },
           "blocks": {
-            "text_q787hF": {
+            "text_AJatpt": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Attention to Detail</p>",
+                "text": "<p>Instructions</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -492,7 +492,7 @@
               },
               "blocks": {}
             },
-            "group_dDA6pe": {
+            "group_yrtWLp": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -531,14 +531,14 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_XYHiVe": {
+                "text_gkQt3i": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>All Custom Components</h2>",
-                    "width": "100%",
+                    "text": "<h2>Change in Seconds</h2>",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "h3",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -557,13 +557,13 @@
                   },
                   "blocks": {}
                 },
-                "text_tpXd8X": {
+                "text_qMyWWt": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
+                    "text": "<p>The PXR5 straps are safely attached with velcro and can be changed in seconds. We recommend getting a few different colours.</p>",
+                    "width": "fit-content",
+                    "max_width": "narrow",
+                    "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -584,17 +584,18 @@
                 }
               },
               "block_order": [
-                "text_XYHiVe",
-                "text_tpXd8X"
+                "text_gkQt3i",
+                "text_qMyWWt"
               ]
             },
-            "button_Lk8jj9": {
+            "button_p9HJtm": {
               "type": "button",
+              "disabled": true,
               "settings": {
-                "label": "Learn More",
+                "label": "Shop now",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -604,13 +605,13 @@
             }
           },
           "block_order": [
-            "text_q787hF",
-            "group_dDA6pe",
-            "button_Lk8jj9"
+            "text_AJatpt",
+            "group_yrtWLp",
+            "button_p9HJtm"
           ]
         }
       },
-      "name": "Editorial - PXR5 Components",
+      "name": "Editorial B - PXR5 Straps",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
@@ -797,7 +798,7 @@
     "section",
     "main",
     "media_with_content_UMbxNg",
-    "media_with_content_Jmgcri",
+    "media_with_content_RgLRmR",
     "collection_list_WhEYP8"
   ]
 }
