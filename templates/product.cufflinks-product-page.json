@@ -640,7 +640,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Material</p>",
+                "text": "<p>Design</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
