@@ -440,7 +440,7 @@
         "padding-block-end": 0
       }
     },
-    "media_with_content_6yzz9H": {
+    "media_with_content_PUQG8X": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -448,7 +448,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-V01MKII-SILB-Still-Life-1600x1067.jpg",
+            "image": "shopify://shop_images/V02MKII-How-it-works_c33a819d-f56a-49ff-9f0f-2bbb15e36b12.png",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -466,11 +466,11 @@
             "gap": 24
           },
           "blocks": {
-            "text_QLXzQe": {
+            "text_zQrYdQ": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Attention to Detail</p>",
+                "text": "<p>How it Works</p><p></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -492,7 +492,7 @@
               },
               "blocks": {}
             },
-            "group_jQaVPP": {
+            "group_crRGxg": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -531,11 +531,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_EmByfg": {
+                "text_DxE9Ka": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>All Custom Components</h2>",
+                    "text": "<p><em>\"That's a great looking watch! How does it work?\"</em></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -557,10 +557,10 @@
                   },
                   "blocks": {}
                 },
-                "text_QymJwj": {
+                "text_eHMEAf": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
+                    "text": "<p>The V02MKII uses three ‘compass needle’ hands, the short hand representing the hours and the long hands the minutes and seconds, as on any other watch. The short and long hands, in either red or white, represent the minutes and the hours; the black hand, with the red or white tip, represents the seconds. Match the colour of the needle shown to the number with the same colour on the dial.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -584,15 +584,15 @@
                 }
               },
               "block_order": [
-                "text_EmByfg",
-                "text_QymJwj"
+                "text_DxE9Ka",
+                "text_eHMEAf"
               ]
             },
-            "button_t4aG7F": {
+            "button_LYwymK": {
               "type": "button",
               "settings": {
                 "label": "Learn More",
-                "link": "shopify://collections/all",
+                "link": "shopify://blogs/news/v02mkii-how-it-works",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -604,22 +604,153 @@
             }
           },
           "block_order": [
-            "text_QLXzQe",
-            "group_jQaVPP",
-            "button_t4aG7F"
+            "text_zQrYdQ",
+            "group_crRGxg",
+            "button_LYwymK"
           ]
         }
       },
-      "name": "Editorial - V01MKII",
+      "name": "Editorial - V02MKII How it Works",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
+      }
+    },
+    "section_j8hg3m": {
+      "type": "section",
+      "blocks": {
+        "video_eD3RTL": {
+          "type": "video",
+          "name": "t:names.video",
+          "settings": {
+            "source": "url",
+            "video_url": "https://vimeo.com/156220912?fl=pl&fe=sh",
+            "video_autoplay": false,
+            "video_loop": true,
+            "alt": "",
+            "custom_width": 100,
+            "custom_width_mobile": 100,
+            "aspect_ratio": "16/9",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_acBmxw": {
+          "type": "group",
+          "name": "Caption",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "placeholder": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_6qeiRd": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p><em>Here's how the V02MKII works.</em></p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_6qeiRd"
+          ]
+        }
+      },
+      "block_order": [
+        "video_eD3RTL",
+        "group_acBmxw"
+      ],
+      "name": "t:names.video_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 32,
+        "padding-block-end": 32
       }
     },
     "collection_list_WhEYP8": {
@@ -797,7 +928,8 @@
     "section",
     "main",
     "media_with_content_rHKP7q",
-    "media_with_content_6yzz9H",
+    "media_with_content_PUQG8X",
+    "section_j8hg3m",
     "collection_list_WhEYP8"
   ]
 }
