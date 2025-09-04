@@ -257,7 +257,7 @@
         "padding-block-end": 32
       }
     },
-    "media_with_content_YxMyjr": {
+    "media_with_content_UMbxNg": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -265,7 +265,6 @@
           "static": true,
           "settings": {
             "media_type": "video",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
             "link": "",
             "video": "shopify://files/videos/VOID-Watches-PXR5-Straps-Video-Low-Res.mp4",
             "video_loop": true,
@@ -279,16 +278,16 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 24
           },
           "blocks": {
-            "text_DUGyQ6": {
+            "text_7W7prK": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Key Feature: The Strap</p>",
+                "text": "<p>Size Guide</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -310,7 +309,7 @@
               },
               "blocks": {}
             },
-            "group_wBhW94": {
+            "group_bj3wPe": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -320,7 +319,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "fill",
@@ -349,11 +348,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_hJWakc": {
+                "text_p6XArU": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Endless Color Combinations</h2>",
+                    "text": "<h2>Fits the PXR5</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -375,12 +374,12 @@
                   },
                   "blocks": {}
                 },
-                "text_kpwDBJ": {
+                "text_NTYDWN": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We strongly recommend to get at least one extra strap for your PXR5 to take full advantage of your watch. Switch in seconds.</p>",
+                    "text": "<p>These straps are custom made for our PXR5 collection.</p>",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "narrow",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -402,17 +401,18 @@
                 }
               },
               "block_order": [
-                "text_hJWakc",
-                "text_kpwDBJ"
+                "text_p6XArU",
+                "text_NTYDWN"
               ]
             },
-            "button_ECpdCR": {
+            "button_nnWFdG": {
               "type": "button",
+              "disabled": true,
               "settings": {
-                "label": "Shop Straps",
-                "link": "shopify://collections/pxr5-straps",
+                "label": "Shop now",
+                "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -422,13 +422,13 @@
             }
           },
           "block_order": [
-            "text_DUGyQ6",
-            "group_wBhW94",
-            "button_ECpdCR"
+            "text_7W7prK",
+            "group_bj3wPe",
+            "button_nnWFdG"
           ]
         }
       },
-      "name": "Editorial - PXR5 Straps",
+      "name": "Editorial A - PXR5 Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -436,8 +436,8 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "media_with_content_Jmgcri": {
@@ -796,7 +796,7 @@
     "hero_Qh8VN4",
     "section",
     "main",
-    "media_with_content_YxMyjr",
+    "media_with_content_UMbxNg",
     "media_with_content_Jmgcri",
     "collection_list_WhEYP8"
   ]
