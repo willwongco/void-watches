@@ -27,7 +27,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
-        "section_height": "medium",
+        "section_height": "small",
         "section_height_custom": 50,
         "color_scheme": "scheme-1",
         "toggle_overlay": false,
@@ -315,7 +315,7 @@
         "padding-block-end": 32
       }
     },
-    "media_with_content_3RwCNU": {
+    "media_with_content_NiJTyb": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -325,7 +325,7 @@
             "media_type": "video",
             "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
             "link": "",
-            "video": "shopify://files/videos/VOID-Watches-PKG01-Straps-Video.mp4",
+            "video": "shopify://files/videos/VOID-Watches-V03D-Straps-Video.mp4",
             "video_loop": true,
             "video_autoplay": true,
             "image_position": "cover",
@@ -342,7 +342,7 @@
             "gap": 24
           },
           "blocks": {
-            "text_TEprDr": {
+            "text_XrXkxJ": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
@@ -368,7 +368,7 @@
               },
               "blocks": {}
             },
-            "group_KgnRab": {
+            "group_c4XV4N": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -407,7 +407,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_Rj6JAU": {
+                "text_KUBFKQ": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
@@ -433,7 +433,7 @@
                   },
                   "blocks": {}
                 },
-                "text_jMWVwL": {
+                "text_LEeTxF": {
                   "type": "text",
                   "settings": {
                     "text": "<p>All watches are fitted with a quick release system for the straps and bracelets. You can easily change between straps or bracelets to give your watch a whole new look. No tools required.</p>",
@@ -460,11 +460,11 @@
                 }
               },
               "block_order": [
-                "text_Rj6JAU",
-                "text_jMWVwL"
+                "text_KUBFKQ",
+                "text_LEeTxF"
               ]
             },
-            "button_44tm4p": {
+            "button_4W6T3Q": {
               "type": "button",
               "settings": {
                 "label": "Shop Straps",
@@ -480,13 +480,13 @@
             }
           },
           "block_order": [
-            "text_TEprDr",
-            "group_KgnRab",
-            "button_44tm4p"
+            "text_XrXkxJ",
+            "group_c4XV4N",
+            "button_4W6T3Q"
           ]
         }
       },
-      "name": "Editorial PKG01 Straps",
+      "name": "Editorial V03D Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -856,7 +856,7 @@
     "section",
     "1757006021194c4fd5",
     "main",
-    "media_with_content_3RwCNU",
+    "media_with_content_NiJTyb",
     "media_with_content_4wW84K",
     "collection_list_WhEYP8"
   ]
