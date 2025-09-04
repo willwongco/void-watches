@@ -257,7 +257,7 @@
         "padding-block-end": 32
       }
     },
-    "media_with_content_YxMyjr": {
+    "media_with_content_TptHYR": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -284,7 +284,7 @@
             "gap": 24
           },
           "blocks": {
-            "text_DUGyQ6": {
+            "text_9NrCPp": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
@@ -310,7 +310,7 @@
               },
               "blocks": {}
             },
-            "group_wBhW94": {
+            "group_84p3Kd": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -349,11 +349,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_hJWakc": {
+                "text_e43UJp": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Fits V01MKII & V02MKII</h2>",
+                    "text": "<h2>Fits PKG01 & V03D</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -375,10 +375,10 @@
                   },
                   "blocks": {}
                 },
-                "text_kpwDBJ": {
+                "text_WtJE8F": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our 22mm straps and bracelets fit our V01MKII and V02MKII collections.</p>",
+                    "text": "<p>Our 18mm straps and bracelets fit our PKG01 and V03D collections.</p><p><em>*The 18mm straps also fit our legacy V03A, V03B, V03C, V03M and V03W models.</em></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -402,15 +402,15 @@
                 }
               },
               "block_order": [
-                "text_hJWakc",
-                "text_kpwDBJ"
+                "text_e43UJp",
+                "text_WtJE8F"
               ]
             },
-            "button_ECpdCR": {
+            "button_GpWqW8": {
               "type": "button",
               "settings": {
-                "label": "Detailed Guide",
-                "link": "shopify://blogs/news/how-to-change-your-watch-strap",
+                "label": "Learn More",
+                "link": "shopify://blogs/news/straps-a-size-guide",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -422,13 +422,13 @@
             }
           },
           "block_order": [
-            "text_DUGyQ6",
-            "group_wBhW94",
-            "button_ECpdCR"
+            "text_9NrCPp",
+            "group_84p3Kd",
+            "button_GpWqW8"
           ]
         }
       },
-      "name": "Editorial - 22mm Straps",
+      "name": "Editorial 18mm Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -794,7 +794,7 @@
     "hero_Qh8VN4",
     "section",
     "main",
-    "media_with_content_YxMyjr",
+    "media_with_content_TptHYR",
     "media_with_content_Jmgcri",
     "collection_list_WhEYP8"
   ]
