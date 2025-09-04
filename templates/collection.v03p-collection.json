@@ -468,7 +468,7 @@
               "type": "button",
               "settings": {
                 "label": "Shop Straps",
-                "link": "shopify://collections/18mm-straps",
+                "link": "shopify://collections/14mm-straps",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
