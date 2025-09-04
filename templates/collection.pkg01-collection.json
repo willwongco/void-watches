@@ -498,7 +498,7 @@
         "padding-block-end": 0
       }
     },
-    "media_with_content_UcEdDw": {
+    "media_with_content_4wW84K": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -506,7 +506,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/V02MKII-How-it-works_c33a819d-f56a-49ff-9f0f-2bbb15e36b12.png",
+            "image": "shopify://shop_images/VOID-Watches-V03D-Components-2000x1333.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -524,11 +524,11 @@
             "gap": 24
           },
           "blocks": {
-            "text_yyTRpA": {
+            "text_BkxzbN": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>How it Works</p>",
+                "text": "<p>Attention to Detail</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -550,7 +550,7 @@
               },
               "blocks": {}
             },
-            "group_DRzfT3": {
+            "group_innTQT": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -589,11 +589,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_kNTgyR": {
+                "text_cHH6Ah": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p><em>\"That's a great looking watch! How does it work?\"</em></p>",
+                    "text": "<h2>All Custom Components</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -615,10 +615,10 @@
                   },
                   "blocks": {}
                 },
-                "text_iGAzVa": {
+                "text_f8XBXX": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>The V02MKII uses three ‘compass needle’ hands, the short hand representing the hours and the long hands the minutes and seconds, as on any other watch. The short and long hands, in either red or white, represent the minutes and the hours; the black hand, with the red or white tip, represents the seconds. Match the colour of the needle shown to the number with the same colour on the dial.</p>",
+                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -633,7 +633,7 @@
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
-                    "padding-block-start": 16,
+                    "padding-block-start": 0,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
@@ -642,11 +642,11 @@
                 }
               },
               "block_order": [
-                "text_kNTgyR",
-                "text_iGAzVa"
+                "text_cHH6Ah",
+                "text_f8XBXX"
               ]
             },
-            "button_mJLmEU": {
+            "button_Y3faNM": {
               "type": "button",
               "disabled": true,
               "settings": {
@@ -663,13 +663,13 @@
             }
           },
           "block_order": [
-            "text_yyTRpA",
-            "group_DRzfT3",
-            "button_mJLmEU"
+            "text_BkxzbN",
+            "group_innTQT",
+            "button_Y3faNM"
           ]
         }
       },
-      "name": "Editorial V02MKII - How it Works",
+      "name": "Editorial V03D/PKG01",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
@@ -681,7 +681,7 @@
         "padding-block-end": 0
       }
     },
-    "media_with_content_PUQG8X": {
+    "media_with_content_CjP8A3": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -689,7 +689,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/V02MKII-How-it-works_c33a819d-f56a-49ff-9f0f-2bbb15e36b12.png",
+            "image": "shopify://shop_images/VOID-Watches-V03D-Components-2000x1333.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -707,11 +707,11 @@
             "gap": 24
           },
           "blocks": {
-            "text_zQrYdQ": {
+            "text_Ay8Qjq": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>How it Works</p><p></p>",
+                "text": "<p>Attention to Detail</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -733,7 +733,7 @@
               },
               "blocks": {}
             },
-            "group_crRGxg": {
+            "group_3AG8Qe": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -772,11 +772,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_DxE9Ka": {
+                "text_nDKV8M": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<p><em>\"That's a great looking watch! How does it work?\"</em></p>",
+                    "text": "<h2>All Custom Components</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -798,10 +798,10 @@
                   },
                   "blocks": {}
                 },
-                "text_eHMEAf": {
+                "text_8Jqj6D": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>The V02MKII uses three ‘compass needle’ hands, the short hand representing the hours and the long hands the minutes and seconds, as on any other watch. The short and long hands, in either red or white, represent the minutes and the hours; the black hand, with the red or white tip, represents the seconds. Match the colour of the needle shown to the number with the same colour on the dial.</p>",
+                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -825,16 +825,15 @@
                 }
               },
               "block_order": [
-                "text_DxE9Ka",
-                "text_eHMEAf"
+                "text_nDKV8M",
+                "text_8Jqj6D"
               ]
             },
-            "button_LYwymK": {
+            "button_YeMC8t": {
               "type": "button",
-              "disabled": true,
               "settings": {
                 "label": "Learn More",
-                "link": "shopify://blogs/news/v02mkii-how-it-works",
+                "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -846,21 +845,20 @@
             }
           },
           "block_order": [
-            "text_zQrYdQ",
-            "group_crRGxg",
-            "button_LYwymK"
+            "text_Ay8Qjq",
+            "group_3AG8Qe",
+            "button_YeMC8t"
           ]
         }
       },
-      "disabled": true,
-      "name": "Editorial - V02MKII How it Works",
+      "name": "Editorial - V03D",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -1041,8 +1039,8 @@
     "1757006021194c4fd5",
     "main",
     "media_with_content_3RwCNU",
-    "media_with_content_UcEdDw",
-    "media_with_content_PUQG8X",
+    "media_with_content_4wW84K",
+    "media_with_content_CjP8A3",
     "collection_list_WhEYP8"
   ]
 }
