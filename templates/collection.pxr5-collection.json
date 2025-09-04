@@ -498,7 +498,7 @@
         "padding-block-end": 0
       }
     },
-    "media_with_content_6yzz9H": {
+    "media_with_content_JiKWpF": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -506,7 +506,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-V01MKII-SILB-Still-Life-1600x1067.jpg",
+            "image": "shopify://shop_images/VOID-Watches-PXR5-Components-2000x2000.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -524,7 +524,7 @@
             "gap": 24
           },
           "blocks": {
-            "text_QLXzQe": {
+            "text_46Mrd9": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
@@ -550,7 +550,7 @@
               },
               "blocks": {}
             },
-            "group_jQaVPP": {
+            "group_TLyhpX": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -589,7 +589,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_EmByfg": {
+                "text_eHDXHq": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
@@ -615,7 +615,7 @@
                   },
                   "blocks": {}
                 },
-                "text_QymJwj": {
+                "text_3rTNnR": {
                   "type": "text",
                   "settings": {
                     "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
@@ -642,11 +642,11 @@
                 }
               },
               "block_order": [
-                "text_EmByfg",
-                "text_QymJwj"
+                "text_eHDXHq",
+                "text_3rTNnR"
               ]
             },
-            "button_t4aG7F": {
+            "button_YeC3py": {
               "type": "button",
               "settings": {
                 "label": "Learn More",
@@ -662,13 +662,13 @@
             }
           },
           "block_order": [
-            "text_QLXzQe",
-            "group_jQaVPP",
-            "button_t4aG7F"
+            "text_46Mrd9",
+            "group_TLyhpX",
+            "button_YeC3py"
           ]
         }
       },
-      "name": "Editorial - V01MKII",
+      "name": "Editorial - PXR5 Components",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
@@ -856,7 +856,7 @@
     "section",
     "main",
     "media_with_content_miXWLk",
-    "media_with_content_6yzz9H",
+    "media_with_content_JiKWpF",
     "collection_list_WhEYP8"
   ]
 }
