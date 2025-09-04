@@ -257,7 +257,7 @@
         "padding-block-end": 32
       }
     },
-    "media_with_content_TptHYR": {
+    "media_with_content_YpMDa9": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -265,7 +265,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/18mm-Strap-Fits-PKG01-V03D.jpg",
+            "image": "shopify://shop_images/14mm-Strap-Fits-V03P.jpg",
             "link": "",
             "video": "shopify://files/videos/VOID-Watches-PXR5-Straps-Video-Low-Res.mp4",
             "video_loop": true,
@@ -284,7 +284,7 @@
             "gap": 24
           },
           "blocks": {
-            "text_9NrCPp": {
+            "text_h4gqkX": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
@@ -310,7 +310,7 @@
               },
               "blocks": {}
             },
-            "group_84p3Kd": {
+            "group_6Yk6iF": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -349,11 +349,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_e43UJp": {
+                "text_Gr9gqK": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Fits PKG01 & V03D</h2>",
+                    "text": "<h2>Fits the V03P</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -375,10 +375,10 @@
                   },
                   "blocks": {}
                 },
-                "text_WtJE8F": {
+                "text_QPtd8W": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our 18mm straps and bracelets fit our PKG01 and V03D collections.</p><p><em>*The 18mm straps also fit our legacy V03A, V03B, V03C, V03M and V03W models.</em></p>",
+                    "text": "<p>Our 14mm straps and bracelets fit our V03P collection.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -402,11 +402,11 @@
                 }
               },
               "block_order": [
-                "text_e43UJp",
-                "text_WtJE8F"
+                "text_Gr9gqK",
+                "text_QPtd8W"
               ]
             },
-            "button_GpWqW8": {
+            "button_7FtrUr": {
               "type": "button",
               "settings": {
                 "label": "Learn More",
@@ -422,13 +422,13 @@
             }
           },
           "block_order": [
-            "text_9NrCPp",
-            "group_84p3Kd",
-            "button_GpWqW8"
+            "text_h4gqkX",
+            "group_6Yk6iF",
+            "button_7FtrUr"
           ]
         }
       },
-      "name": "Editorial 18mm Straps",
+      "name": "Editorial 14mm Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -794,7 +794,7 @@
     "hero_Qh8VN4",
     "section",
     "main",
-    "media_with_content_TptHYR",
+    "media_with_content_YpMDa9",
     "media_with_content_Jmgcri",
     "collection_list_WhEYP8"
   ]
