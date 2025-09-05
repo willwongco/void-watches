@@ -528,7 +528,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Attention to Detail</p>",
+                "text": "<p>Catch them if you can</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -593,7 +593,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>All Custom Components</h2>",
+                    "text": "<h2>Strictly Limited</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -618,7 +618,7 @@
                 "text_f8XBXX": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
+                    "text": "<p>Our limited editions are made in strictly limited numbers. Once they are gone, they are gone.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
