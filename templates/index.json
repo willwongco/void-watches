@@ -566,7 +566,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h4>OUR COLLECTIONS</h4>",
+                "text": "<h4>OUR WATCH COLLECTIONS</h4>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -776,7 +776,7 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 32,
+            "gap": 34,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
