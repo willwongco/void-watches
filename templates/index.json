@@ -1709,37 +1709,40 @@
         "padding-block-end": 0
       }
     },
-    "1755852492e0f85e98": {
-      "type": "_blocks",
+    "section_kAXyrR": {
+      "type": "section",
       "blocks": {
-        "ai_gen_block_6ac32c3_xhLaTB": {
-          "type": "ai_gen_block_6ac32c3",
+        "text_bqYzL8": {
+          "type": "text",
+          "name": "t:names.heading",
           "settings": {
             "text": "<h4>AS SEEN IN</h4>",
-            "max_width": 600,
-            "background_color": "#ffffff",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "link_color": "#000f9f",
-            "link_hover_color": "#000000",
-            "text_size": 16,
-            "line_height": "1.2",
-            "min_height": 100,
-            "padding_top": 0,
-            "padding_bottom": 0,
-            "padding_horizontal": 20,
-            "mobile_min_height": 25,
-            "mobile_text_size": 14,
-            "mobile_padding_top": 0,
-            "mobile_padding_bottom": 0,
-            "mobile_padding_horizontal": 15
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_6ac32c3_xhLaTB"
+        "text_bqYzL8"
       ],
+      "name": "As Seen In",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1749,9 +1752,9 @@
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 0,
-        "section_width": "full-width",
+        "section_width": "page-width",
         "section_height": "custom",
-        "section_height_custom": 1,
+        "section_height_custom": 0,
         "color_scheme": "",
         "background_media": "none",
         "video_position": "cover",
@@ -1764,7 +1767,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
+        "padding-block-start": 29,
         "padding-block-end": 0
       }
     },
@@ -1900,7 +1903,7 @@
     "product_list_fa6P9H",
     "section_9XpMrT",
     "17558521662dc6a8a3",
-    "1755852492e0f85e98",
+    "section_kAXyrR",
     "marquee_cHX9kt"
   ]
 }
