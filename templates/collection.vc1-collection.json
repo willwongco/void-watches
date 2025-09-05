@@ -498,7 +498,7 @@
         "padding-block-end": 0
       }
     },
-    "media_with_content_4wW84K": {
+    "media_with_content_tgWDpY": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -506,7 +506,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-V03D-Components-2000x1333.jpg",
+            "image": "shopify://shop_images/VOID-Watches-VC1-Sketch-2000x2000.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -524,11 +524,11 @@
             "gap": 24
           },
           "blocks": {
-            "text_BkxzbN": {
+            "text_KHwdtp": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Attention to Detail</p>",
+                "text": "<p>Design</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -550,7 +550,7 @@
               },
               "blocks": {}
             },
-            "group_innTQT": {
+            "group_EgmpVM": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -589,11 +589,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_cHH6Ah": {
+                "text_PqPfiA": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>All Custom Components</h2>",
+                    "text": "<h2>Minimal. Industrial.</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -615,10 +615,10 @@
                   },
                   "blocks": {}
                 },
-                "text_f8XBXX": {
+                "text_Wky3ay": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
+                    "text": "<p>Inspired by the tooling and machinery that made them. These cufflinks are designed to fit the tools, not the other way around.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -642,11 +642,11 @@
                 }
               },
               "block_order": [
-                "text_cHH6Ah",
-                "text_f8XBXX"
+                "text_PqPfiA",
+                "text_Wky3ay"
               ]
             },
-            "button_Y3faNM": {
+            "button_QCkfci": {
               "type": "button",
               "disabled": true,
               "settings": {
@@ -663,20 +663,20 @@
             }
           },
           "block_order": [
-            "text_BkxzbN",
-            "group_innTQT",
-            "button_Y3faNM"
+            "text_KHwdtp",
+            "group_EgmpVM",
+            "button_QCkfci"
           ]
         }
       },
-      "name": "Editorial V03D/PKG01",
+      "name": "Editorial B - Cufflinks",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -857,7 +857,7 @@
     "1757006021194c4fd5",
     "main",
     "media_with_content_VYnaLt",
-    "media_with_content_4wW84K",
+    "media_with_content_tgWDpY",
     "collection_list_WhEYP8"
   ]
 }
