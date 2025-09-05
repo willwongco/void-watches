@@ -427,7 +427,7 @@
       },
       "name": "Our Top Picks",
       "settings": {
-        "collection": "14mm-straps",
+        "collection": "our-top-picks",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 6,
