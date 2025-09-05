@@ -345,7 +345,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Bestseller</p>",
+                "text": "<p>Limited Editions</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -410,7 +410,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Our signature product</h2>",
+                    "text": "<h2>Something Special</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -435,7 +435,7 @@
                 "text_xDBMca": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
+                    "text": "<p>We care about all our watches but we admit that we care a little bit extra about our limited editions.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -462,26 +462,11 @@
                 "text_Njaymn",
                 "text_xDBMca"
               ]
-            },
-            "button_mhJnCP": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_X3Ngbj",
-            "group_tM7MY8",
-            "button_mhJnCP"
+            "group_tM7MY8"
           ]
         }
       },
