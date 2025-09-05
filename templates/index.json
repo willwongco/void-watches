@@ -440,9 +440,9 @@
           ]
         }
       },
-      "name": "t:names.products_carousel",
+      "name": "Our Top Picks",
       "settings": {
-        "collection": "",
+        "collection": "our-top-picks",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 6,
