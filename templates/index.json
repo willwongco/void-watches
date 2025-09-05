@@ -1768,7 +1768,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 29,
-        "padding-block-end": 0
+        "padding-block-end": 6
       }
     },
     "marquee_cHX9kt": {
@@ -1881,7 +1881,7 @@
         "icon_pwhqMW",
         "icon_g3RaR7"
       ],
-      "name": "t:names.marquee_section",
+      "name": "Marquee - Press Logos",
       "settings": {
         "movement_direction": "reverse",
         "color_scheme": "",
