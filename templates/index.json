@@ -9,6 +9,51 @@
  */
 {
   "sections": {
+    "17570595836fc7b034": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c590eda_VVADzp": {
+          "type": "ai_gen_block_c590eda",
+          "settings": {
+            "desktop_image": "shopify://shop_images/2021-05-VOID-Watches-Main-2000x1000.jpg",
+            "mobile_image": "shopify://shop_images/2021-05-VOID-Watches-Main-1000x1429.jpg",
+            "min_height_desktop": 500,
+            "min_height_mobile": 400
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c590eda_VVADzp"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "hero_wJMymL": {
       "type": "hero",
       "blocks": {
@@ -288,42 +333,6 @@
     },
     "1757059116ff4d6b30": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_c6eb2d3_PTqJ4n": {
-          "type": "ai_gen_block_c6eb2d3",
-          "settings": {
-            "heading": "Shop by collection",
-            "description": "<p>Discover our curated collections of premium products</p>",
-            "collections": [
-              "v01mkii",
-              "v02mkii",
-              "pxr5",
-              "pkg01",
-              "ltd",
-              "v03d",
-              "v03p"
-            ],
-            "background_color": "#ffffff",
-            "heading_color": "#000000",
-            "text_color": "#666666",
-            "card_background_color": "#ffffff",
-            "card_title_color": "#000000",
-            "card_text_color": "#666666",
-            "nav_button_background": "#ffffff",
-            "nav_button_color": "#000000",
-            "nav_button_border_color": "#e6e6e6",
-            "nav_button_hover_background": "#f5f5f5",
-            "nav_button_hover_color": "#000000",
-            "heading_size": 36,
-            "text_size": 16,
-            "card_border_radius": 8
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_c6eb2d3_PTqJ4n"
-      ],
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1553,6 +1562,7 @@
     }
   },
   "order": [
+    "17570595836fc7b034",
     "hero_wJMymL",
     "collection_list_fgDPjN",
     "1757059116ff4d6b30",
