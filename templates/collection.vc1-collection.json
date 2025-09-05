@@ -315,19 +315,18 @@
         "padding-block-end": 32
       }
     },
-    "media_with_content_3RwCNU": {
+    "media_with_content_VYnaLt": {
       "type": "media-with-content",
       "blocks": {
         "media": {
           "type": "_media-without-appearance",
           "static": true,
           "settings": {
-            "media_type": "video",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
+            "media_type": "image",
+            "image": "shopify://shop_images/VOID-Watches-VC1-Manufacturing-2000x2000.jpg",
             "link": "",
-            "video": "shopify://files/videos/VOID-Watches-PKG01-Straps-Video.mp4",
             "video_loop": true,
-            "video_autoplay": true,
+            "video_autoplay": false,
             "image_position": "cover",
             "video_position": "cover"
           },
@@ -337,16 +336,16 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 24
           },
           "blocks": {
-            "text_TEprDr": {
+            "text_ArcMgG": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Wide Selection of Straps</p>",
+                "text": "<p>Manufacturing</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -368,7 +367,7 @@
               },
               "blocks": {}
             },
-            "group_KgnRab": {
+            "group_RUmBmH": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -378,7 +377,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "fill",
@@ -407,11 +406,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_Rj6JAU": {
+                "text_rmVLLn": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>New Look in Seconds</h2>",
+                    "text": "<h2>Built to Last</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -433,12 +432,12 @@
                   },
                   "blocks": {}
                 },
-                "text_jMWVwL": {
+                "text_zV4JVL": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All watches are fitted with a quick release system for the straps and bracelets. You can easily change between straps or bracelets to give your watch a whole new look. No tools required.</p>",
+                    "text": "<p>The VC1 cufflinks are produced by a CNC lathe and made of 100% recyclable aluminium and will last a lifetime.</p>",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "narrow",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -460,17 +459,18 @@
                 }
               },
               "block_order": [
-                "text_Rj6JAU",
-                "text_jMWVwL"
+                "text_rmVLLn",
+                "text_zV4JVL"
               ]
             },
-            "button_44tm4p": {
+            "button_NKMqD3": {
               "type": "button",
+              "disabled": true,
               "settings": {
-                "label": "Shop Straps",
-                "link": "shopify://collections/18mm-straps",
+                "label": "Shop now",
+                "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -480,20 +480,20 @@
             }
           },
           "block_order": [
-            "text_TEprDr",
-            "group_KgnRab",
-            "button_44tm4p"
+            "text_ArcMgG",
+            "group_RUmBmH",
+            "button_NKMqD3"
           ]
         }
       },
-      "name": "Editorial PKG01 Straps",
+      "name": "Editorial A - Cufflinks",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -856,7 +856,7 @@
     "section",
     "1757006021194c4fd5",
     "main",
-    "media_with_content_3RwCNU",
+    "media_with_content_VYnaLt",
     "media_with_content_4wW84K",
     "collection_list_WhEYP8"
   ]
