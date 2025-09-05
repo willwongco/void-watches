@@ -238,7 +238,7 @@
         "text_f49ecV",
         "button_EmL6zC"
       ],
-      "name": "t:names.rich_text_section",
+      "name": "Hero Text",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
