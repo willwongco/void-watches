@@ -1319,7 +1319,7 @@
             "accordion_row_9bxPHN": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What is the return policy?",
+                "heading": "What is your return policy?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1328,7 +1328,7 @@
                 "text_jkNLER": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn’t the case, let us know and we’ll do our best to work with you to make it right. </p>",
+                    "text": "<p>If for any reason you are not happy with your purchase, you may return the items within 30 calendar days of receipt.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
