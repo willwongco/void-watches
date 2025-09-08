@@ -1589,7 +1589,7 @@
             "accordion_row_DEQzEG": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Where are your products manufactured?",
+                "heading": "Is the glass scratch resistant?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1599,7 +1599,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
+                    "text": "<p>Yes, the V01MKII comes with a sapphire crystal that is very scratch resistant.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
