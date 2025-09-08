@@ -1364,7 +1364,7 @@
             "accordion_row_DEQzEG": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Do you offer different buckle colours?",
+                "heading": "How does the leather age, will it develop patina?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1374,7 +1374,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Yes, for the most common colours we do offer straps with different coloured buckles. If you can't find the combination you're looking for you can reuse your original buckle from your own strap.</p>",
+                    "text": "<p>With proper care and maintenance, vegetable tanned leather will age naturally, develop a beautiful patina and last for generations. When exposed to sunlight vegetable tanned leather will change tone of color.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
