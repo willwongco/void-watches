@@ -1328,7 +1328,7 @@
                 "text_jkNLER": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>If for any reason you are not happy with your purchase, you may return the items within 30 calendar days of receipt.</p>",
+                    "text": "<p>You can return the watch for a full refund within 30 days. The watch has to be unworn and in it's complete original packaging.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
