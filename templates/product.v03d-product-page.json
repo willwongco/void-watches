@@ -1321,53 +1321,12 @@
               "block_order": [
                 "text_AAUmBH"
               ]
-            },
-            "accordion_row_RWmMEt": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Is the glass scratch resistant?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_UEJJxN": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Yes, the V01MKII comes with a sapphire crystal that is very scratch resistant.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_UEJJxN"
-              ]
             }
           },
           "block_order": [
             "accordion_row_mrgpzt",
             "accordion_row_8GdQcW",
-            "accordion_row_GBf9Yy",
-            "accordion_row_RWmMEt"
+            "accordion_row_GBf9Yy"
           ]
         }
       },
