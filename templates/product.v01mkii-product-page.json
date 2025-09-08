@@ -1549,7 +1549,7 @@
             "accordion_row_XgQcC3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "Is the V01MKII waterproof?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1559,7 +1559,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>Yes the V01MKII is rated to 5ATM. This means it is possible to occasionally take it for a swim or wear it in the shower but we strongly recommend keeping it as dry as possible to make it last longer.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
