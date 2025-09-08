@@ -427,6 +427,140 @@
         "padding-block-end": 20
       }
     },
+    "marquee_qFtLAt": {
+      "type": "marquee",
+      "blocks": {
+        "icon_9thUWG": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Shipping-Icon-100x100.png",
+            "width": 56,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "text_rqeyAW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free Shipping Available</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 50
+          },
+          "blocks": {}
+        },
+        "icon_zb6aPC": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Returns-Icon-100x100.png",
+            "width": 50,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "text_UtnVmU": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>30-Day Returns</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 50
+          },
+          "blocks": {}
+        },
+        "icon_knqGFY": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Warranty-Icon-100x100.png",
+            "width": 38,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "text_6fqrQi": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>2 Year Warranty</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 50
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "icon_9thUWG",
+        "text_rqeyAW",
+        "icon_zb6aPC",
+        "text_UtnVmU",
+        "icon_knqGFY",
+        "text_6fqrQi"
+      ],
+      "name": "Icons - Marquee",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-3",
+        "padding-block-start": 0,
+        "padding-block-end": 0,
+        "gap_between_elements": 11
+      }
+    },
     "media_with_content_pabj4W": {
       "type": "media-with-content",
       "blocks": {
@@ -606,7 +740,7 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
-        "padding-block-start": 0,
+        "padding-block-start": 20,
         "padding-block-end": 0
       }
     },
@@ -1382,53 +1516,12 @@
               "block_order": [
                 "text_xBeBe8"
               ]
-            },
-            "accordion_row_GxJhin": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "How much does shipping cost?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_UBBbFM": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_UBBbFM"
-              ]
             }
           },
           "block_order": [
             "accordion_row_9bxPHN",
             "accordion_row_XgQcC3",
-            "accordion_row_DEQzEG",
-            "accordion_row_GxJhin"
+            "accordion_row_DEQzEG"
           ]
         }
       },
@@ -1468,6 +1561,7 @@
   },
   "order": [
     "main",
+    "marquee_qFtLAt",
     "media_with_content_pabj4W",
     "media_with_content_ME7Gpr",
     "section_J9XNjK",
