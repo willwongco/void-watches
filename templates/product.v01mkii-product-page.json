@@ -1625,54 +1625,13 @@
               "block_order": [
                 "text_xBeBe8"
               ]
-            },
-            "accordion_row_GxJhin": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "How much does shipping cost?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_UBBbFM": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_UBBbFM"
-              ]
             }
           },
           "block_order": [
             "accordion_row_9bxPHN",
             "accordion_row_PxMbPm",
             "accordion_row_XgQcC3",
-            "accordion_row_DEQzEG",
-            "accordion_row_GxJhin"
+            "accordion_row_DEQzEG"
           ]
         }
       },

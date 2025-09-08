@@ -1334,10 +1334,10 @@
         "padding-block-end": 48
       }
     },
-    "section_c3mftC": {
+    "section_fzgCi4": {
       "type": "section",
       "blocks": {
-        "text_tedw79": {
+        "text_NwqQt8": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
@@ -1363,7 +1363,7 @@
           },
           "blocks": {}
         },
-        "accordion_LhYUXH": {
+        "accordion_aVLcX8": {
           "type": "accordion",
           "name": "t:names.accordion",
           "settings": {
@@ -1382,19 +1382,19 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "accordion_row_9bxPHN": {
+            "accordion_row_prYU9e": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What is the return policy?",
+                "heading": "What is your return policy?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
               },
               "blocks": {
-                "text_jkNLER": {
+                "text_DAYhtN": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn’t the case, let us know and we’ll do our best to work with you to make it right. </p>",
+                    "text": "<p>You can return the watch for a full refund within 30 days. The watch has to be unworn and in it's complete original packaging.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1418,22 +1418,22 @@
                 }
               },
               "block_order": [
-                "text_jkNLER"
+                "text_DAYhtN"
               ]
             },
-            "accordion_row_PxMbPm": {
+            "accordion_row_XVPnQF": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are any purchases final sale?",
+                "heading": "Are the straps interchangable?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
               },
               "blocks": {
-                "text_ewWqxQ": {
+                "text_XXqgkC": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
+                    "text": "<p>Yes, you can use any of our 22mm straps with the V02MKII.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1457,23 +1457,23 @@
                 }
               },
               "block_order": [
-                "text_ewWqxQ"
+                "text_XXqgkC"
               ]
             },
-            "accordion_row_XgQcC3": {
+            "accordion_row_cbQLjt": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "Is the V02MKII waterproof?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
               },
               "blocks": {
-                "text_tqtafA": {
+                "text_F4beW4": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>Yes the V01MKII is rated to 5ATM. This means it is possible to occasionally take it for a swim or wear it in the shower but we strongly recommend keeping it as dry as possible to make it last longer.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1497,23 +1497,23 @@
                 }
               },
               "block_order": [
-                "text_tqtafA"
+                "text_F4beW4"
               ]
             },
-            "accordion_row_DEQzEG": {
+            "accordion_row_QXNPqm": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Where are your products manufactured?",
+                "heading": "Is the glass scratch resistant?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
               },
               "blocks": {
-                "text_xBeBe8": {
+                "text_ntTYEG": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
+                    "text": "<p>Yes, the V01MKII comes with a sapphire crystal that is very scratch resistant.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1537,64 +1537,23 @@
                 }
               },
               "block_order": [
-                "text_xBeBe8"
-              ]
-            },
-            "accordion_row_GxJhin": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "How much does shipping cost?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_UBBbFM": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_UBBbFM"
+                "text_ntTYEG"
               ]
             }
           },
           "block_order": [
-            "accordion_row_9bxPHN",
-            "accordion_row_PxMbPm",
-            "accordion_row_XgQcC3",
-            "accordion_row_DEQzEG",
-            "accordion_row_GxJhin"
+            "accordion_row_prYU9e",
+            "accordion_row_XVPnQF",
+            "accordion_row_cbQLjt",
+            "accordion_row_QXNPqm"
           ]
         }
       },
       "block_order": [
-        "text_tedw79",
-        "accordion_LhYUXH"
+        "text_NwqQt8",
+        "accordion_aVLcX8"
       ],
-      "name": "t:names.faq_section",
+      "name": "FAQ - V02MKII",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1633,6 +1592,6 @@
     "media_with_content_KKLz8B",
     "section_jcVzQ4",
     "product_recommendations_qggXJq",
-    "section_c3mftC"
+    "section_fzgCi4"
   ]
 }
