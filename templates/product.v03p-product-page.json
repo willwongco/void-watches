@@ -1325,7 +1325,7 @@
             "accordion_row_a83n3k": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Is the glass scratch resistant?",
+                "heading": "What size is the watch?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1335,7 +1335,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Yes, the V01MKII comes with a sapphire crystal that is very scratch resistant.</p>",
+                    "text": "<p>The diameter of the V03P is 28mm. The \"P\" in the name stands for \"petite\" and it's intended for smaller wrists.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
