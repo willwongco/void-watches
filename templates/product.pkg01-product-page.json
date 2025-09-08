@@ -1303,49 +1303,10 @@
                 "text_jkNLER"
               ]
             },
-            "accordion_row_PxMbPm": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Are any purchases final sale?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_ewWqxQ": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_ewWqxQ"
-              ]
-            },
             "accordion_row_XgQcC3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "Is the PKG01 waterproof?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1355,7 +1316,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>Yes, the PKG01 is rated 5ATM. This means you can take it for a swim or wear it in the shower occasionally but we strongly recommend keeping it as dry as possible to make it last longer.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1385,7 +1346,7 @@
             "accordion_row_DEQzEG": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Where are your products manufactured?",
+                "heading": "Are the straps interchangable?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1395,7 +1356,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
+                    "text": "<p>Yes, you can use any of our 18mm straps with the PKG01.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1465,7 +1426,6 @@
           },
           "block_order": [
             "accordion_row_9bxPHN",
-            "accordion_row_PxMbPm",
             "accordion_row_XgQcC3",
             "accordion_row_DEQzEG",
             "accordion_row_GxJhin"
