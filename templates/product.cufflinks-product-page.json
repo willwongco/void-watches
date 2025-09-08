@@ -1246,7 +1246,7 @@
             "accordion_row_9bxPHN": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What size strap should I get?",
+                "heading": "How big are the cufflinks?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1255,7 +1255,7 @@
                 "text_jkNLER": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We have a few different strap sizes but they all have a number on the back. These 14mm straps and bracelets fit our V03P collection (our smallest watch).</p>",
+                    "text": "<p>The widest diameter is 18mm (the visible part of the cufflink).</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1285,7 +1285,7 @@
             "accordion_row_PxMbPm": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "How do I maintain my leather strap?",
+                "heading": "Do they come in a gift box?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
