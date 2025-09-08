@@ -1285,7 +1285,7 @@
             "accordion_row_PxMbPm": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "How do I maintain my leather strap?",
+                "heading": "How do I maintain my leather accessories?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1294,7 +1294,7 @@
                 "text_ewWqxQ": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>A leather strap should be kept as dry as possible. Avoid water when possible and let the strap dry out properly if it's wet. The leather strap can be cleaned by wiping it with a damp cloth using a mild detergent.</p>",
+                    "text": "<p>When needed, use very small amounts of leather oil and grease. The leather can change look and hand-feel and can also get a darker color tone from these type of products.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
