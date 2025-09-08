@@ -1285,7 +1285,7 @@
             "accordion_row_tpYcfB": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Is the V01MKII waterproof?",
+                "heading": "Is the V03P waterproof?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1295,7 +1295,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Yes the V01MKII is rated to 5ATM. This means it is possible to occasionally take it for a swim or wear it in the shower but we strongly recommend keeping it as dry as possible to make it last longer.</p>",
+                    "text": "<p>Yes the V03P is rated to 5ATM. This means it is possible to occasionally take it for a swim or wear it in the shower but we strongly recommend keeping it as dry as possible to make it last longer.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
