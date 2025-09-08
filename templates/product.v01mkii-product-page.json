@@ -1510,7 +1510,7 @@
             "accordion_row_PxMbPm": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are any purchases final sale?",
+                "heading": "Are the straps interchangable?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1519,7 +1519,7 @@
                 "text_ewWqxQ": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
+                    "text": "<p>Yes, you can use any of our 22mm straps with the V01MKII.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
