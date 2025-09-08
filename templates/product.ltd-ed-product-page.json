@@ -1402,10 +1402,10 @@
         "padding-block-end": 48
       }
     },
-    "section_c3mftC": {
+    "section_dJxqeg": {
       "type": "section",
       "blocks": {
-        "text_tedw79": {
+        "text_xgiHqP": {
           "type": "text",
           "name": "t:names.heading",
           "settings": {
@@ -1431,7 +1431,7 @@
           },
           "blocks": {}
         },
-        "accordion_LhYUXH": {
+        "accordion_p4jRJw": {
           "type": "accordion",
           "name": "t:names.accordion",
           "settings": {
@@ -1450,7 +1450,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "accordion_row_9bxPHN": {
+            "accordion_row_HgagQ8": {
               "type": "_accordion-row",
               "settings": {
                 "heading": "What is your return policy?",
@@ -1459,7 +1459,7 @@
                 "width": 20
               },
               "blocks": {
-                "text_jkNLER": {
+                "text_EAEPUM": {
                   "type": "text",
                   "settings": {
                     "text": "<p>You can return the watch for a full refund within 30 days. The watch has to be unworn and in it's complete original packaging.</p>",
@@ -1486,62 +1486,23 @@
                 }
               },
               "block_order": [
-                "text_jkNLER"
+                "text_EAEPUM"
               ]
             },
-            "accordion_row_PxMbPm": {
+            "accordion_row_TfT6Kp": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are any purchases final sale?",
+                "heading": "Is the watch waterproof?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
               },
               "blocks": {
-                "text_ewWqxQ": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_ewWqxQ"
-              ]
-            },
-            "accordion_row_XgQcC3": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "When will I get my order?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_tqtafA": {
+                "text_tHwMQA": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>Yes, the watch is rated 5ATM. This means you can take it for a swim or wear it in the shower occasionally but we strongly recommend keeping it as dry as possible to make it last longer.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1565,23 +1526,23 @@
                 }
               },
               "block_order": [
-                "text_tqtafA"
+                "text_tHwMQA"
               ]
             },
-            "accordion_row_DEQzEG": {
+            "accordion_row_UxXV4q": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Where are your products manufactured?",
+                "heading": "Are the straps interchangable?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
               },
               "blocks": {
-                "text_xBeBe8": {
+                "text_jQyaTQ": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
+                    "text": "<p>Yes, you can use any of our 18mm straps with the PKG01.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1605,64 +1566,22 @@
                 }
               },
               "block_order": [
-                "text_xBeBe8"
-              ]
-            },
-            "accordion_row_GxJhin": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "How much does shipping cost?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_UBBbFM": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_UBBbFM"
+                "text_jQyaTQ"
               ]
             }
           },
           "block_order": [
-            "accordion_row_9bxPHN",
-            "accordion_row_PxMbPm",
-            "accordion_row_XgQcC3",
-            "accordion_row_DEQzEG",
-            "accordion_row_GxJhin"
+            "accordion_row_HgagQ8",
+            "accordion_row_TfT6Kp",
+            "accordion_row_UxXV4q"
           ]
         }
       },
       "block_order": [
-        "text_tedw79",
-        "accordion_LhYUXH"
+        "text_xgiHqP",
+        "accordion_p4jRJw"
       ],
-      "name": "t:names.faq_section",
+      "name": "FAQ - PKG01",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1703,6 +1622,6 @@
     "hero_CkRK8x",
     "1756286557466a5e62",
     "product_recommendations_qggXJq",
-    "section_c3mftC"
+    "section_dJxqeg"
   ]
 }
