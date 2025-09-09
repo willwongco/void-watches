@@ -10,8 +10,6 @@ body {
   margin: 0;
   min-height: 100svh;
   font-variation-settings: 'slnt' 0;
-
-    letter-spacing: 1px;
 }
 
 :root {
@@ -32,14 +30,6 @@ html {
 
 html[scroll-lock] {
   overflow: hidden;
-}
-
-[popover] {
-  display: none;
-}
-
-[popover]:is(:popover-open, dialog[open]) {
-  display: block;
 }
 
 img,
@@ -100,7 +90,6 @@ select {
 
 .product-card__content slideshow-component {
   --cursor: pointer;
-  background: #fbfbfb;
 }
 
 .predictive-search-results__card .product-card,
@@ -586,6 +575,7 @@ p:empty {
   overflow: hidden;
   height: 1px;
   left: -99999px;
+  /* stylelint-disable-next-line declaration-no-important */
   word-wrap: normal !important;
 }
 
@@ -1646,7 +1636,7 @@ zoom-dialog dialog {
   padding: 0;
   max-width: 100%;
   max-height: 100%;
-  background: white;
+  background: #fff;
   opacity: 0;
   transition: opacity var(--animation-speed) var(--animation-easing);
   scrollbar-width: none;
@@ -3020,7 +3010,7 @@ fly-to-cart {
   }
 
   50% {
-    box-shadow: 0 0 0 2px black;
+    box-shadow: 0 0 0 2px #000;
     scale: 1;
   }
 }
@@ -3773,11 +3763,6 @@ slideshow-arrows .slideshow-control {
 
 slideshow-arrows .slideshow-control.slideshow-control--style-none {
   display: none;
-}
-.media-gallery--carousel {
-  .product-media {
-    background: #fbfbfb;
-  }
 }
 
 .media-gallery--carousel slideshow-arrows .slideshow-control {

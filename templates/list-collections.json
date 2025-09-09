@@ -6,8 +6,7 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "sections": {
     "collection_list_Wfgh3m": {
       "type": "main-collection-list",
@@ -16,7 +15,6 @@
           "type": "group",
           "name": "t:names.header",
           "settings": {
-            "link": "",
             "open_in_new_tab": false,
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -41,7 +39,6 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "placeholder": "",
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
@@ -56,10 +53,10 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h2>OUR COLLECTIONS</h2>",
+                "text": "<h3>Collections</h3>",
                 "width": "100%",
                 "max_width": "normal",
-                "alignment": "center",
+                "alignment": "left",
                 "type_preset": "h2",
                 "font": "var(--font-primary--family)",
                 "font_size": "",
@@ -89,11 +86,11 @@
           "static": true,
           "settings": {
             "placement": "below_image",
-            "horizontal_alignment": "center",
+            "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
             "collection_card_gap": 8,
-            "inherit_color_scheme": false,
-            "color_scheme": "scheme-3",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
