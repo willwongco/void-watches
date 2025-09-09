@@ -55,6 +55,7 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
+            "placeholder": "",
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
@@ -94,6 +95,7 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
+                "placeholder": "",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
@@ -169,10 +171,12 @@
                 "width": "custom",
                 "custom_width": 50,
                 "inherit_color_scheme": true,
+                "heading": "",
+                "heading_preset": "h3",
                 "color_scheme": "scheme-1",
                 "border_style": "all",
                 "border_width": 1,
-                "border_radius": 39,
+                "border_radius": 0,
                 "input_type_preset": "paragraph",
                 "style_class": "button-unstyled",
                 "display_type": "arrow",
@@ -205,6 +209,7 @@
               "type": "_footer-copyright",
               "static": true,
               "settings": {
+                "show_powered_by": false,
                 "font_size": "0.75rem",
                 "case": "none"
               },
@@ -224,7 +229,7 @@
               "static": true,
               "settings": {},
               "blocks": {
-                "social_link_JnLXB6": {
+                "social_link_hmMYkC": {
                   "type": "_social-link",
                   "name": "Facebook",
                   "settings": {
@@ -239,38 +244,11 @@
                     "link": "https://www.instagram.com/"
                   },
                   "blocks": {}
-                },
-                "social_link_kd8UUt": {
-                  "type": "_social-link",
-                  "name": "TikTok",
-                  "settings": {
-                    "link": "https://www.tiktok.com/"
-                  },
-                  "blocks": {}
-                },
-                "social_link_Qw9AXL": {
-                  "type": "_social-link",
-                  "name": "X / Twitter",
-                  "settings": {
-                    "link": "https://x.com/"
-                  },
-                  "blocks": {}
-                },
-                "social_link_aAH768": {
-                  "type": "_social-link",
-                  "name": "YouTube",
-                  "settings": {
-                    "link": "https://www.youtube.com/"
-                  },
-                  "blocks": {}
                 }
               },
               "block_order": [
-                "social_link_JnLXB6",
-                "social_link_9i9EqD",
-                "social_link_kd8UUt",
-                "social_link_Qw9AXL",
-                "social_link_aAH768"
+                "social_link_hmMYkC",
+                "social_link_9i9EqD"
               ]
             }
           },

@@ -1,0 +1,277 @@
+{% doc %}
+  @prompt
+    Add two images side by side with adjustable padding., Center the block on the page.
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-side-by-side-images-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding_top }}px {{ block.settings.section_padding_horizontal }}px {{ block.settings.section_padding_bottom }}px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ai-side-by-side-images__wrapper-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    width: 100%;
+  }
+
+  .ai-side-by-side-images__container-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.gap_between_images }}px;
+    align-items: {{ block.settings.vertical_alignment }};
+    max-width: 100%;
+  }
+
+  .ai-side-by-side-images__image-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ai-side-by-side-images__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.border_radius }}px;
+    display: block;
+  }
+
+  .ai-side-by-side-images__placeholder-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    aspect-ratio: {{ block.settings.aspect_ratio }};
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-side-by-side-images__placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-side-by-side-images__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-side-by-side-images__container-{{ ai_gen_id }} {
+      {% if block.settings.stack_on_mobile %}
+        flex-direction: column;
+      {% else %}
+        gap: {{ block.settings.gap_between_images | divided_by: 2 }}px;
+      {% endif %}
+    }
+
+    .ai-side-by-side-images-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_top | divided_by: 2 }}px {{ block.settings.section_padding_horizontal | divided_by: 2 }}px {{ block.settings.section_padding_bottom | divided_by: 2 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-side-by-side-images-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-side-by-side-images__wrapper-{{ ai_gen_id }}">
+    <div class="ai-side-by-side-images__container-{{ ai_gen_id }}">
+      <div class="ai-side-by-side-images__image-wrapper-{{ ai_gen_id }}">
+        {% if block.settings.image_1 %}
+          <img
+            src="{{ block.settings.image_1 | image_url: width: 1000 }}"
+            alt="{{ block.settings.image_1.alt | escape }}"
+            class="ai-side-by-side-images__image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.image_1.width }}"
+            height="{{ block.settings.image_1.height }}"
+          >
+        {% else %}
+          <div class="ai-side-by-side-images__placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-side-by-side-images__empty-state-{{ ai_gen_id }}">
+              Add first image
+            </div>
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="ai-side-by-side-images__image-wrapper-{{ ai_gen_id }}">
+        {% if block.settings.image_2 %}
+          <img
+            src="{{ block.settings.image_2 | image_url: width: 1000 }}"
+            alt="{{ block.settings.image_2.alt | escape }}"
+            class="ai-side-by-side-images__image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.image_2.width }}"
+            height="{{ block.settings.image_2.height }}"
+          >
+        {% else %}
+          <div class="ai-side-by-side-images__placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-side-by-side-images__empty-state-{{ ai_gen_id }}">
+              Add second image
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Side by side images",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "First image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Second image"
+    },
+    {
+      "type": "select",
+      "id": "aspect_ratio",
+      "label": "Aspect ratio",
+      "options": [
+        {
+          "value": "1/1",
+          "label": "Square"
+        },
+        {
+          "value": "3/4",
+          "label": "Portrait"
+        },
+        {
+          "value": "4/3",
+          "label": "Landscape"
+        },
+        {
+          "value": "16/9",
+          "label": "Widescreen"
+        }
+      ],
+      "default": "4/3"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 400,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 1000
+    },
+    {
+      "type": "select",
+      "id": "vertical_alignment",
+      "label": "Vertical alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Top"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Bottom"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "gap_between_images",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Gap between images",
+      "default": 20
+    },
+    {
+      "type": "checkbox",
+      "id": "stack_on_mobile",
+      "label": "Stack images on mobile",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    }
+  ],
+  "presets": [
+    {
+      "name": "Side by side images"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

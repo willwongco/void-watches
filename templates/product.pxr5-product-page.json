@@ -427,10 +427,10 @@
         "padding-block-end": 20
       }
     },
-    "marquee_Xx8aTE": {
+    "marquee_GawRFn": {
       "type": "marquee",
       "blocks": {
-        "icon_LMqLjH": {
+        "icon_fyKy9c": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -442,7 +442,7 @@
           },
           "blocks": {}
         },
-        "text_Yw9Uwr": {
+        "text_tfk96U": {
           "type": "text",
           "settings": {
             "text": "<p>Free Shipping Available</p>",
@@ -467,7 +467,7 @@
           },
           "blocks": {}
         },
-        "icon_7qEHMX": {
+        "icon_qMAU8Q": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -479,7 +479,7 @@
           },
           "blocks": {}
         },
-        "text_wCFKAf": {
+        "text_jtj8mP": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
@@ -505,7 +505,7 @@
           },
           "blocks": {}
         },
-        "icon_GWqtep": {
+        "icon_kz8W8B": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -517,7 +517,7 @@
           },
           "blocks": {}
         },
-        "text_9VrA8c": {
+        "text_RMAYmK": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
@@ -545,12 +545,12 @@
         }
       },
       "block_order": [
-        "icon_LMqLjH",
-        "text_Yw9Uwr",
-        "icon_7qEHMX",
-        "text_wCFKAf",
-        "icon_GWqtep",
-        "text_9VrA8c"
+        "icon_fyKy9c",
+        "text_tfk96U",
+        "icon_qMAU8Q",
+        "text_jtj8mP",
+        "icon_kz8W8B",
+        "text_RMAYmK"
       ],
       "name": "Icons - Marquee",
       "settings": {
@@ -559,161 +559,6 @@
         "padding-block-start": 0,
         "padding-block-end": 0,
         "gap_between_elements": 11
-      }
-    },
-    "section_J9XNjK": {
-      "type": "section",
-      "blocks": {
-        "image_wPcMwz": {
-          "type": "image",
-          "settings": {
-            "image": "{{ closest.product.metafields.custom.product_feature_image.value }}",
-            "link": "",
-            "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "group_KXVj3J": {
-          "type": "group",
-          "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "placeholder": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_4aAqif": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>Technical Specifications</h2>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_EHaHKr": {
-              "type": "text",
-              "settings": {
-                "text": "<p>{{ closest.product.metafields.custom.product_details_accordion | metafield_tag }}</p>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_4aAqif",
-            "text_EHaHKr"
-          ]
-        }
-      },
-      "block_order": [
-        "image_wPcMwz",
-        "group_KXVj3J"
-      ],
-      "name": "Product Features",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
       }
     },
     "media_with_content_pabj4W": {
@@ -899,189 +744,6 @@
         "padding-block-end": 20
       }
     },
-    "media_with_content_ME7Gpr": {
-      "type": "media-with-content",
-      "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true,
-          "settings": {
-            "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-V03D-Components-2000x1333.jpg",
-            "link": "",
-            "video_loop": true,
-            "video_autoplay": false,
-            "image_position": "cover",
-            "video_position": "cover"
-          },
-          "blocks": {}
-        },
-        "content": {
-          "type": "_content-without-appearance",
-          "static": true,
-          "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 24
-          },
-          "blocks": {
-            "text_z666KE": {
-              "type": "text",
-              "name": "t:names.caption",
-              "settings": {
-                "text": "<p>Attention to Detail</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h6",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "group_wqg6Ci": {
-              "type": "group",
-              "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "placeholder": "",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_AWRKfi": {
-                  "type": "text",
-                  "name": "t:names.heading",
-                  "settings": {
-                    "text": "<h2>All Custom Components</h2>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h3",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_JPjfaW": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_AWRKfi",
-                "text_JPjfaW"
-              ]
-            },
-            "button_YcGCQV": {
-              "type": "button",
-              "settings": {
-                "label": "Learn More",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_z666KE",
-            "group_wqg6Ci",
-            "button_YcGCQV"
-          ]
-        }
-      },
-      "disabled": true,
-      "name": "Editorial - V03D",
-      "settings": {
-        "media_position": "right",
-        "media_width": "medium",
-        "media_height": "60svh",
-        "section_width": "full-width",
-        "extend_media": true,
-        "color_scheme": "scheme-2",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
     "media_with_content_KKLz8B": {
       "type": "media-with-content",
       "blocks": {
@@ -1264,6 +926,184 @@
         "padding-block-end": 0
       }
     },
+    "section_J9XNjK": {
+      "type": "section",
+      "blocks": {
+        "image_wPcMwz": {
+          "type": "image",
+          "settings": {
+            "image": "{{ closest.product.metafields.custom.product_feature_image.value }}",
+            "link": "",
+            "image_ratio": "square",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_KXVj3J": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "placeholder": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_4aAqif": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Technical Specifications</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_EHaHKr": {
+              "type": "text",
+              "settings": {
+                "text": "<p>{{ closest.product.metafields.custom.product_details_accordion | metafield_tag }}</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "ai_gen_block_bdcbbf7_7fTEA9": {
+              "type": "ai_gen_block_bdcbbf7",
+              "name": "Download Manual",
+              "settings": {
+                "button_text": "Download Manual",
+                "manual_link": "https://cdn.shopify.com/s/files/1/0698/5904/9517/files/VOID-Watches-PXR5-Instructions.pdf?v=1756379090",
+                "background_color": "#ffffff",
+                "text_color": "#000000",
+                "border_color": "#000000",
+                "hover_background_color": "#333333",
+                "hover_text_color": "#ffffff",
+                "hover_border_color": "#333333",
+                "font_size": 16,
+                "font_weight": "500",
+                "icon_size": 20,
+                "padding_vertical": 12,
+                "padding_horizontal": 20,
+                "border_width": 2,
+                "border_radius": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_4aAqif",
+            "text_EHaHKr",
+            "ai_gen_block_bdcbbf7_7fTEA9"
+          ]
+        }
+      },
+      "block_order": [
+        "image_wPcMwz",
+        "group_KXVj3J"
+      ],
+      "name": "Product Features",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
     "section_jcVzQ4": {
       "type": "section",
       "blocks": {
@@ -1431,7 +1271,7 @@
           "settings": {
             "product_card_gap": 8,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-2",
+            "color_scheme": "scheme-1",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -1531,7 +1371,7 @@
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 28,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
@@ -1543,9 +1383,9 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Frequently asked questions</h3>",
-            "width": "fit-content",
-            "max_width": "narrow",
+            "text": "<h4>Frequently asked questions</h4>",
+            "width": "100%",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
@@ -1587,7 +1427,7 @@
             "accordion_row_9bxPHN": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What is the return policy?",
+                "heading": "Is the PXR5 waterproof?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1596,7 +1436,7 @@
                 "text_jkNLER": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn’t the case, let us know and we’ll do our best to work with you to make it right. </p>",
+                    "text": "<p>Yes, the PXR5 is rated to 3ATM (30m). This means the watch is saft to use in rain or when washing your hands but we do not recommend using it in the shower or when swimming.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1626,7 +1466,7 @@
             "accordion_row_PxMbPm": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are any purchases final sale?",
+                "heading": "What functions does the watch have?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1635,7 +1475,7 @@
                 "text_ewWqxQ": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
+                    "text": "<p>The PXR5 displays time in a 12 hour format with an AM/PM indicator. It also has a backlight function.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1665,7 +1505,7 @@
             "accordion_row_XgQcC3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "How do I change the strap?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1675,7 +1515,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>The strap is attached with velcro and it's so simple to change we haven't even made an instruction for it!</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1702,50 +1542,10 @@
                 "text_tqtafA"
               ]
             },
-            "accordion_row_DEQzEG": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Where are your products manufactured?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_xBeBe8": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xBeBe8"
-              ]
-            },
             "accordion_row_GxJhin": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "How much does shipping cost?",
+                "heading": "What's your return policy?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1755,7 +1555,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
+                    "text": "<p>You can return the watch for a full refund within 30 days. The watch has to be unworn and in it's complete original packaging.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1781,14 +1581,54 @@
               "block_order": [
                 "text_UBBbFM"
               ]
+            },
+            "accordion_row_8c6bmP": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "How long does the battery last?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_nwr7xA": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>The battery fitted in the PXR5 is expected to last around 2 years. Batteries can easily be changed at most jewellery & watch stores at a low cost.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_nwr7xA"
+              ]
             }
           },
           "block_order": [
             "accordion_row_9bxPHN",
             "accordion_row_PxMbPm",
             "accordion_row_XgQcC3",
-            "accordion_row_DEQzEG",
-            "accordion_row_GxJhin"
+            "accordion_row_GxJhin",
+            "accordion_row_8c6bmP"
           ]
         }
       },
@@ -1796,8 +1636,7 @@
         "text_tedw79",
         "accordion_LhYUXH"
       ],
-      "disabled": true,
-      "name": "t:names.faq_section",
+      "name": "FAQ - PXR5",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1829,11 +1668,10 @@
   },
   "order": [
     "main",
-    "marquee_Xx8aTE",
-    "section_J9XNjK",
+    "marquee_GawRFn",
     "media_with_content_pabj4W",
-    "media_with_content_ME7Gpr",
     "media_with_content_KKLz8B",
+    "section_J9XNjK",
     "section_jcVzQ4",
     "product_recommendations_qggXJq",
     "section_c3mftC"

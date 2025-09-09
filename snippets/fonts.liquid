@@ -1,4 +1,25 @@
-{%- unless settings.type_body_font.system?
+<style>
+  @font-face {
+    font-family: "font-futura";
+    src: url({{ 'font-FuturaMedium.woff' | asset_url }});
+    src: url({{ 'font-FuturaMedium.woff2' | asset_url }}) format('woff2'),
+        url({{ 'font-FuturaMedium.woff' | asset_url }}) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "font-futura";
+    src: url({{ 'font-FuturaMedium.woff' | asset_url }});
+    src: url({{ 'font-FuturaMedium.woff2' | asset_url }}) format('woff2'),
+        url({{ 'font-FuturaMedium.woff' | asset_url }}) format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+</style>
+
+{% comment %} {%- unless settings.type_body_font.system?
   and settings.type_subheading_font.system?
   and settings.type_heading_font.system?
 -%}
@@ -46,4 +67,4 @@
     crossorigin
   >
 {%- endunless -%}
-{% # theme-check-enable %}
+{% # theme-check-enable %} {% endcomment %}

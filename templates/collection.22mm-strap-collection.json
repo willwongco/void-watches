@@ -264,8 +264,8 @@
           "type": "_media-without-appearance",
           "static": true,
           "settings": {
-            "media_type": "video",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
+            "media_type": "image",
+            "image": "shopify://shop_images/22mm-Strap-Fits-V01MKII-V02MKII_98a9b87f-4da7-4373-8788-78f12bb35b99.jpg",
             "link": "",
             "video": "shopify://files/videos/VOID-Watches-PXR5-Straps-Video-Low-Res.mp4",
             "video_loop": true,
@@ -288,7 +288,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Key Feature: The Strap</p>",
+                "text": "<p>Size Guide</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -353,7 +353,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Endless Color Combinations</h2>",
+                    "text": "<h2>Fits V01MKII & V02MKII</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -378,7 +378,7 @@
                 "text_kpwDBJ": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We strongly recommend to get at least one extra strap for your PXR5 to take full advantage of your watch. Switch in seconds.</p>",
+                    "text": "<p>Our 22mm straps and bracelets fit our V01MKII and V02MKII collections.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -409,8 +409,8 @@
             "button_ECpdCR": {
               "type": "button",
               "settings": {
-                "label": "Shop Straps",
-                "link": "shopify://collections/pxr5-straps",
+                "label": "Detailed Guide",
+                "link": "shopify://blogs/news/how-to-change-your-watch-strap",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -428,7 +428,7 @@
           ]
         }
       },
-      "name": "Editorial - PXR5 Straps",
+      "name": "Editorial - 22mm Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -436,8 +436,8 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "media_with_content_Jmgcri": {
@@ -448,7 +448,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-Components-2000x2000.jpg",
+            "image": "shopify://shop_images/2021-05-VOID-Watches-Main-2000x1000.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -535,7 +535,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>All Custom Components</h2>",
+                    "text": "<h2>How to change your strap</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -560,7 +560,7 @@
                 "text_tpXd8X": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
+                    "text": "<p>Changing your watch strap is not rocket science. This article will guide you.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -592,7 +592,7 @@
               "type": "button",
               "settings": {
                 "label": "Learn More",
-                "link": "shopify://collections/all",
+                "link": "shopify://blogs/news/how-to-change-your-watch-strap",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
@@ -610,7 +610,7 @@
           ]
         }
       },
-      "name": "Editorial - PXR5 Components",
+      "name": "Editorial - How to Change your strap",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
@@ -669,7 +669,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h3>View our other collections</h3>",
+                "text": "<h3>View our other strap collections</h3>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -717,9 +717,9 @@
               "type": "collection-title",
               "name": "t:names.collection_title",
               "settings": {
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -767,11 +767,9 @@
       "name": "t:names.collections_carousel",
       "settings": {
         "collection_list": [
-          "pkg01",
-          "v01mkii",
-          "v02mkii",
-          "v03d",
-          "v03p"
+          "18mm-straps",
+          "22mm-straps",
+          "pxr5-straps"
         ],
         "layout_type": "carousel",
         "carousel_on_mobile": false,
