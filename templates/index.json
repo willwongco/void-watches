@@ -718,15 +718,15 @@
             "image_2": "shopify://shop_images/For-Her-600x800.jpg",
             "title_2": "For Her",
             "description_2": "Suitable for smaller wrists",
-            "link_2": "",
+            "link_2": "shopify://collections/for-her",
             "image_3": "shopify://shop_images/Limited-Editions-600x800.jpg",
             "title_3": "Limited Editions",
             "description_3": "Truly unique timepieces",
-            "link_3": "",
+            "link_3": "shopify://collections/ltd",
             "image_4": "shopify://shop_images/Straps-600x800.jpg",
             "title_4": "Straps",
             "description_4": "Find your next strap here",
-            "link_4": ""
+            "link_4": "shopify://collections/18mm-straps"
           },
           "blocks": {}
         }
