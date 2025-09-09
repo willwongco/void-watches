@@ -426,6 +426,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Our Top Picks",
       "settings": {
         "collection": "our-top-picks",
@@ -491,6 +492,7 @@
       "block_order": [
         "ai_gen_block_30a7262_ftjAgE"
       ],
+      "disabled": true,
       "name": "Two Column Section",
       "settings": {
         "content_direction": "column",
