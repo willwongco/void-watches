@@ -84,6 +84,13 @@
     "variant_button_radius": 14,
     "variant_button_width": "equal-width-buttons",
     "content_for_index": [],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
@@ -165,7 +172,7 @@
       },
       "scheme-3": {
         "settings": {
-          "background": "#d6d7d431",
+          "background": "#d6d7d430",
           "foreground_heading": "#000000",
           "foreground": "#000000cf",
           "primary": "#000000cf",
