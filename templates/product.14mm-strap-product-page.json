@@ -154,23 +154,11 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
-                },
-                "stamped_reviews_badge_ribbon_image_36neGR": {
-                  "type": "shopify://apps/stamped-reviews/blocks/badge-ribbon-image/a103faaf-2125-4b0e-89fa-de5149736723",
-                  "settings": {
-                    "api_key": "",
-                    "store_hash": "",
-                    "label1": "",
-                    "label2": "",
-                    "width": "",
-                    "height": ""
-                  }
                 }
               },
               "block_order": [
                 "text_xrnftG",
-                "price_tVjtKg",
-                "stamped_reviews_badge_ribbon_image_36neGR"
+                "price_tVjtKg"
               ]
             },
             "ai_gen_block_306cb2b_BxLDVe": {
