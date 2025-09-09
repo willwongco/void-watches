@@ -170,7 +170,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Minimal Scandinavian Timepieces</h2>",
+            "text": "<h2>Tools That Tell Time</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -196,7 +196,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>We've been making intricately simple watches since 2008. It's what makes us tick.</p>",
+            "text": "<p>Minimal Swedish timepieces since 2008. Instant classics for men, women and all.</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -222,7 +222,7 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Discover our Collections",
+            "label": "Shop Now",
             "link": "shopify://collections/all",
             "open_in_new_tab": false,
             "style_class": "button",
