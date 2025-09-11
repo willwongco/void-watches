@@ -225,19 +225,18 @@
         "padding-block-end": 32
       }
     },
-    "media_with_content_YxMyjr": {
+    "media_with_content_JFzzWd": {
       "type": "media-with-content",
       "blocks": {
         "media": {
           "type": "_media-without-appearance",
           "static": true,
           "settings": {
-            "media_type": "video",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
+            "media_type": "image",
+            "image": "shopify://shop_images/VOID-Watches-V03W-365-2000x2000-Gift-Set.jpg",
             "link": "",
-            "video": "shopify://files/videos/VOID-Watches-PXR5-Straps-Video-Low-Res.mp4",
             "video_loop": true,
-            "video_autoplay": true,
+            "video_autoplay": false,
             "image_position": "cover",
             "video_position": "cover"
           },
@@ -247,16 +246,16 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 24
           },
           "blocks": {
-            "text_DUGyQ6": {
+            "text_gMcmwa": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Key Feature: The Strap</p>",
+                "text": "<p>Bestseller</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -278,7 +277,7 @@
               },
               "blocks": {}
             },
-            "group_wBhW94": {
+            "group_CQa9xA": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -288,7 +287,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "fill",
@@ -317,11 +316,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_hJWakc": {
+                "text_TBWJDy": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Endless Color Combinations</h2>",
+                    "text": "<h2>Best Value - V03W LTD Ed.</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -343,12 +342,12 @@
                   },
                   "blocks": {}
                 },
-                "text_kpwDBJ": {
+                "text_wnyPfj": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We strongly recommend to get at least one extra strap for your PXR5 to take full advantage of your watch. Switch in seconds.</p>",
+                    "text": "<p>The V03W-365 is a limited edition watch (365pcs made) and comes with two straps and a strap changing tool. All packaged in a nice presentation box. The perfect gift for yourself or someone else.</p>",
                     "width": "fit-content",
-                    "max_width": "normal",
+                    "max_width": "narrow",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -370,33 +369,18 @@
                 }
               },
               "block_order": [
-                "text_hJWakc",
-                "text_kpwDBJ"
+                "text_TBWJDy",
+                "text_wnyPfj"
               ]
-            },
-            "button_ECpdCR": {
-              "type": "button",
-              "settings": {
-                "label": "Shop Straps",
-                "link": "shopify://collections/pxr5-straps",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_DUGyQ6",
-            "group_wBhW94",
-            "button_ECpdCR"
+            "text_gMcmwa",
+            "group_CQa9xA"
           ]
         }
       },
-      "name": "Editorial - PXR5 Straps",
+      "name": "Editorial EOL V03W",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -404,8 +388,8 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "media_with_content_Jmgcri": {
@@ -764,7 +748,7 @@
     "hero_Qh8VN4",
     "blocks_URiR6K",
     "main",
-    "media_with_content_YxMyjr",
+    "media_with_content_JFzzWd",
     "media_with_content_Jmgcri",
     "collection_list_WhEYP8"
   ]
