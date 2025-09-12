@@ -100,7 +100,7 @@
         "alignment": "center",
         "image_position": "right",
         "color_scheme": "",
-        "padding-block-start": 0,
+        "padding-block-start": 15,
         "padding-block-end": 0
       }
     }
