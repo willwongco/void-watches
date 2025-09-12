@@ -71,7 +71,7 @@
               "type": "shopify://apps/stamped-reviews/blocks/star-rating-badge/a103faaf-2125-4b0e-89fa-de5149736723",
               "settings": {
                 "use_metafields": false,
-                "sku_tagtype": "sku",
+                "sku_tagtype": "handle",
                 "is_featured_product": false,
                 "featured_product_handle": ""
               }
@@ -1848,7 +1848,7 @@
             "search": "",
             "linkify": true,
             "use_metafields": false,
-            "sku_tagtype": "sku"
+            "sku_tagtype": "handle"
           }
         }
       },
