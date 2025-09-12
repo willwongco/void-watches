@@ -400,7 +400,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-Components-2000x2000.jpg",
+            "image": "shopify://shop_images/VOID-Watches-LTD-ED-1000x700.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -422,7 +422,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Attention to Detail</p>",
+                "text": "<p>End of Life Sale</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -487,7 +487,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>All Custom Components</h2>",
+                    "text": "<h2>Going. Going. Gone.</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -512,7 +512,7 @@
                 "text_tpXd8X": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
+                    "text": "<p>We're clearing out these models to make room for something new. When they're gone, they're gone.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
