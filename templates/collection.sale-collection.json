@@ -392,7 +392,7 @@
         "padding-block-end": 0
       }
     },
-    "media_with_content_Jmgcri": {
+    "media_with_content_ByAcdM": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -413,16 +413,16 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 24
           },
           "blocks": {
-            "text_q787hF": {
+            "text_K3UQKH": {
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>End of Life Sale</p>",
+                "text": "<p>End of Life Sale</p><p></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -444,7 +444,7 @@
               },
               "blocks": {}
             },
-            "group_dDA6pe": {
+            "group_Hxw99h": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -483,14 +483,14 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_XYHiVe": {
+                "text_xL9zCk": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
                     "text": "<h2>Going. Going. Gone.</h2>",
-                    "width": "100%",
+                    "width": "fit-content",
                     "max_width": "normal",
-                    "alignment": "center",
+                    "alignment": "left",
                     "type_preset": "h3",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -509,13 +509,13 @@
                   },
                   "blocks": {}
                 },
-                "text_tpXd8X": {
+                "text_RHKJym": {
                   "type": "text",
                   "settings": {
                     "text": "<p>We're clearing out these models to make room for something new. When they're gone, they're gone.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
+                    "width": "fit-content",
+                    "max_width": "narrow",
+                    "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -536,33 +536,18 @@
                 }
               },
               "block_order": [
-                "text_XYHiVe",
-                "text_tpXd8X"
+                "text_xL9zCk",
+                "text_RHKJym"
               ]
-            },
-            "button_Lk8jj9": {
-              "type": "button",
-              "settings": {
-                "label": "Learn More",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "text_q787hF",
-            "group_dDA6pe",
-            "button_Lk8jj9"
+            "text_K3UQKH",
+            "group_Hxw99h"
           ]
         }
       },
-      "name": "Editorial - PXR5 Components",
+      "name": "Editorial EOL",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
@@ -749,7 +734,7 @@
     "blocks_URiR6K",
     "main",
     "media_with_content_JFzzWd",
-    "media_with_content_Jmgcri",
+    "media_with_content_ByAcdM",
     "collection_list_WhEYP8"
   ]
 }
