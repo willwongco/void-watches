@@ -315,6 +315,20 @@
         "padding-block-end": 32
       }
     },
+    "divider_XHaHXh": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
+    },
     "section_zQxqPb": {
       "type": "section",
       "blocks": {
@@ -486,6 +500,20 @@
         "padding-block-end": 40
       }
     },
+    "divider_rVDjRU": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
+      }
+    },
     "blocks_qhDjcj": {
       "type": "_blocks",
       "blocks": {
@@ -545,6 +573,20 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
+      }
+    },
+    "divider_EybVGb": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
       }
     },
     "media_with_content_Jmgcri": {
@@ -905,8 +947,11 @@
     "section",
     "blocks_URiR6K",
     "main",
+    "divider_XHaHXh",
     "section_zQxqPb",
+    "divider_rVDjRU",
     "blocks_qhDjcj",
+    "divider_EybVGb",
     "media_with_content_Jmgcri",
     "collection_list_WhEYP8"
   ]
