@@ -335,7 +335,7 @@
         "image_wE69xi": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/VOID-Watches-Collection-For-Him-2000x1600.jpg",
+            "image": "shopify://shop_images/VOID-Watches-Collection-For-Her-1600x2000.jpg",
             "link": "",
             "image_ratio": "portrait",
             "width": "fill",
@@ -397,7 +397,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Watches for him.</h2>",
+                "text": "<h2>Watches for her.</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -422,7 +422,7 @@
             "text_DCC8RW": {
               "type": "text",
               "settings": {
-                "text": "<p>It's not often men get the chance to accessorise. A nice watch can make a big difference.</p>",
+                "text": "<p>We'd like to think all our watches look great on smaller wrists. Our V03P collecion is our smallest model (P for \"Petite\").</p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
