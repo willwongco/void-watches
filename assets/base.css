@@ -90,6 +90,7 @@ select {
 
 .product-card__content slideshow-component {
   --cursor: pointer;
+  background: #fbfbfb;
 }
 
 .predictive-search-results__card .product-card,
