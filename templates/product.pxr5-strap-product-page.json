@@ -133,6 +133,15 @@
                   },
                   "blocks": {}
                 },
+                "stamped_reviews_star_rating_badge_tr4xE3": {
+                  "type": "shopify://apps/stamped-reviews/blocks/star-rating-badge/a103faaf-2125-4b0e-89fa-de5149736723",
+                  "settings": {
+                    "use_metafields": false,
+                    "sku_tagtype": "handle",
+                    "is_featured_product": false,
+                    "featured_product_handle": ""
+                  }
+                },
                 "price_tVjtKg": {
                   "type": "price",
                   "settings": {
@@ -158,6 +167,7 @@
               },
               "block_order": [
                 "text_xrnftG",
+                "stamped_reviews_star_rating_badge_tr4xE3",
                 "price_tVjtKg"
               ]
             },
