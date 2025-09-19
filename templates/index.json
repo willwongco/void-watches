@@ -583,7 +583,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h4>OUR WATCH COLLECTIONS</h4>",
+                "text": "<h5>OUR WATCH COLLECTIONS</h5>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
