@@ -8,9 +8,18 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "header-group.json",
-  "context": {
-    "market": "hk"
-  },
-  "sections": {}
+  "markets": {
+    "great-brittain": {
+      "parent": "@default"
+    },
+    "united-states": {
+      "parent": "@default"
+    },
+    "eu": {
+      "parent": "@default"
+    },
+    "hk": {
+      "parent": "@default"
+    }
+  }
 }
