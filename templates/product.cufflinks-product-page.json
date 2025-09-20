@@ -189,6 +189,20 @@
               },
               "blocks": {}
             },
+            "ai_gen_block_7d5afb9_p6e8BV": {
+              "type": "ai_gen_block_7d5afb9",
+              "settings": {
+                "collection": "vc1",
+                "grid_alignment": "left",
+                "thumbnail_size": 55,
+                "grid_gap": 4,
+                "section_padding_top": 5,
+                "section_padding_bottom": 5,
+                "item_background_color": "#ffffff",
+                "item_padding": 2
+              },
+              "blocks": {}
+            },
             "divider_VJhene": {
               "type": "_divider",
               "name": "t:names.divider",
@@ -419,6 +433,7 @@
           "block_order": [
             "group_icgrde",
             "ai_gen_block_306cb2b_BxLDVe",
+            "ai_gen_block_7d5afb9_p6e8BV",
             "divider_VJhene",
             "buy_buttons_eYQEYi",
             "klarna_on_site_messaging_app_block_UAHVGt",
