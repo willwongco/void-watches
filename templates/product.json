@@ -146,7 +146,7 @@
                   "type": "price",
                   "settings": {
                     "show_sale_price_first": true,
-                    "show_installments": false,
+                    "show_installments": true,
                     "show_tax_info": true,
                     "type_preset": "paragraph",
                     "width": "100%",
