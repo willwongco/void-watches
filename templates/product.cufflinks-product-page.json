@@ -163,6 +163,7 @@
             },
             "ai_gen_block_306cb2b_BxLDVe": {
               "type": "ai_gen_block_306cb2b",
+              "disabled": true,
               "settings": {
                 "collection": "vc1",
                 "thumbnail_size": 50,
