@@ -189,6 +189,30 @@
               },
               "blocks": {}
             },
+            "ai_gen_block_816dd22_T6KEYF": {
+              "type": "ai_gen_block_816dd22",
+              "name": "Collection SKU Grid - No Text",
+              "settings": {
+                "collection": "vc1",
+                "product_limit": 20,
+                "heading": "",
+                "heading_size": 24,
+                "heading_alignment": "left",
+                "heading_margin_bottom": 16,
+                "thumbnail_size": 52,
+                "grid_gap": 6,
+                "grid_padding": 0,
+                "container_padding": 0,
+                "item_border_width": 0,
+                "item_border_color": "#e6e6e6",
+                "item_background_color": "#ffffff",
+                "show_overlay_info": false,
+                "background_color": "#ffffff",
+                "heading_color": "#000000",
+                "empty_state_color": "#666666"
+              },
+              "blocks": {}
+            },
             "divider_VJhene": {
               "type": "_divider",
               "name": "t:names.divider",
@@ -421,6 +445,7 @@
           "block_order": [
             "group_icgrde",
             "ai_gen_block_306cb2b_BxLDVe",
+            "ai_gen_block_816dd22_T6KEYF",
             "divider_VJhene",
             "buy_buttons_eYQEYi",
             "klarna_on_site_messaging_app_block_UAHVGt",
