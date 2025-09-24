@@ -167,8 +167,9 @@
             "text_Ymgf4p": {
               "type": "text",
               "name": "t:names.caption",
+              "disabled": true,
               "settings": {
-                "text": "<p>Bestseller</p>",
+                "text": "<p>Our Founder</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -233,7 +234,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Our signature product</h2>",
+                    "text": "<h2>Meet the  Founder</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -258,7 +259,7 @@
                 "text_n7P9Qz": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
+                    "text": "<p>VOID Watches was founded in 2008 by Swedish engineer turned designer Hans David Ericsson (b. 1977).</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -288,6 +289,7 @@
             },
             "button_UKM6z8": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Shop now",
                 "link": "shopify://collections/all",
@@ -315,7 +317,7 @@
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
