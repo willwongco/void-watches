@@ -876,7 +876,7 @@
             "accordion_row_rbrAbH": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Manufacturing",
+                "heading": "PR & Media inquiries",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -885,9 +885,9 @@
                 "text_E6H4rN": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value.</p>",
+                    "text": "<p>Please contact our founder David Ericsson at david@voidwatches.com</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
