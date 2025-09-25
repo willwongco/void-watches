@@ -490,13 +490,54 @@
               "block_order": [
                 "text_aEP9zA"
               ]
+            },
+            "accordion_row_cNL3YP": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Can I combine a watch with a different strap than what you offer on your web shop?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_WX7Qjf": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Unfortunately you can’t change the standard strap but you can always add an additional one to your order.<br/></p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_WX7Qjf"
+              ]
             }
           },
           "block_order": [
             "accordion_row_KTpJpJ",
             "accordion_row_nfgrNH",
             "accordion_row_qFtQ6M",
-            "accordion_row_fny4Yp"
+            "accordion_row_fny4Yp",
+            "accordion_row_cNL3YP"
           ]
         },
         "text_VcVij7": {
