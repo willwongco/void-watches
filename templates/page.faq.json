@@ -585,7 +585,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h4>Payment Methods</h4>",
+            "text": "<h4>Payment</h4>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
