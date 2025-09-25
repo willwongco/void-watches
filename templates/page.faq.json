@@ -97,7 +97,7 @@
                   "settings": {
                     "text": "<p>Yes. Shipping is free on all orders above 100EUR/100USD/100GBP/500SEK. We ship with UPS (PostNord in Sweden) Delivery time is usually 3-7working days. All orders are shipped with full tracking.</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -136,7 +136,7 @@
                   "settings": {
                     "text": "<p>For orders shipped to the EU VAT is included in the price. For orders to the United Kingdom all taxes are included in the price (VOID Watches will pay all charges through our courier UPS).</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -164,7 +164,7 @@
             "accordion_row_RTbY83": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Manufacturing",
+                "heading": "VAT & Import Fees (outside EU)",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -173,9 +173,9 @@
                 "text_eTAWDe": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value.</p>",
+                    "text": "<p>Please note that if you place and order from outside the EU prices do NOT include VAT or other taxes / government fees. You may have to pay import taxes and fees according to the laws and regulations of your country. All fees are handled by the courier and your national customs authority. If you chose to return your order for a refund you may still be subject to paying import taxes and fees - this is also handled by your national customs authority. Please check with your local customs authority for more information about import taxes and fees BEFORE placing an order.</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
