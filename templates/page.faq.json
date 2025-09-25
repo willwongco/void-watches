@@ -239,13 +239,54 @@
               "block_order": [
                 "text_zaiaMW"
               ]
+            },
+            "accordion_row_pLXQqh": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Can I exchange or return my item?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_X3bKiG": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>If you want to exchange or return an order, please contact us at order@voidwatches.com. You can always return or exchange an order within 30 days after you have received your package, as long as the item has not been used. All original packaging, warranty cards etc. must be returned together with the product complete and undamaged. Please note that you are responsible for the product until it reaches us. A return address in Sweden will be provided by email.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_X3bKiG"
+              ]
             }
           },
           "block_order": [
             "accordion_row_NHrEjW",
             "accordion_row_kLMXiD",
             "accordion_row_RTbY83",
-            "accordion_row_Q9pQqT"
+            "accordion_row_Q9pQqT",
+            "accordion_row_pLXQqh"
           ]
         },
         "text_BEbVjm": {
