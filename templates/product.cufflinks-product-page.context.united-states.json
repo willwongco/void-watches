@@ -12,5 +12,74 @@
   "context": {
     "market": "united-states"
   },
-  "sections": {}
+  "sections": {
+    "main": {
+      "settings": {},
+      "blocks": {
+        "product-details": {
+          "blocks": {
+            "accordion_hFcKk9": {
+              "blocks": {
+                "accordion_row_cD7mPg": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "disabled": false,
+                  "blocks": {
+                    "text_HNdeMt": {
+                      "type": "text",
+                      "disabled": false,
+                      "settings": {
+                        "text": "<p>For Countries outside the EU prices are displayed without VAT. Be aware that you have to pay import taxes according to the laws of your specific country. In case of returns we are not able to return any duties or taxes, as this is paid to and handled directly between you (the customer) and your country.</p>",
+                        "header-ebe3ba1813d82d942846bc9214e8798e": null,
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "header-3a690e719a077a0d503394fb7832f085": null,
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "header-91a1ed6a1afca4a583a2541fe69b793b": null,
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "header-5f92700daaaa772a1f0660f9b9792ae8": null,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      }
+                    }
+                  },
+                  "block_order": [
+                    "text_HNdeMt"
+                  ],
+                  "settings": {
+                    "heading": "TAXES & DUTIES",
+                    "open_by_default": false,
+                    "header-63a62ff56a1f475aa2bb29b1d1011431": null,
+                    "icon": "none",
+                    "image_upload": null,
+                    "width": 20
+                  }
+                }
+              },
+              "block_order": [
+                "accordion_row_jtgghK",
+                "accordion_row_Y8GdGt",
+                "accordion_row_cxc9cP",
+                "accordion_row_cD7mPg"
+              ],
+              "settings": {}
+            }
+          },
+          "settings": {}
+        }
+      }
+    }
+  }
 }
