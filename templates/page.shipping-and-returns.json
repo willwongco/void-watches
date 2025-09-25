@@ -108,7 +108,7 @@
                 "text_dAtz4m": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Free Shipping on all orders above 100GBP. VAT and any other fees are included in the price. Your order will be shipped with all duties and taxes paid (DDP) by UPS.</p><p>Delivery: 3-5 working days, full tracking (UPS).</p><p>Returns: You can return (for a full refund) or exchange your order within 30-days from the day it's received. See your FAQ for details.</p>",
+                    "text": "<p>Free Shipping on all orders above 100GBP. VAT and any other fees are included in the price. Your order will be shipped with all duties and taxes paid (DDP) by UPS.</p><p>Delivery: 3-5 working days, full tracking (UPS).</p><p>Returns: You can return (for a full refund) or exchange your order within 30-days from the day it's received. See your FAQ for details.</p><p>Currency: GBP</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
