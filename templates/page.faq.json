@@ -337,7 +337,7 @@
             "accordion_row_KTpJpJ": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Return policy",
+                "heading": "Do your watches come with a warranty?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -346,9 +346,9 @@
                 "text_YPHWbd": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                    "text": "<p>Yes, we have a 2 year warranty against manufacturing defects on all watches.<br/></p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -376,7 +376,7 @@
             "accordion_row_nfgrNH": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Shipping",
+                "heading": "How can I change the strap?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -385,7 +385,7 @@
                 "text_rUAine": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>All our straps and bracelets (except the MB18-SI) come with a quick release system that makes changing the strap very easy (no tools required). If you’re changing from an older strap without the quick release system we have some instruction videos <a href=\"https://www.voidwatches.com/blogs/news/how-to-change-your-watch-strap\" target=\"_blank\" title=\"https://www.voidwatches.com/blogs/news/how-to-change-your-watch-strap\">here</a>.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
