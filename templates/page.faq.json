@@ -199,12 +199,53 @@
               "block_order": [
                 "text_eTAWDe"
               ]
+            },
+            "accordion_row_Q9pQqT": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "When will I receive my order?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_zaiaMW": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>When we receive your order we will send an automated email confirmation. Orders made before noon (CET) will in most cases be shipped the same day. <br/>Sweden: All orders to Sweden are shipped with PostNord and are typically delivered in 1-2 working days.<br/>Other countries: Delivery time is usually 3-7 working days by UPS depending on area.<br/>We will send an email with full tracking when the order has left our warehouse.<br/>*If there are any issues with delivering your order we will contact you by email, phone or SMS.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_zaiaMW"
+              ]
             }
           },
           "block_order": [
             "accordion_row_NHrEjW",
             "accordion_row_kLMXiD",
-            "accordion_row_RTbY83"
+            "accordion_row_RTbY83",
+            "accordion_row_Q9pQqT"
           ]
         },
         "text_BEbVjm": {
