@@ -754,7 +754,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h4>Contact</h4>",
+            "text": "<h4>Contact Information</h4>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -798,7 +798,7 @@
             "accordion_row_NLFXQM": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Payment Methods",
+                "heading": "Customer Service",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -807,7 +807,7 @@
                 "text_w6Ywgi": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                    "text": "<p>Please email <a href=\"mailto:info@voidwatches.com\" target=\"_blank\" title=\"mailto:info@voidwatches.com\">info@voidwatches.com</a></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
