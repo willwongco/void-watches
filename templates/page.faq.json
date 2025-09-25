@@ -959,11 +959,6 @@
             "accordion_row_rbrAbH",
             "accordion_row_iCEEBB"
           ]
-        },
-        "page-content": {
-          "type": "page-content",
-          "settings": {},
-          "blocks": {}
         }
       },
       "block_order": [
@@ -975,8 +970,7 @@
         "text_VcVij7",
         "accordion_mpgHtG",
         "text_nKeXtL",
-        "accordion_nQNfqi",
-        "page-content"
+        "accordion_nQNfqi"
       ],
       "settings": {
         "content_direction": "column",
