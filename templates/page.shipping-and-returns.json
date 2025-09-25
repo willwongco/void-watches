@@ -69,7 +69,7 @@
                 "text_dY3UqP": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Free Shipping on all orders above 100EUR. VAT and any other fees are included in the price.</p><p>Delivery: 3-5 working days, full tracking (UPS).</p><p>Returns: You can return (for a full refund) or exchange your order within 30-days from the day it's received. See your FAQ for details.</p>",
+                    "text": "<p>Free Shipping on all orders above 100EUR. VAT and any other fees are included in the price.</p><p>Delivery: 3-5 working days, full tracking (UPS).</p><p>Returns: You can return (for a full refund) or exchange your order within 30-days from the day it's received. See your FAQ for details.</p><p>Currency: EUR</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -138,7 +138,7 @@
             "accordion_row_XccQqr": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Manufacturing",
+                "heading": "SWEDEN",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
