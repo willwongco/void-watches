@@ -629,7 +629,7 @@
             "accordion_row_7CK9Cc": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Payment Methods",
+                "heading": "What payment methods do you accept?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -638,9 +638,9 @@
                 "text_YqPMYC": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                    "text": "<p>We accept most major credit cards depending on your region. We also offer flexible payments through Klarna in some regions.</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -668,7 +668,7 @@
             "accordion_row_mnBbgz": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Shipping",
+                "heading": "VAT (inside the EU and United Kingdom)",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -677,9 +677,9 @@
                 "text_zQmzMj": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>For orders shipped to the EU VAT is included in the price. For orders to the United Kingdom all taxes are included in the price (VOID Watches will pay all charges through our courier UPS).</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -707,7 +707,7 @@
             "accordion_row_VAf6MV": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Manufacturing",
+                "heading": "VAT & Import Fees (outside EU and UK)",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -716,9 +716,9 @@
                 "text_UpHwdr": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value.</p>",
+                    "text": "<p>Please note that if you place and order from outside the EU prices do NOT include VAT or other taxes / government fees. You may have to pay import taxes and fees according to the laws and regulations of your country. All fees are handled by the courier and your national customs authority. If you chose to return your order for a refund you may still be subject to paying import taxes and fees - this is also handled by your national customs authority. Please check with your local customs authority for more information about import taxes and fees BEFORE placing an order.</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
