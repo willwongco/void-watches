@@ -387,7 +387,7 @@
                   "settings": {
                     "text": "<p>All our straps and bracelets (except the MB18-SI) come with a quick release system that makes changing the strap very easy (no tools required). If you’re changing from an older strap without the quick release system we have some instruction videos <a href=\"https://www.voidwatches.com/blogs/news/how-to-change-your-watch-strap\" target=\"_blank\" title=\"https://www.voidwatches.com/blogs/news/how-to-change-your-watch-strap\">here</a>.</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -450,12 +450,53 @@
               "block_order": [
                 "text_Ee3jfU"
               ]
+            },
+            "accordion_row_fny4Yp": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "What can I do if I receive a faulty item?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_aEP9zA": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>If you have any complaints or concerns regarding wrong, damaged or missing items, please contact us by mail order@voidwatches.com and we will find a solution. We want all our customers to be happy with their purchase.</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_aEP9zA"
+              ]
             }
           },
           "block_order": [
             "accordion_row_KTpJpJ",
             "accordion_row_nfgrNH",
-            "accordion_row_qFtQ6M"
+            "accordion_row_qFtQ6M",
+            "accordion_row_fny4Yp"
           ]
         },
         "text_VcVij7": {
