@@ -125,7 +125,7 @@
             "accordion_row_kLMXiD": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "VAT (inside the EU and United Kingdom)",
+                "heading": "VAT (inside the EU and UK)",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -164,7 +164,7 @@
             "accordion_row_RTbY83": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "VAT & Import Fees (outside EU)",
+                "heading": "VAT & Import Fees (outside EU and UK)",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
