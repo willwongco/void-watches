@@ -809,7 +809,7 @@
                   "settings": {
                     "text": "<p>Please email <a href=\"mailto:info@voidwatches.com\" target=\"_blank\" title=\"mailto:info@voidwatches.com\">info@voidwatches.com</a></p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
@@ -848,7 +848,7 @@
                   "settings": {
                     "text": "<p>If you’re interested in collaborating with us, please send us a DM on Instagram or email us at <a href=\"mailto:info@voidwatches.com\" target=\"_blank\" title=\"mailto:info@voidwatches.com\">info@voidwatches.com</a>.</p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
