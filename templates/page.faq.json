@@ -530,6 +530,46 @@
               "block_order": [
                 "text_WX7Qjf"
               ]
+            },
+            "accordion_row_6YyBMq": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "How do I keep up to date about future collections and other news and offers?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_rLrUwb": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Please sign up for our newsletter on www.voidwatches.com to get updates on our collections, release dates, offers and other news. </p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_rLrUwb"
+              ]
             }
           },
           "block_order": [
@@ -537,7 +577,8 @@
             "accordion_row_nfgrNH",
             "accordion_row_qFtQ6M",
             "accordion_row_fny4Yp",
-            "accordion_row_cNL3YP"
+            "accordion_row_cNL3YP",
+            "accordion_row_6YyBMq"
           ]
         },
         "text_VcVij7": {
