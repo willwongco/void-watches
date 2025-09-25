@@ -86,7 +86,7 @@
             "accordion_row_NHrEjW": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Return policy",
+                "heading": "Do you offer free shipping?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -95,7 +95,7 @@
                 "text_UtFXXP": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn't the case, let us know and we'll do our best to work with you to make it right.</p>",
+                    "text": "<p>Yes. Shipping is free on all orders above 100EUR/100USD/100GBP/500SEK. We ship with UPS (PostNord in Sweden) Delivery time is usually 3-7working days. All orders are shipped with full tracking.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
