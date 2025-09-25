@@ -187,9 +187,9 @@
                 "text_7Ubtp3": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>Free Shipping on all orders above 100USD. VAT and any other fees are NOT included in the price.<br/><br/>Delivery: 3-5 working days, full tracking (UPS).<br/><br/>Returns: You can return or exchange your order within 30-days from the day it's received. See your FAQ for details.<br/><br/>Currency: USD<br/><br/><em><strong>Please note:</strong></em><em> For Countries outside the EU prices are displayed without VAT. Be aware that you have to pay import taxes according to the laws of your specific country. In case of returns we are not able to return any duties or taxes, as this is paid to and handled directly between you (the customer) and your country.</em></p>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
