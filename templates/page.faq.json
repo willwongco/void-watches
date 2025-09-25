@@ -125,7 +125,7 @@
             "accordion_row_kLMXiD": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Shipping",
+                "heading": "VAT (inside the EU and United Kingdom)",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -134,7 +134,7 @@
                 "text_NFfeQU": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>For orders shipped to the EU VAT is included in the price. For orders to the United Kingdom all taxes are included in the price (VOID Watches will pay all charges through our courier UPS).</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
