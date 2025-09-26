@@ -12,5 +12,16 @@
   "context": {
     "market": "great-brittain"
   },
-  "sections": {}
+  "sections": {
+    "header_announcements_9jGBFp": {
+      "settings": {},
+      "blocks": {
+        "announcement_BxgCk9": {
+          "settings": {
+            "text": "Free Shipping from 100GBP. Taxes Included."
+          }
+        }
+      }
+    }
+  }
 }
