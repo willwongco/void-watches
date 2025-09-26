@@ -12,15 +12,5 @@
   "context": {
     "market": "united-states"
   },
-  "sections": {
-    "main": {
-      "settings": {},
-      "blocks": {
-        "product-details": {
-          "blocks": {},
-          "settings": {}
-        }
-      }
-    }
-  }
+  "sections": {}
 }
