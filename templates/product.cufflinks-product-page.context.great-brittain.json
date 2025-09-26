@@ -23,7 +23,7 @@
               "name": "t:names.text",
               "disabled": false,
               "settings": {
-                "text": "<p>Tax included. Free shipping above 100GBP.</p>",
+                "text": "<p>Tax included. Free shipping above 100GBP</p>",
                 "header-906b8e67714e5ea815bcdc1a45f8b282": null,
                 "width": "fit-content",
                 "max_width": "normal",
@@ -60,7 +60,9 @@
             "text_aEtTtq",
             "accordion_hFcKk9"
           ],
-          "settings": {}
+          "settings": {
+            "gap": 23
+          }
         }
       }
     }
