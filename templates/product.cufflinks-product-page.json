@@ -600,6 +600,20 @@
         "gap_between_elements": 11
       }
     },
+    "divider_drkxVd": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "section_width": "full-width",
+        "thickness": 0.5,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 10,
+        "padding-block-end": 10
+      }
+    },
     "media_with_content_mrMmQN": {
       "type": "media-with-content",
       "blocks": {
@@ -1579,6 +1593,7 @@
   "order": [
     "main",
     "marquee_4gWGVW",
+    "divider_drkxVd",
     "media_with_content_mrMmQN",
     "media_with_content_MLrCea",
     "section_J9XNjK",
