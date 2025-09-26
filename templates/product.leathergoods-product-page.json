@@ -171,31 +171,27 @@
                 "price_tVjtKg"
               ]
             },
-            "ai_gen_block_306cb2b_BxLDVe": {
-              "type": "ai_gen_block_306cb2b",
+            "ai_gen_block_816dd22_LeGf3H": {
+              "type": "ai_gen_block_816dd22",
+              "name": "SKU Grid - No Text",
               "settings": {
                 "collection": "leather-goods",
-                "thumbnail_size": 50,
-                "grid_gap": 10,
-                "container_padding": 10,
-                "border_radius": 0,
-                "border_width": 1,
-                "border_color": "#e6e6e6",
-                "selected_border_width": 1,
-                "selected_border_color": "#000000",
+                "product_limit": 20,
+                "heading": "",
+                "heading_size": 24,
+                "heading_alignment": "left",
+                "heading_margin_bottom": 16,
+                "thumbnail_size": 52,
+                "grid_gap": 6,
+                "grid_padding": 0,
+                "container_padding": 0,
+                "item_border_width": 0,
+                "item_border_color": "#e6e6e6",
+                "item_background_color": "#ffffff",
+                "show_overlay_info": false,
                 "background_color": "#ffffff",
-                "text_color": "#000000",
-                "hover_scale": 1.1,
-                "description_min_height": 40,
-                "description_padding": 10,
-                "description_font_size": 14,
-                "description_border_width": 1,
-                "description_bg_color": "#ffffff",
-                "description_text_color": "#000000",
-                "description_border_color": "#ffffff",
-                "show_product_title": true,
-                "placeholder_text": "No description available",
-                "placeholder_text_color": "#666666"
+                "heading_color": "#000000",
+                "empty_state_color": "#666666"
               },
               "blocks": {}
             },
@@ -418,7 +414,7 @@
           },
           "block_order": [
             "group_icgrde",
-            "ai_gen_block_306cb2b_BxLDVe",
+            "ai_gen_block_816dd22_LeGf3H",
             "divider_VJhene",
             "buy_buttons_eYQEYi",
             "text_aEtTtq",
