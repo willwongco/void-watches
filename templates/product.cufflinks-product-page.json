@@ -298,149 +298,6 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "accordion_yQnTtc": {
-              "type": "accordion",
-              "name": "t:names.accordion",
-              "settings": {
-                "icon": "caret",
-                "dividers": true,
-                "type_preset": "h6",
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "accordion_row_qA6iFa": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "PRODUCT DETAILS",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_JD4Q6e": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>{{ closest.product.metafields.custom.product_details_accordion | metafield_tag }}</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_JD4Q6e"
-                  ]
-                },
-                "accordion_row_bNAA3i": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "SHIPPING INFORMATION",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_9JAee8": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>We will ship your order within 1-2 working days. We use DHL or UPS for international shipments and Postnord for shipments within Sweden. Once your order has shipped, you will receive an email with tracking information. Delivery times vary depending on your location but are typically 2-4 days.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_9JAee8"
-                  ]
-                },
-                "accordion_row_izRA8N": {
-                  "type": "_accordion-row",
-                  "settings": {
-                    "heading": "WARRANTY",
-                    "open_by_default": false,
-                    "icon": "none",
-                    "width": 20
-                  },
-                  "blocks": {
-                    "text_kkHHxh": {
-                      "type": "text",
-                      "settings": {
-                        "text": "<p>We offer a 2 year warranty on all watches.</p>",
-                        "width": "100%",
-                        "max_width": "normal",
-                        "alignment": "left",
-                        "type_preset": "rte",
-                        "font": "var(--font-body--family)",
-                        "font_size": "1rem",
-                        "line_height": "normal",
-                        "letter_spacing": "normal",
-                        "case": "none",
-                        "wrap": "pretty",
-                        "color": "var(--color-foreground)",
-                        "background": false,
-                        "background_color": "#00000026",
-                        "corner_radius": 0,
-                        "padding-block-start": 0,
-                        "padding-block-end": 0,
-                        "padding-inline-start": 0,
-                        "padding-inline-end": 0
-                      },
-                      "blocks": {}
-                    }
-                  },
-                  "block_order": [
-                    "text_kkHHxh"
-                  ]
-                }
-              },
-              "block_order": [
-                "accordion_row_qA6iFa",
-                "accordion_row_bNAA3i",
-                "accordion_row_izRA8N"
-              ]
             }
           },
           "block_order": [
@@ -450,8 +307,7 @@
             "divider_VJhene",
             "buy_buttons_eYQEYi",
             "klarna_on_site_messaging_app_block_UAHVGt",
-            "text_aEtTtq",
-            "accordion_yQnTtc"
+            "text_aEtTtq"
           ]
         }
       },
@@ -464,20 +320,6 @@
         "color_scheme": "scheme-1",
         "padding-block-start": 20,
         "padding-block-end": 20
-      }
-    },
-    "divider_drkxVd": {
-      "type": "divider",
-      "name": "t:names.divider_section",
-      "settings": {
-        "color_scheme": "scheme-1",
-        "section_width": "full-width",
-        "thickness": 0.5,
-        "corner_radius": "square",
-        "width_percent": 100,
-        "alignment_horizontal": "center",
-        "padding-block-start": 10,
-        "padding-block-end": 10
       }
     },
     "marquee_mkq8ip": {
@@ -612,6 +454,20 @@
         "padding-block-start": 0,
         "padding-block-end": 0,
         "gap_between_elements": 11
+      }
+    },
+    "divider_drkxVd": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "section_width": "full-width",
+        "thickness": 0.5,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 10,
+        "padding-block-end": 10
       }
     },
     "media_with_content_mrMmQN": {
