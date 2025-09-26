@@ -41,7 +41,7 @@
             "vertical_alignment_flex_direction_column": "center",
             "gap": 0,
             "width": "custom",
-            "custom_width": 100,
+            "custom_width": 95,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
@@ -144,7 +144,7 @@
                 "heading_preset": "h6",
                 "link_preset": "paragraph",
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 15,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
               },
@@ -306,6 +306,18 @@
           },
           "blocks": {}
         },
+        "divider_wkFj8B": {
+          "type": "_divider",
+          "name": "t:names.divider",
+          "settings": {
+            "thickness": 1,
+            "corner_radius": "square",
+            "width_percent": 100,
+            "padding-block-start": 10,
+            "padding-block-end": 0
+          },
+          "blocks": {}
+        },
         "footer_utilities_KRaGcH": {
           "type": "footer-utilities",
           "name": "t:names.footer_utilities",
@@ -369,6 +381,7 @@
         "divider_hFm3am",
         "group_tbFfTQ",
         "menu_hnNPGF",
+        "divider_wkFj8B",
         "footer_utilities_KRaGcH"
       ],
       "name": "Footer",
@@ -387,7 +400,7 @@
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
-        "padding-block-start": 10,
+        "padding-block-start": 19,
         "padding-block-end": 10
       }
     }
