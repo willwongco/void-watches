@@ -8,9 +8,9 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "header-group.json",
+  "parent": "product.cufflinks-product-page.json",
   "context": {
-    "market": "great-brittain"
+    "market": "eu"
   },
   "sections": {}
 }

@@ -10,7 +10,7 @@
 {
   "parent": "footer-group.json",
   "context": {
-    "market": "great-brittain"
+    "market": "eu"
   },
   "sections": {}
 }
