@@ -383,11 +383,11 @@
         "gap": 5,
         "section_width": "page-width",
         "section_height": "",
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
-        "padding-block-start": 0,
+        "padding-block-start": 10,
         "padding-block-end": 10
       }
     }
