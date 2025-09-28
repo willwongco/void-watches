@@ -1290,6 +1290,7 @@
       "blocks": {
         "ai_gen_block_21bc593_AdnW7m": {
           "type": "ai_gen_block_21bc593",
+          "disabled": true,
           "settings": {
             "heading": "Compare Products",
             "heading_font_size": 32,
