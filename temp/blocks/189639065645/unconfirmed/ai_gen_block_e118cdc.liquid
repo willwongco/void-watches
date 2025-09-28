@@ -1,6 +1,1126 @@
+{% doc %}
+  @prompt
+    Create a comparison chart with 6 columns. At the top of each column should be an image. Below the image a text line and a call to action button. Below this there should be 4-6 lines of text with a description at the very left., On mobile it should be horizontal and scrollable left to right.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-comparison-chart-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: {{ block.settings.section_padding }}px 0;
+  }
+
+  .ai-comparison-chart__container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: {{ block.settings.column_gap }}px;
+    min-width: 800px;
+    padding: 0 20px;
+  }
+
+  .ai-comparison-chart__column-{{ ai_gen_id }} {
+    background-color: {{ block.settings.column_background_color }};
+    border: {{ block.settings.column_border_width }}px solid {{ block.settings.column_border_color }};
+    border-radius: {{ block.settings.column_border_radius }}px;
+    padding: {{ block.settings.column_padding }}px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .ai-comparison-chart__image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    height: {{ block.settings.image_height }}px;
+    margin-bottom: {{ block.settings.content_spacing }}px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+  }
+
+  .ai-comparison-chart__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-comparison-chart__image-wrapper-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-comparison-chart__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_font_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+    margin-bottom: {{ block.settings.content_spacing }}px;
+    line-height: 1.3;
+  }
+
+  .ai-comparison-chart__button-{{ ai_gen_id }} {
+    background-color: {{ block.settings.button_background_color }};
+    color: {{ block.settings.button_text_color }};
+    border: {{ block.settings.button_border_width }}px solid {{ block.settings.button_border_color }};
+    border-radius: {{ block.settings.button_border_radius }}px;
+    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+    font-size: {{ block.settings.button_font_size }}px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin-bottom: {{ block.settings.content_spacing }}px;
+    cursor: pointer;
+  }
+
+  .ai-comparison-chart__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background_color }};
+    color: {{ block.settings.button_hover_text_color }};
+    border-color: {{ block.settings.button_hover_border_color }};
+  }
+
+  .ai-comparison-chart__features-{{ ai_gen_id }} {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.feature_spacing }}px;
+  }
+
+  .ai-comparison-chart__feature-{{ ai_gen_id }} {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 12px;
+  }
+
+  .ai-comparison-chart__feature-label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.feature_label_font_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.feature_label_color }};
+    min-width: 120px;
+    flex-shrink: 0;
+  }
+
+  .ai-comparison-chart__feature-value-{{ ai_gen_id }} {
+    font-size: {{ block.settings.feature_value_font_size }}px;
+    color: {{ block.settings.feature_value_color }};
+    line-height: 1.4;
+    flex-grow: 1;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .ai-comparison-chart__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat(6, minmax(250px, 1fr));
+      min-width: 1500px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-comparison-chart__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat(6, minmax(220px, 1fr));
+      min-width: 1320px;
+      gap: {{ block.settings.column_gap | times: 0.8 }}px;
+    }
+
+    .ai-comparison-chart__column-{{ ai_gen_id }} {
+      padding: {{ block.settings.column_padding | times: 0.8 }}px;
+    }
+
+    .ai-comparison-chart__image-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.image_height | times: 0.8 }}px;
+    }
+
+    .ai-comparison-chart__feature-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .ai-comparison-chart__feature-label-{{ ai_gen_id }} {
+      min-width: auto;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .ai-comparison-chart__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat(6, minmax(200px, 1fr));
+      min-width: 1200px;
+      gap: {{ block.settings.column_gap | times: 0.6 }}px;
+    }
+
+    .ai-comparison-chart__column-{{ ai_gen_id }} {
+      padding: {{ block.settings.column_padding | times: 0.6 }}px;
+    }
+
+    .ai-comparison-chart__image-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.image_height | times: 0.7 }}px;
+    }
+
+    .ai-comparison-chart__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_font_size | times: 0.9 }}px;
+    }
+
+    .ai-comparison-chart__button-{{ ai_gen_id }} {
+      font-size: {{ block.settings.button_font_size | times: 0.9 }}px;
+      padding: {{ block.settings.button_padding_vertical | times: 0.8 }}px {{ block.settings.button_padding_horizontal | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-comparison-chart-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-comparison-chart__container-{{ ai_gen_id }}">
+    {% for i in (1..6) %}
+      {% liquid
+        assign image_key = 'column_' | append: i | append: '_image'
+        assign title_key = 'column_' | append: i | append: '_title'
+        assign button_text_key = 'column_' | append: i | append: '_button_text'
+        assign button_url_key = 'column_' | append: i | append: '_button_url'
+        assign feature_1_label_key = 'column_' | append: i | append: '_feature_1_label'
+        assign feature_1_value_key = 'column_' | append: i | append: '_feature_1_value'
+        assign feature_2_label_key = 'column_' | append: i | append: '_feature_2_label'
+        assign feature_2_value_key = 'column_' | append: i | append: '_feature_2_value'
+        assign feature_3_label_key = 'column_' | append: i | append: '_feature_3_label'
+        assign feature_3_value_key = 'column_' | append: i | append: '_feature_3_value'
+        assign feature_4_label_key = 'column_' | append: i | append: '_feature_4_label'
+        assign feature_4_value_key = 'column_' | append: i | append: '_feature_4_value'
+        assign feature_5_label_key = 'column_' | append: i | append: '_feature_5_label'
+        assign feature_5_value_key = 'column_' | append: i | append: '_feature_5_value'
+        assign feature_6_label_key = 'column_' | append: i | append: '_feature_6_label'
+        assign feature_6_value_key = 'column_' | append: i | append: '_feature_6_value'
+
+        assign column_image = block.settings[image_key]
+        assign column_title = block.settings[title_key]
+        assign button_text = block.settings[button_text_key]
+        assign button_url = block.settings[button_url_key]
+        assign feature_1_label = block.settings[feature_1_label_key]
+        assign feature_1_value = block.settings[feature_1_value_key]
+        assign feature_2_label = block.settings[feature_2_label_key]
+        assign feature_2_value = block.settings[feature_2_value_key]
+        assign feature_3_label = block.settings[feature_3_label_key]
+        assign feature_3_value = block.settings[feature_3_value_key]
+        assign feature_4_label = block.settings[feature_4_label_key]
+        assign feature_4_value = block.settings[feature_4_value_key]
+        assign feature_5_label = block.settings[feature_5_label_key]
+        assign feature_5_value = block.settings[feature_5_value_key]
+        assign feature_6_label = block.settings[feature_6_label_key]
+        assign feature_6_value = block.settings[feature_6_value_key]
+      %}
+
+      <div class="ai-comparison-chart__column-{{ ai_gen_id }}">
+        <div class="ai-comparison-chart__image-wrapper-{{ ai_gen_id }}">
+          {% if column_image %}
+            <img
+              src="{{ column_image | image_url: width: 400 }}"
+              alt="{{ column_image.alt | escape }}"
+              class="ai-comparison-chart__image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="{{ column_image.width }}"
+              height="{{ column_image.height }}"
+            >
+          {% else %}
+            {{ 'image' | placeholder_svg_tag }}
+          {% endif %}
+        </div>
+
+        {% if column_title != blank %}
+          <h3 class="ai-comparison-chart__title-{{ ai_gen_id }}">{{ column_title }}</h3>
+        {% endif %}
+
+        {% if button_text != blank %}
+          <a
+            href="{{ button_url | default: '#' }}"
+            class="ai-comparison-chart__button-{{ ai_gen_id }}"
+          >
+            {{ button_text }}
+          </a>
+        {% endif %}
+
+        <div class="ai-comparison-chart__features-{{ ai_gen_id }}">
+          {% if feature_1_label != blank or feature_1_value != blank %}
+            <div class="ai-comparison-chart__feature-{{ ai_gen_id }}">
+              <div class="ai-comparison-chart__feature-label-{{ ai_gen_id }}">{{ feature_1_label }}</div>
+              <div class="ai-comparison-chart__feature-value-{{ ai_gen_id }}">{{ feature_1_value }}</div>
+            </div>
+          {% endif %}
+
+          {% if feature_2_label != blank or feature_2_value != blank %}
+            <div class="ai-comparison-chart__feature-{{ ai_gen_id }}">
+              <div class="ai-comparison-chart__feature-label-{{ ai_gen_id }}">{{ feature_2_label }}</div>
+              <div class="ai-comparison-chart__feature-value-{{ ai_gen_id }}">{{ feature_2_value }}</div>
+            </div>
+          {% endif %}
+
+          {% if feature_3_label != blank or feature_3_value != blank %}
+            <div class="ai-comparison-chart__feature-{{ ai_gen_id }}">
+              <div class="ai-comparison-chart__feature-label-{{ ai_gen_id }}">{{ feature_3_label }}</div>
+              <div class="ai-comparison-chart__feature-value-{{ ai_gen_id }}">{{ feature_3_value }}</div>
+            </div>
+          {% endif %}
+
+          {% if feature_4_label != blank or feature_4_value != blank %}
+            <div class="ai-comparison-chart__feature-{{ ai_gen_id }}">
+              <div class="ai-comparison-chart__feature-label-{{ ai_gen_id }}">{{ feature_4_label }}</div>
+              <div class="ai-comparison-chart__feature-value-{{ ai_gen_id }}">{{ feature_4_value }}</div>
+            </div>
+          {% endif %}
+
+          {% if feature_5_label != blank or feature_5_value != blank %}
+            <div class="ai-comparison-chart__feature-{{ ai_gen_id }}">
+              <div class="ai-comparison-chart__feature-label-{{ ai_gen_id }}">{{ feature_5_label }}</div>
+              <div class="ai-comparison-chart__feature-value-{{ ai_gen_id }}">{{ feature_5_value }}</div>
+            </div>
+          {% endif %}
+
+          {% if feature_6_label != blank or feature_6_value != blank %}
+            <div class="ai-comparison-chart__feature-{{ ai_gen_id }}">
+              <div class="ai-comparison-chart__feature-label-{{ ai_gen_id }}">{{ feature_6_label }}</div>
+              <div class="ai-comparison-chart__feature-value-{{ ai_gen_id }}">{{ feature_6_value }}</div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Comparison chart",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Column gap",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "column_padding",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Column padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "content_spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Content spacing",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Column style"
+    },
+    {
+      "type": "color",
+      "id": "column_background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "column_border_color",
+      "label": "Border color",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "range",
+      "id": "column_border_width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "column_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 80,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Image height",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Titles"
+    },
+    {
+      "type": "range",
+      "id": "title_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Text color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Buttons"
+    },
+    {
+      "type": "color",
+      "id": "button_background_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Border color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background_color",
+      "label": "Hover background color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_border_color",
+      "label": "Hover border color",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "min": 5,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "min": 10,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "button_border_width",
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "type": "range",
+      "id": "feature_spacing",
+      "min": 5,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Feature spacing",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "feature_label_font_size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Label font size",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "feature_label_color",
+      "label": "Label color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "feature_value_font_size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Value font size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "feature_value_color",
+      "label": "Value color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Column 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_1_title",
+      "label": "Title",
+      "default": "Product 1"
+    },
+    {
+      "type": "text",
+      "id": "column_1_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_1_button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_1_label",
+      "label": "Feature 1 label",
+      "default": "Price"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_1_value",
+      "label": "Feature 1 value",
+      "default": "$99"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_2_label",
+      "label": "Feature 2 label",
+      "default": "Material"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_2_value",
+      "label": "Feature 2 value",
+      "default": "Stainless steel"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_3_label",
+      "label": "Feature 3 label",
+      "default": "Warranty"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_3_value",
+      "label": "Feature 3 value",
+      "default": "2 years"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_4_label",
+      "label": "Feature 4 label",
+      "default": "Weight"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_4_value",
+      "label": "Feature 4 value",
+      "default": "150g"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_5_label",
+      "label": "Feature 5 label"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_5_value",
+      "label": "Feature 5 value"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_6_label",
+      "label": "Feature 6 label"
+    },
+    {
+      "type": "text",
+      "id": "column_1_feature_6_value",
+      "label": "Feature 6 value"
+    },
+    {
+      "type": "header",
+      "content": "Column 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_2_title",
+      "label": "Title",
+      "default": "Product 2"
+    },
+    {
+      "type": "text",
+      "id": "column_2_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_2_button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_1_label",
+      "label": "Feature 1 label",
+      "default": "Price"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_1_value",
+      "label": "Feature 1 value",
+      "default": "$149"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_2_label",
+      "label": "Feature 2 label",
+      "default": "Material"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_2_value",
+      "label": "Feature 2 value",
+      "default": "Titanium"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_3_label",
+      "label": "Feature 3 label",
+      "default": "Warranty"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_3_value",
+      "label": "Feature 3 value",
+      "default": "3 years"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_4_label",
+      "label": "Feature 4 label",
+      "default": "Weight"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_4_value",
+      "label": "Feature 4 value",
+      "default": "120g"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_5_label",
+      "label": "Feature 5 label"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_5_value",
+      "label": "Feature 5 value"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_6_label",
+      "label": "Feature 6 label"
+    },
+    {
+      "type": "text",
+      "id": "column_2_feature_6_value",
+      "label": "Feature 6 value"
+    },
+    {
+      "type": "header",
+      "content": "Column 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_3_title",
+      "label": "Title",
+      "default": "Product 3"
+    },
+    {
+      "type": "text",
+      "id": "column_3_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_3_button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_1_label",
+      "label": "Feature 1 label",
+      "default": "Price"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_1_value",
+      "label": "Feature 1 value",
+      "default": "$199"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_2_label",
+      "label": "Feature 2 label",
+      "default": "Material"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_2_value",
+      "label": "Feature 2 value",
+      "default": "Carbon fiber"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_3_label",
+      "label": "Feature 3 label",
+      "default": "Warranty"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_3_value",
+      "label": "Feature 3 value",
+      "default": "5 years"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_4_label",
+      "label": "Feature 4 label",
+      "default": "Weight"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_4_value",
+      "label": "Feature 4 value",
+      "default": "90g"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_5_label",
+      "label": "Feature 5 label"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_5_value",
+      "label": "Feature 5 value"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_6_label",
+      "label": "Feature 6 label"
+    },
+    {
+      "type": "text",
+      "id": "column_3_feature_6_value",
+      "label": "Feature 6 value"
+    },
+    {
+      "type": "header",
+      "content": "Column 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_4_title",
+      "label": "Title",
+      "default": "Product 4"
+    },
+    {
+      "type": "text",
+      "id": "column_4_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_4_button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_1_label",
+      "label": "Feature 1 label",
+      "default": "Price"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_1_value",
+      "label": "Feature 1 value",
+      "default": "$249"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_2_label",
+      "label": "Feature 2 label",
+      "default": "Material"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_2_value",
+      "label": "Feature 2 value",
+      "default": "Ceramic"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_3_label",
+      "label": "Feature 3 label",
+      "default": "Warranty"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_3_value",
+      "label": "Feature 3 value",
+      "default": "Lifetime"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_4_label",
+      "label": "Feature 4 label",
+      "default": "Weight"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_4_value",
+      "label": "Feature 4 value",
+      "default": "110g"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_5_label",
+      "label": "Feature 5 label"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_5_value",
+      "label": "Feature 5 value"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_6_label",
+      "label": "Feature 6 label"
+    },
+    {
+      "type": "text",
+      "id": "column_4_feature_6_value",
+      "label": "Feature 6 value"
+    },
+    {
+      "type": "header",
+      "content": "Column 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_5_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_5_title",
+      "label": "Title",
+      "default": "Product 5"
+    },
+    {
+      "type": "text",
+      "id": "column_5_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_5_button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_1_label",
+      "label": "Feature 1 label",
+      "default": "Price"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_1_value",
+      "label": "Feature 1 value",
+      "default": "$299"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_2_label",
+      "label": "Feature 2 label",
+      "default": "Material"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_2_value",
+      "label": "Feature 2 value",
+      "default": "Gold plated"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_3_label",
+      "label": "Feature 3 label",
+      "default": "Warranty"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_3_value",
+      "label": "Feature 3 value",
+      "default": "10 years"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_4_label",
+      "label": "Feature 4 label",
+      "default": "Weight"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_4_value",
+      "label": "Feature 4 value",
+      "default": "180g"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_5_label",
+      "label": "Feature 5 label"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_5_value",
+      "label": "Feature 5 value"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_6_label",
+      "label": "Feature 6 label"
+    },
+    {
+      "type": "text",
+      "id": "column_5_feature_6_value",
+      "label": "Feature 6 value"
+    },
+    {
+      "type": "header",
+      "content": "Column 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_6_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_6_title",
+      "label": "Title",
+      "default": "Product 6"
+    },
+    {
+      "type": "text",
+      "id": "column_6_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_6_button_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_1_label",
+      "label": "Feature 1 label",
+      "default": "Price"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_1_value",
+      "label": "Feature 1 value",
+      "default": "$399"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_2_label",
+      "label": "Feature 2 label",
+      "default": "Material"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_2_value",
+      "label": "Feature 2 value",
+      "default": "Platinum"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_3_label",
+      "label": "Feature 3 label",
+      "default": "Warranty"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_3_value",
+      "label": "Feature 3 value",
+      "default": "Lifetime"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_4_label",
+      "label": "Feature 4 label",
+      "default": "Weight"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_4_value",
+      "label": "Feature 4 value",
+      "default": "200g"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_5_label",
+      "label": "Feature 5 label"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_5_value",
+      "label": "Feature 5 value"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_6_label",
+      "label": "Feature 6 label"
+    },
+    {
+      "type": "text",
+      "id": "column_6_feature_6_value",
+      "label": "Feature 6 value"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison chart"
+    }
+  ]
+}
 {% endschema %}
