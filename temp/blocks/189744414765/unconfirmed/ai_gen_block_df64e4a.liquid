@@ -1,6 +1,334 @@
+{% doc %}
+  @prompt
+    Generate a grid of thumbnails to display all SKUs in a collection. The thumbnails should be square with 0 corner radius. The thumbnail size should be adjustable from 40 to 120 pixels. The grid should be filled horizontally and have several padding adjustments., Remove title
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-sku-grid-{{ ai_gen_id }} {
+    padding: {{ block.settings.container_padding }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-sku-grid__container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax({{ block.settings.thumbnail_size }}px, 1fr));
+    gap: {{ block.settings.grid_gap }}px;
+    padding: {{ block.settings.grid_padding }}px;
+    background-color: {{ block.settings.grid_background_color }};
+    border-radius: {{ block.settings.grid_border_radius }}px;
+  }
+
+  .ai-sku-grid__item-{{ ai_gen_id }} {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 0;
+    background-color: {{ block.settings.item_background_color }};
+    border: {{ block.settings.item_border_width }}px solid {{ block.settings.item_border_color }};
+    transition: transform 0.2s ease;
+  }
+
+  .ai-sku-grid__item-{{ ai_gen_id }}:hover {
+    transform: scale({{ block.settings.hover_scale }});
+  }
+
+  .ai-sku-grid__link-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .ai-sku-grid__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-sku-grid__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-sku-grid__placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-sku-grid__overlay-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: white;
+    padding: {{ block.settings.overlay_padding }}px;
+    font-size: {{ block.settings.overlay_text_size }}px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+
+  .ai-sku-grid__item-{{ ai_gen_id }}:hover .ai-sku-grid__overlay-{{ ai_gen_id }} {
+    opacity: {{ block.settings.show_overlay | times: 1 }};
+  }
+
+  .ai-sku-grid__variant-title-{{ ai_gen_id }} {
+    font-weight: 600;
+    margin: 0 0 2px;
+    font-size: {{ block.settings.overlay_text_size }}px;
+  }
+
+  .ai-sku-grid__variant-price-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.overlay_text_size | minus: 2 }}px;
+    opacity: 0.9;
+  }
+
+  .ai-sku-grid__empty-state-{{ ai_gen_id }} {
+    text-align: center;
+    padding: 40px 20px;
+    color: #666;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-sku-grid__container-{{ ai_gen_id }} {
+      grid-template-columns: repeat(auto-fill, minmax({{ block.settings.thumbnail_size | times: 0.8 }}px, 1fr));
+      gap: {{ block.settings.grid_gap | times: 0.8 }}px;
+      padding: {{ block.settings.grid_padding | times: 0.8 }}px;
+    }
+
+    .ai-sku-grid__overlay-{{ ai_gen_id }} {
+      padding: {{ block.settings.overlay_padding | times: 0.8 }}px;
+      font-size: {{ block.settings.overlay_text_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-sku-grid-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.collection != blank %}
+    {% assign collection = block.settings.collection %}
+    {% assign all_variants = collection.products | map: 'variants' | join: ',' | split: ',' %}
+    
+    {% if all_variants.size > 0 %}
+      <div class="ai-sku-grid__container-{{ ai_gen_id }}">
+        {% for product in collection.products %}
+          {% for variant in product.variants %}
+            <div class="ai-sku-grid__item-{{ ai_gen_id }}">
+              <a href="{{ variant.url }}" class="ai-sku-grid__link-{{ ai_gen_id }}">
+                {% if variant.image %}
+                  <img
+                    src="{{ variant.image | image_url: width: 400 }}"
+                    alt="{{ variant.title | escape }}"
+                    class="ai-sku-grid__image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="400"
+                    height="400"
+                  >
+                {% elsif product.featured_image %}
+                  <img
+                    src="{{ product.featured_image | image_url: width: 400 }}"
+                    alt="{{ product.title | escape }}"
+                    class="ai-sku-grid__image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="400"
+                    height="400"
+                  >
+                {% else %}
+                  <div class="ai-sku-grid__placeholder-{{ ai_gen_id }}">
+                    {{ 'product-1' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+
+                {% if block.settings.show_overlay %}
+                  <div class="ai-sku-grid__overlay-{{ ai_gen_id }}">
+                    <div class="ai-sku-grid__variant-title-{{ ai_gen_id }}">
+                      {{ variant.title }}
+                    </div>
+                    <div class="ai-sku-grid__variant-price-{{ ai_gen_id }}">
+                      {{ variant.price | money }}
+                    </div>
+                  </div>
+                {% endif %}
+              </a>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <div class="ai-sku-grid__empty-state-{{ ai_gen_id }}">
+        No products found in this collection.
+      </div>
+    {% endif %}
+  {% else %}
+    <div class="ai-sku-grid__empty-state-{{ ai_gen_id }}">
+      Next, select a collection to display SKUs
+    </div>
+  {% endif %}
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Collection SKU grid",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Collection"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
+    {
+      "type": "header",
+      "content": "Grid layout"
+    },
+    {
+      "type": "range",
+      "id": "thumbnail_size",
+      "min": 40,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Thumbnail size",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Grid gap",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "grid_padding",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Grid padding",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "container_padding",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Container padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "grid_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Grid border radius",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Thumbnail style"
+    },
+    {
+      "type": "range",
+      "id": "item_border_width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "hover_scale",
+      "min": 1.0,
+      "max": 1.2,
+      "step": 0.1,
+      "label": "Hover scale",
+      "default": 1.1
+    },
+    {
+      "type": "header",
+      "content": "Overlay"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_overlay",
+      "label": "Show overlay on hover",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "overlay_padding",
+      "min": 4,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "label": "Overlay padding",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "overlay_text_size",
+      "min": 10,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "label": "Overlay text size",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "grid_background_color",
+      "label": "Grid background color",
+      "default": "#f8f8f8"
+    },
+    {
+      "type": "color",
+      "id": "item_background_color",
+      "label": "Item background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "item_border_color",
+      "label": "Item border color",
+      "default": "#e6e6e6"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection SKU grid"
+    }
+  ]
+}
 {% endschema %}
