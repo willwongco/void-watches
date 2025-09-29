@@ -486,6 +486,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Editorial - PXR5 Straps",
       "settings": {
         "media_position": "left",
@@ -668,6 +669,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Editorial - PXR5 Components",
       "settings": {
         "media_position": "right",
