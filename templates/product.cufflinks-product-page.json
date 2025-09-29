@@ -205,7 +205,7 @@
                 "overlay_padding": 8,
                 "overlay_text_size": 12,
                 "background_color": "#ffffff",
-                "grid_background_color": "#f8f8f8",
+                "grid_background_color": "#ffffff",
                 "item_background_color": "#ffffff",
                 "item_border_color": "#e6e6e6"
               },
