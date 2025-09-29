@@ -996,7 +996,7 @@
                 "label": "Shop Straps",
                 "link": "shopify://collections/22mm-straps",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "button-secondary",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -1020,8 +1020,8 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "media_with_content_KKLz8B": {
@@ -1178,7 +1178,7 @@
                 "label": "Learn More",
                 "link": "shopify://blogs/news/v02mkii-how-it-works",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
