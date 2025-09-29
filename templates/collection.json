@@ -885,6 +885,7 @@
       "block_order": [
         "ai_gen_block_48b98fa_Q8JKy4"
       ],
+      "disabled": true,
       "name": "Comparison Chart",
       "settings": {
         "content_direction": "column",
