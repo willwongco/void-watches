@@ -690,8 +690,8 @@
           "settings": {
             "padding_top": 40,
             "padding_bottom": 40,
-            "padding_left": 0,
-            "padding_right": 0,
+            "padding_left": 40,
+            "padding_right": 40,
             "heading": "Compare Products",
             "columns_count": 6,
             "column_width": 260,
