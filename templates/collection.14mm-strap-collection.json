@@ -396,10 +396,7 @@
           ]
         }
       },
-      "custom_css": [
-        "video::-webkit-media-controls {display: none !important;}",
-        "video::-moz-media-controls {display: none !important;}"
-      ],
+      "custom_css": [],
       "name": "Editorial 14mm Straps",
       "settings": {
         "media_position": "left",
