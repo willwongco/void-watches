@@ -763,9 +763,7 @@
           ]
         }
       },
-      "custom_css": [
-        "video, .video, .video-wrapper, .hero__video, .hero__media, .section--video, .section-video, .video__media, .media--video {display: none !important; }"
-      ],
+      "custom_css": [],
       "name": "Editorial A - PXR5 Straps",
       "settings": {
         "media_position": "left",
