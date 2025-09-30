@@ -1236,6 +1236,10 @@
         "video_hdqenm",
         "group_qNAbKe"
       ],
+      "custom_css": [
+        "video::-webkit-media-controls {display: none !important;}",
+        "video::-moz-media-controls {display: none !important;}"
+      ],
       "name": "t:names.video_section",
       "settings": {
         "content_direction": "column",
