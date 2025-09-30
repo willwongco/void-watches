@@ -764,7 +764,8 @@
         }
       },
       "custom_css": [
-        ".video-viewer-controls {display: none !important; }"
+        "video::-webkit-media-controls {display: none !important;}",
+        "video::-moz-media-controls {display: none !important;}"
       ],
       "name": "Editorial A - PXR5 Straps",
       "settings": {
