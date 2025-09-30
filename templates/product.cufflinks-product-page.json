@@ -225,6 +225,8 @@
             },
             "ai_gen_block_94d6160_DPRbzN": {
               "type": "ai_gen_block_94d6160",
+              "name": "Klarna Static",
+              "disabled": true,
               "settings": {
                 "text": "Available at checkout.",
                 "custom_icon": "shopify://shop_images/Klarna-Icon-150x50.png",
