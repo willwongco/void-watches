@@ -380,7 +380,7 @@
                 "label": "Learn More",
                 "link": "shopify://blogs/news/straps-a-size-guide",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -396,6 +396,10 @@
           ]
         }
       },
+      "custom_css": [
+        "video::-webkit-media-controls {display: none !important;}",
+        "video::-moz-media-controls {display: none !important;}"
+      ],
       "name": "Editorial 18mm Straps",
       "settings": {
         "media_position": "left",
@@ -562,7 +566,7 @@
                 "label": "Learn More",
                 "link": "shopify://blogs/news/how-to-change-your-watch-strap",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
