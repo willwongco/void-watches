@@ -742,6 +742,10 @@
           ]
         }
       },
+      "custom_css": [
+        "video::-webkit-media-controls {display: none !important;}",
+        "video::-moz-media-controls {display: none !important;}"
+      ],
       "name": "Editorial PXR5 Straps",
       "settings": {
         "media_position": "left",
