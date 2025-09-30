@@ -171,23 +171,23 @@
                 "price_tVjtKg"
               ]
             },
-            "ai_gen_block_df64e4a_Lppn7y": {
+            "ai_gen_block_df64e4a_NEjNME": {
               "type": "ai_gen_block_df64e4a",
               "settings": {
-                "collection": "ltd",
+                "collection": "pkg01",
                 "thumbnail_size": 52,
                 "grid_gap": 10,
                 "grid_padding": 0,
                 "container_padding": 0,
                 "grid_border_radius": 0,
-                "item_border_width": 0,
+                "item_border_width": 1,
                 "hover_scale": 1.1,
                 "show_overlay": false,
                 "overlay_padding": 8,
                 "overlay_text_size": 12,
                 "background_color": "#ffffff",
                 "grid_background_color": "#ffffff",
-                "item_background_color": "#ffffff",
+                "item_background_color": "#0000000f",
                 "item_border_color": "#e6e6e6"
               },
               "blocks": {}
@@ -411,7 +411,7 @@
           },
           "block_order": [
             "group_icgrde",
-            "ai_gen_block_df64e4a_Lppn7y",
+            "ai_gen_block_df64e4a_NEjNME",
             "divider_VJhene",
             "buy_buttons_eYQEYi",
             "text_aEtTtq",
