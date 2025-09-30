@@ -470,7 +470,7 @@
                 "label": "Shop Straps",
                 "link": "shopify://collections/22mm-straps",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -486,6 +486,10 @@
           ]
         }
       },
+      "custom_css": [
+        "video::-webkit-media-controls {display: none !important;}",
+        "video::-moz-media-controls {display: none !important;}"
+      ],
       "name": "Editorial V01MKII Straps",
       "settings": {
         "media_position": "left",
@@ -648,6 +652,7 @@
             },
             "button_t4aG7F": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Learn More",
                 "link": "shopify://collections/all",
