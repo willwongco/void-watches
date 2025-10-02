@@ -8,9 +8,20 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "footer-group.json",
+  "parent": "product.v02mkii-product-page.json",
   "context": {
     "market": "great-brittain"
   },
-  "sections": {}
+  "sections": {
+    "marquee_JHgDU8": {
+      "settings": {},
+      "blocks": {
+        "text_KYKdPj": {
+          "settings": {
+            "text": "<p>Free Shipping Available. Tax Included.</p>"
+          }
+        }
+      }
+    }
+  }
 }
