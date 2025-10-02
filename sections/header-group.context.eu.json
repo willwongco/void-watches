@@ -12,5 +12,16 @@
   "context": {
     "market": "eu"
   },
-  "sections": {}
+  "sections": {
+    "header_announcements_9jGBFp": {
+      "settings": {},
+      "blocks": {
+        "announcement_BxgCk9": {
+          "settings": {
+            "text": "Free Shipping on Orders Above 100EUR"
+          }
+        }
+      }
+    }
+  }
 }
