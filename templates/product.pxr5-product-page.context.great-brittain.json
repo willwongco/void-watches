@@ -12,5 +12,16 @@
   "context": {
     "market": "great-brittain"
   },
-  "sections": {}
+  "sections": {
+    "marquee_GawRFn": {
+      "settings": {},
+      "blocks": {
+        "text_tfk96U": {
+          "settings": {
+            "text": "<p>Free Shipping Available. Tax Included.</p>"
+          }
+        }
+      }
+    }
+  }
 }
