@@ -443,6 +443,100 @@
         "padding-block-end": 20
       }
     },
+    "marquee_bgCiYp": {
+      "type": "marquee",
+      "blocks": {
+        "icon_CRcW6K": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Shipping-Icon-100x100.png",
+            "width": 56,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "text_iPicCp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Free Shipping Available</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.875rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 50
+          },
+          "blocks": {}
+        },
+        "icon_nqfnbx": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Returns-Icon-100x100.png",
+            "width": 50,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "text_rfcazy": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>30-Day Returns</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 50
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "icon_CRcW6K",
+        "text_iPicCp",
+        "icon_nqfnbx",
+        "text_rfcazy"
+      ],
+      "name": "Icons - Marquee - Straps",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-3",
+        "padding-block-start": 0,
+        "padding-block-end": 0,
+        "gap_between_elements": 11
+      }
+    },
     "section_J9XNjK": {
       "type": "section",
       "blocks": {
@@ -1408,6 +1502,7 @@
   },
   "order": [
     "main",
+    "marquee_bgCiYp",
     "section_J9XNjK",
     "media_with_content_qNKCBF",
     "media_with_content_mftf7P",
