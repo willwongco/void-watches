@@ -218,6 +218,7 @@
               "blocks": {
                 "quantity": {
                   "type": "quantity",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
@@ -232,12 +233,23 @@
                 },
                 "accelerated-checkout": {
                   "type": "accelerated-checkout",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
                 }
               },
               "block_order": []
+            },
+            "klarna_on_site_messaging_app_block_kaWUb4": {
+              "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+              "settings": {
+                "data_key": "credit-promotion-auto-size",
+                "theme": "default",
+                "topPadding": "0",
+                "bottomPadding": "0",
+                "messagePrefix": ""
+              }
             },
             "text_aEtTtq": {
               "type": "text",
@@ -414,6 +426,7 @@
             "ai_gen_block_df64e4a_34GF33",
             "divider_VJhene",
             "buy_buttons_eYQEYi",
+            "klarna_on_site_messaging_app_block_kaWUb4",
             "text_aEtTtq",
             "accordion_hFcKk9"
           ]
