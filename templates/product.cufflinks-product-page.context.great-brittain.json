@@ -32,11 +32,11 @@
                       "disabled": false,
                       "settings": {
                         "text": "<p>{{ closest.product.metafields.custom.product_details_accordion | metafield_tag }}</p>",
-                        "header-f527ec30d6559d2acec1a74d8a878086": null,
+                        "header-bf11c0b733fca8556eb9a3a7a894de3d": null,
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
-                        "header-e637a386aa574f8030b013acfb7bc67d": null,
+                        "header-12343c433b37aec734f71ee3593e27a6": null,
                         "type_preset": "rte",
                         "font": "var(--font-body--family)",
                         "font_size": "1rem",
@@ -45,11 +45,11 @@
                         "case": "none",
                         "wrap": "pretty",
                         "color": "var(--color-foreground)",
-                        "header-bf16d12f9f71e5510700c9881b256329": null,
+                        "header-7c93fc18ac30b8e84b22406f5aee18fa": null,
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
-                        "header-8ef1badc1c272f49bec51f5640c46b8f": null,
+                        "header-187a6907b7c66de7d306e06fbaa84ddf": null,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -63,7 +63,7 @@
                   "settings": {
                     "heading": "PRODUCT DETAILS",
                     "open_by_default": false,
-                    "header-0a70288f4576c4d939f6a4ec4d9bc3ba": null,
+                    "header-83b527754fbc2711a5569c3d28f04cb9": null,
                     "icon": "none",
                     "image_upload": null,
                     "width": 20
@@ -78,11 +78,11 @@
                       "disabled": false,
                       "settings": {
                         "text": "<p>We will ship your order within 1-2 working days. We use DHL or UPS for international shipments and Postnord for shipments within Sweden. Once your order has shipped, you will receive an email with tracking information. Delivery times vary depending on your location but are typically 2-4 days.</p>",
-                        "header-f527ec30d6559d2acec1a74d8a878086": null,
+                        "header-cdb08e304d0a00159b5c94171e642e0f": null,
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
-                        "header-e637a386aa574f8030b013acfb7bc67d": null,
+                        "header-d47b8e1c139897bc4657deed6824bf43": null,
                         "type_preset": "rte",
                         "font": "var(--font-body--family)",
                         "font_size": "1rem",
@@ -91,11 +91,11 @@
                         "case": "none",
                         "wrap": "pretty",
                         "color": "var(--color-foreground)",
-                        "header-bf16d12f9f71e5510700c9881b256329": null,
+                        "header-b0cdb53ed310f877793d4731fb534d12": null,
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
-                        "header-8ef1badc1c272f49bec51f5640c46b8f": null,
+                        "header-d1f3433bde64e67cd80ac2856f1f6fbd": null,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -109,7 +109,7 @@
                   "settings": {
                     "heading": "SHIPPING INFORMATION",
                     "open_by_default": false,
-                    "header-0a70288f4576c4d939f6a4ec4d9bc3ba": null,
+                    "header-a983f1307485bc449c198b584839e629": null,
                     "icon": "none",
                     "image_upload": null,
                     "width": 20
@@ -124,11 +124,11 @@
                       "disabled": false,
                       "settings": {
                         "text": "<p>We offer a 2 year warranty on all watches.</p>",
-                        "header-f527ec30d6559d2acec1a74d8a878086": null,
+                        "header-b7d020e030a4112259e14240d9c8bd25": null,
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
-                        "header-e637a386aa574f8030b013acfb7bc67d": null,
+                        "header-02b54d4e0d0153c533028a35d55e6cd4": null,
                         "type_preset": "rte",
                         "font": "var(--font-body--family)",
                         "font_size": "1rem",
@@ -137,11 +137,11 @@
                         "case": "none",
                         "wrap": "pretty",
                         "color": "var(--color-foreground)",
-                        "header-bf16d12f9f71e5510700c9881b256329": null,
+                        "header-3df731b58d3353d235dbbb64e3670ced": null,
                         "background": false,
                         "background_color": "#00000026",
                         "corner_radius": 0,
-                        "header-8ef1badc1c272f49bec51f5640c46b8f": null,
+                        "header-696dfd862e918321b421e57b6ae23fd9": null,
                         "padding-block-start": 0,
                         "padding-block-end": 0,
                         "padding-inline-start": 0,
@@ -155,7 +155,7 @@
                   "settings": {
                     "heading": "WARRANTY",
                     "open_by_default": false,
-                    "header-0a70288f4576c4d939f6a4ec4d9bc3ba": null,
+                    "header-a173ba75f1600bec449eee4849d9d809": null,
                     "icon": "none",
                     "image_upload": null,
                     "width": 20
@@ -173,12 +173,12 @@
                 "type_preset": "h6",
                 "inherit_color_scheme": true,
                 "color_scheme": "",
-                "header-31e17b657fe50e64f19596d043245335": null,
+                "header-b6ed750c8bcf901e00bb2ed44a1db4ce": null,
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "header-7a3765df9c34ad97097a647bea757b76": null,
+                "header-b36ace824fe380956f0bdbaaa4c8f22c": null,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -197,6 +197,16 @@
           ],
           "settings": {
             "gap": 23
+          }
+        }
+      }
+    },
+    "marquee_mkq8ip": {
+      "settings": {},
+      "blocks": {
+        "text_GLUiV6": {
+          "settings": {
+            "text": "<p>Free Shipping Available. Tax Included.</p>"
           }
         }
       }
