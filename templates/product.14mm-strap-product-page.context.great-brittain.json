@@ -8,20 +8,9 @@
  * ------------------------------------------------------------
  */
 {
-  "parent": "product.json",
+  "parent": "product.14mm-strap-product-page.json",
   "context": {
     "market": "great-brittain"
   },
-  "sections": {
-    "marquee_Xx8aTE": {
-      "settings": {},
-      "blocks": {
-        "text_Yw9Uwr": {
-          "settings": {
-            "text": "<p>Free Shipping Available. Tax Included.</p>"
-          }
-        }
-      }
-    }
-  }
+  "sections": {}
 }
