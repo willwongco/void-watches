@@ -103,5 +103,11 @@
         }
       });
     </script>
+
+    {%- if product.tags contains 'Hide BIS' -%}
+      <style>
+        .klaviyo-bis-trigger { display: none !important; }
+      </style>
+    {%- endif -%}
   </body>
 </html>
