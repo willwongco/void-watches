@@ -104,10 +104,10 @@
       });
     </script>
 
-    {%- if product.tags contains 'Hide BIS' -%}
+    {%- unless product.tags contains 'BIS' -%}
       <style>
         .klaviyo-bis-trigger { display: none !important; }
       </style>
-    {%- endif -%}
+    {%- endunless -%}
   </body>
 </html>
