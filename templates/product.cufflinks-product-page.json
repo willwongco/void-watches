@@ -50,7 +50,7 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "details_position": "flex-start",
-            "gap": 28,
+            "gap": 15,
             "sticky_details_desktop": true,
             "inherit_color_scheme": true,
             "color_scheme": "scheme-1",
@@ -163,6 +163,7 @@
             },
             "ai_gen_block_306cb2b_BxLDVe": {
               "type": "ai_gen_block_306cb2b",
+              "disabled": true,
               "settings": {
                 "collection": "vc1",
                 "thumbnail_size": 50,
@@ -186,6 +187,27 @@
                 "show_product_title": true,
                 "placeholder_text": "No description available",
                 "placeholder_text_color": "#666666"
+              },
+              "blocks": {}
+            },
+            "ai_gen_block_df64e4a_eWGU9Q": {
+              "type": "ai_gen_block_df64e4a",
+              "settings": {
+                "collection": "vc1",
+                "thumbnail_size": 52,
+                "grid_gap": 10,
+                "grid_padding": 0,
+                "container_padding": 0,
+                "grid_border_radius": 0,
+                "item_border_width": 0,
+                "hover_scale": 1.1,
+                "show_overlay": false,
+                "overlay_padding": 8,
+                "overlay_text_size": 12,
+                "background_color": "#ffffff",
+                "grid_background_color": "#ffffff",
+                "item_background_color": "#ffffff",
+                "item_border_color": "#e6e6e6"
               },
               "blocks": {}
             },
@@ -215,6 +237,7 @@
               "blocks": {
                 "quantity": {
                   "type": "quantity",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
@@ -229,12 +252,50 @@
                 },
                 "accelerated-checkout": {
                   "type": "accelerated-checkout",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
                 }
               },
               "block_order": []
+            },
+            "ai_gen_block_94d6160_DPRbzN": {
+              "type": "ai_gen_block_94d6160",
+              "name": "Klarna Static",
+              "disabled": true,
+              "settings": {
+                "text": "Available at checkout.",
+                "custom_icon": "shopify://shop_images/Klarna-Icon-150x50.png",
+                "icon": "check",
+                "icon_size": 56,
+                "icon_color": "#000000",
+                "icon_spacing": 8,
+                "font_size": 16,
+                "font_weight": "400",
+                "line_height": "1.2",
+                "text_transform": "none",
+                "letter_spacing": 0,
+                "padding": 0,
+                "text_color": "#000000",
+                "background_color": "#ffffff",
+                "border_radius": 0,
+                "mobile_font_size": 12,
+                "mobile_icon_size": 42,
+                "mobile_icon_spacing": 6,
+                "mobile_padding": 0
+              },
+              "blocks": {}
+            },
+            "klarna_on_site_messaging_app_block_UAHVGt": {
+              "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+              "settings": {
+                "data_key": "credit-promotion-auto-size",
+                "theme": "custom",
+                "topPadding": "0",
+                "bottomPadding": "0",
+                "messagePrefix": ""
+              }
             },
             "text_aEtTtq": {
               "type": "text",
@@ -262,7 +323,7 @@
               },
               "blocks": {}
             },
-            "accordion_hFcKk9": {
+            "accordion_JQcFww": {
               "type": "accordion",
               "name": "t:names.accordion",
               "settings": {
@@ -281,7 +342,7 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "accordion_row_jtgghK": {
+                "accordion_row_X4rXNL": {
                   "type": "_accordion-row",
                   "settings": {
                     "heading": "PRODUCT DETAILS",
@@ -290,7 +351,7 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_yYwAUT": {
+                    "text_wrkK8E": {
                       "type": "text",
                       "settings": {
                         "text": "<p>{{ closest.product.metafields.custom.product_details_accordion | metafield_tag }}</p>",
@@ -317,10 +378,10 @@
                     }
                   },
                   "block_order": [
-                    "text_yYwAUT"
+                    "text_wrkK8E"
                   ]
                 },
-                "accordion_row_Y8GdGt": {
+                "accordion_row_fg7xEW": {
                   "type": "_accordion-row",
                   "settings": {
                     "heading": "SHIPPING INFORMATION",
@@ -329,7 +390,7 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_DNtjaj": {
+                    "text_wt9Y8n": {
                       "type": "text",
                       "settings": {
                         "text": "<p>We will ship your order within 1-2 working days. We use DHL or UPS for international shipments and Postnord for shipments within Sweden. Once your order has shipped, you will receive an email with tracking information. Delivery times vary depending on your location but are typically 2-4 days.</p>",
@@ -356,10 +417,10 @@
                     }
                   },
                   "block_order": [
-                    "text_DNtjaj"
+                    "text_wt9Y8n"
                   ]
                 },
-                "accordion_row_cxc9cP": {
+                "accordion_row_RtR4tN": {
                   "type": "_accordion-row",
                   "settings": {
                     "heading": "WARRANTY",
@@ -368,7 +429,7 @@
                     "width": 20
                   },
                   "blocks": {
-                    "text_Q9nMNM": {
+                    "text_a7Bp6B": {
                       "type": "text",
                       "settings": {
                         "text": "<p>We offer a 2 year warranty on all watches.</p>",
@@ -395,24 +456,27 @@
                     }
                   },
                   "block_order": [
-                    "text_Q9nMNM"
+                    "text_a7Bp6B"
                   ]
                 }
               },
               "block_order": [
-                "accordion_row_jtgghK",
-                "accordion_row_Y8GdGt",
-                "accordion_row_cxc9cP"
+                "accordion_row_X4rXNL",
+                "accordion_row_fg7xEW",
+                "accordion_row_RtR4tN"
               ]
             }
           },
           "block_order": [
             "group_icgrde",
             "ai_gen_block_306cb2b_BxLDVe",
+            "ai_gen_block_df64e4a_eWGU9Q",
             "divider_VJhene",
             "buy_buttons_eYQEYi",
+            "ai_gen_block_94d6160_DPRbzN",
+            "klarna_on_site_messaging_app_block_UAHVGt",
             "text_aEtTtq",
-            "accordion_hFcKk9"
+            "accordion_JQcFww"
           ]
         }
       },
@@ -427,10 +491,10 @@
         "padding-block-end": 20
       }
     },
-    "marquee_4gWGVW": {
+    "marquee_mkq8ip": {
       "type": "marquee",
       "blocks": {
-        "icon_AkHVym": {
+        "icon_gwfpF9": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -442,7 +506,7 @@
           },
           "blocks": {}
         },
-        "text_eziFxb": {
+        "text_GLUiV6": {
           "type": "text",
           "settings": {
             "text": "<p>Free Shipping Available</p>",
@@ -467,7 +531,7 @@
           },
           "blocks": {}
         },
-        "icon_yUDYja": {
+        "icon_4Dh8NF": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -479,7 +543,7 @@
           },
           "blocks": {}
         },
-        "text_L4JWcW": {
+        "text_KyiUBB": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
@@ -505,7 +569,7 @@
           },
           "blocks": {}
         },
-        "icon_bnEPca": {
+        "icon_Chamcx": {
           "type": "icon",
           "name": "t:names.icon",
           "settings": {
@@ -517,7 +581,7 @@
           },
           "blocks": {}
         },
-        "text_cNywnx": {
+        "text_LxGnmR": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
@@ -545,12 +609,12 @@
         }
       },
       "block_order": [
-        "icon_AkHVym",
-        "text_eziFxb",
-        "icon_yUDYja",
-        "text_L4JWcW",
-        "icon_bnEPca",
-        "text_cNywnx"
+        "icon_gwfpF9",
+        "text_GLUiV6",
+        "icon_4Dh8NF",
+        "text_KyiUBB",
+        "icon_Chamcx",
+        "text_LxGnmR"
       ],
       "name": "Icons - Marquee",
       "settings": {
@@ -559,6 +623,20 @@
         "padding-block-start": 0,
         "padding-block-end": 0,
         "gap_between_elements": 11
+      }
+    },
+    "divider_drkxVd": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "section_width": "full-width",
+        "thickness": 0.5,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 10,
+        "padding-block-end": 10
       }
     },
     "media_with_content_mrMmQN": {
@@ -739,8 +817,8 @@
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-3",
-        "padding-block-start": 20,
+        "color_scheme": "scheme-4",
+        "padding-block-start": 0,
         "padding-block-end": 0
       }
     },
@@ -922,7 +1000,7 @@
         "media_height": "80svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -1539,7 +1617,8 @@
   },
   "order": [
     "main",
-    "marquee_4gWGVW",
+    "marquee_mkq8ip",
+    "divider_drkxVd",
     "media_with_content_mrMmQN",
     "media_with_content_MLrCea",
     "section_J9XNjK",

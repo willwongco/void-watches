@@ -1,0 +1,248 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "blocks": {
+        "heading": {
+          "type": "text",
+          "name": "Title",
+          "settings": {
+            "text": "<p>{{ closest.page.title }}</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h4",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "accordion_WeCCwB": {
+          "type": "accordion",
+          "name": "t:names.accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h6",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_MTmEcp": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "EU (EUROPEAN UNION)",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_dY3UqP": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Free Shipping on all orders above 100EUR. VAT and any other fees are included in the price.</p><p>Delivery: 3-5 working days, full tracking (UPS).</p><p>Returns: You can return (for a full refund) or exchange your order within 30-days from the day it's received. See your FAQ for details.</p><p>Currency: EUR</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_dY3UqP"
+              ]
+            },
+            "accordion_row_FMMgL6": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "UNITED KINGDOM",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_dAtz4m": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Free Shipping on all orders above 100GBP. VAT and any other fees are included in the price. Your order will be shipped with all duties and taxes paid (DDP) by UPS.</p><p>Delivery: 3-5 working days, full tracking (UPS).</p><p>Returns: You can return (for a full refund) or exchange your order within 30-days from the day it's received. See your FAQ for details.</p><p>Currency: GBP</p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_dAtz4m"
+              ]
+            },
+            "accordion_row_XccQqr": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "SWEDEN",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_hLNEgn": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Free Shipping on all orders above 50EUR. VAT and any other fees are included in the price.</p><p>Delivery: 2-4 working days, full tracking (PostNord).</p><p>Returns: You can return (for a full refund) or exchange your order within 30-days from the day it's received. See your FAQ for details.</p><p>Currency: EUR</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_hLNEgn"
+              ]
+            },
+            "accordion_row_Md97NT": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "ALL OTHER COUNTRIES (INCL USA)",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_7Ubtp3": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Free Shipping on all orders above 100USD. VAT and any other fees are NOT included in the price.<br/><br/>Delivery: 3-5 working days, full tracking (UPS).<br/><br/>Returns: You can return or exchange your order within 30-days from the day it's received. See your FAQ for details.<br/><br/>Currency: USD<br/><br/><em><strong>Please note:</strong></em><em> For Countries outside the EU prices are displayed without VAT. Be aware that you have to pay import taxes according to the laws of your specific country. In case of returns we are not able to return any duties or taxes, as this is paid to and handled directly between you (the customer) and your country.</em></p>",
+                    "width": "100%",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_7Ubtp3"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_MTmEcp",
+            "accordion_row_FMMgL6",
+            "accordion_row_XccQqr",
+            "accordion_row_Md97NT"
+          ]
+        },
+        "page-content": {
+          "type": "page-content",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading",
+        "accordion_WeCCwB",
+        "page-content"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 80
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

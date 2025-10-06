@@ -27,7 +27,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
-        "section_height": "small",
+        "section_height": "medium",
         "section_height_custom": 50,
         "color_scheme": "scheme-1",
         "toggle_overlay": false,
@@ -40,80 +40,48 @@
         "padding-block-end": 40
       }
     },
-    "section": {
-      "type": "section",
+    "blocks_3qBBj8": {
+      "type": "_blocks",
       "blocks": {
-        "text_tqQTNE": {
-          "type": "text",
-          "name": "Title",
+        "ai_gen_block_4bdd5a4_NWMz8D": {
+          "type": "ai_gen_block_4bdd5a4",
           "settings": {
-            "text": "<p>{{ closest.collection.title }}</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 8,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_twGGkJ": {
-          "type": "text",
-          "name": "Description",
-          "settings": {
-            "text": "{{ closest.collection.description }}",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "paragraph",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 10,
-            "padding-inline-end": 10
+            "header_text": "{{ closest.collection.title }}",
+            "content_text": "{{ closest.collection.description }}",
+            "header_width": 40,
+            "vertical_alignment": "flex-start",
+            "gap": 30,
+            "mobile_layout": "column",
+            "mobile_gap": 10,
+            "padding_top": 15,
+            "padding_bottom": 15,
+            "padding_horizontal": 20,
+            "background_color": "#ffffff",
+            "header_color": "#000000",
+            "text_color": "#000000",
+            "header_size": 48,
+            "text_size": 14
           },
           "blocks": {}
         }
       },
       "block_order": [
-        "text_tqQTNE",
-        "text_twGGkJ"
+        "ai_gen_block_4bdd5a4_NWMz8D"
       ],
-      "name": "Collection heading",
+      "name": "Header Section",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
+        "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 5,
-        "section_width": "full-width",
+        "gap": 12,
+        "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -125,8 +93,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 24,
-        "padding-block-end": 24
+        "padding-block-start": 18,
+        "padding-block-end": 0
       }
     },
     "main": {
@@ -409,10 +377,10 @@
             "button_7FtrUr": {
               "type": "button",
               "settings": {
-                "label": "Learn More",
+                "label": "Detailed Guide",
                 "link": "shopify://blogs/news/straps-a-size-guide",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -428,6 +396,7 @@
           ]
         }
       },
+      "custom_css": [],
       "name": "Editorial 14mm Straps",
       "settings": {
         "media_position": "left",
@@ -594,7 +563,7 @@
                 "label": "Learn More",
                 "link": "shopify://blogs/news/how-to-change-your-watch-strap",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -792,7 +761,7 @@
   },
   "order": [
     "hero_Qh8VN4",
-    "section",
+    "blocks_3qBBj8",
     "main",
     "media_with_content_YpMDa9",
     "media_with_content_Jmgcri",

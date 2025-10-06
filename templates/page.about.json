@@ -17,7 +17,7 @@
           "settings": {
             "text": "<h1>About Us</h1>",
             "width": "fit-content",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "h1",
             "font": "var(--font-body--family)",
@@ -39,6 +39,7 @@
         },
         "text_enYX7E": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Made with care and unconditionally loved by our customers.</p>",
             "width": "fit-content",
@@ -70,14 +71,14 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/hero-about-us_2048x2048_7a553b52-aade-4f42-9e47-7ef358e644f7.webp",
+        "image_1": "{{ page.metafields.custom.hero_image.value }}",
         "media_type_2": "image",
         "link": "",
         "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
+        "vertical_alignment": "flex-end",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "flex-end",
@@ -103,10 +104,10 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>VOID Watches is a Swedish design company turned watch brand. Founded in 2008 by mechanical engineer and designer David Ericsson who launched the brand with a set of iconic square digital watches known as the V01.<br/><br/>We work with geometric shapes, basic colours and simple materials to measure time. Every now and then we receive the opportunity to design other products as well.<br/><br/>Simplicity is at the core of our design philosophy, a philosophy strongly rooted in our Swedish heritage. We prefer simple shapes and use materials that are best suited for the purpose.<br/><br/>In astronomy, voids are the empty spaces between filaments, the largest structures in the Universe, that contain few, or no, galaxies. Voids typically have a diameter of 40 to 500 million light years, so large that we can't even begin to grasp their vastness.<br/><br/>In this they are similar to the concept of time, something that is always present but not to be seen or touched, only to be measured.</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
+            "text": "{{ closest.page.content }}",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -134,7 +135,7 @@
         "gap": 32,
         "color_scheme": "",
         "padding-block-start": 40,
-        "padding-block-end": 80
+        "padding-block-end": 40
       }
     },
     "media_with_content_wFEgTw": {
@@ -166,8 +167,9 @@
             "text_Ymgf4p": {
               "type": "text",
               "name": "t:names.caption",
+              "disabled": true,
               "settings": {
-                "text": "<p>Bestseller</p>",
+                "text": "<p>Our Founder</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -232,7 +234,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Our signature product</h2>",
+                    "text": "<h2>Meet the  Founder</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -257,7 +259,7 @@
                 "text_n7P9Qz": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
+                    "text": "<p>VOID Watches was founded in 2008 by Swedish engineer turned designer Hans David Ericsson (b. 1977).</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
@@ -287,6 +289,7 @@
             },
             "button_UKM6z8": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Shop now",
                 "link": "shopify://collections/all",
@@ -314,9 +317,9 @@
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 30
       }
     }
   },

@@ -51,7 +51,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
+        "padding-block-start": 15,
         "padding-block-end": 0
       }
     },
@@ -170,7 +170,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Minimal Scandinavian Timepieces</h2>",
+            "text": "<h2>Tools That Tell Time</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -185,7 +185,7 @@
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
-            "padding-block-start": 0,
+            "padding-block-start": 15,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -196,7 +196,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>We've been making intricately simple watches since 2008. It's what makes us tick.</p>",
+            "text": "<p>Minimal Swedish timepieces since 2008. Instant classics for men, women and all.</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -222,8 +222,8 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Discover our Collections",
-            "link": "shopify://collections/all",
+            "label": "Shop Now",
+            "link": "shopify://collections/all-watches",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -248,7 +248,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 25,
+        "gap": 7,
         "section_width": "page-width",
         "section_height": "custom",
         "section_height_custom": 9,
@@ -426,6 +426,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Our Top Picks",
       "settings": {
         "collection": "our-top-picks",
@@ -491,6 +492,7 @@
       "block_order": [
         "ai_gen_block_30a7262_ftjAgE"
       ],
+      "disabled": true,
       "name": "Two Column Section",
       "settings": {
         "content_direction": "column",
@@ -518,6 +520,20 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
+      }
+    },
+    "divider_pAJwfq": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 16,
+        "padding-block-end": 16
       }
     },
     "collection_list_fgDPjN": {
@@ -567,7 +583,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<h4>OUR WATCH COLLECTIONS</h4>",
+                "text": "<h5>OUR WATCH COLLECTIONS</h5>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -681,13 +697,13 @@
         "bento_gap": 8,
         "rows_gap": 8,
         "max_collections": 4,
-        "icons_style": "arrow",
-        "icons_shape": "circle",
+        "icons_style": "chevron_large",
+        "icons_shape": "none",
         "section_width": "page-width",
         "gap": 12,
         "color_scheme": "",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 27,
+        "padding-block-end": 20
       }
     },
     "175706344114f7ecfb": {
@@ -696,16 +712,16 @@
         "ai_gen_block_a511e5b_9ENADE": {
           "type": "ai_gen_block_a511e5b",
           "settings": {
-            "section_padding": 40,
+            "section_padding": 25,
             "max_width": 1200,
-            "grid_gap": 25,
+            "grid_gap": 10,
             "columns_mobile": "2",
             "image_height_desktop": 300,
             "image_height_mobile": 200,
             "image_border_radius": 0,
-            "text_alignment": "left",
-            "text_spacing": 10,
-            "title_size": 18,
+            "text_alignment": "right",
+            "text_spacing": 5,
+            "title_size": 16,
             "title_color": "#000000",
             "title_hover_color": "#666666",
             "description_size": 12,
@@ -713,20 +729,20 @@
             "description_hover_color": "#333333",
             "image_1": "shopify://shop_images/For-Him-600x800.jpg",
             "title_1": "For Him",
-            "description_1": "Our collection of mens watches",
+            "description_1": "",
             "link_1": "shopify://collections/for-him",
             "image_2": "shopify://shop_images/For-Her-600x800.jpg",
             "title_2": "For Her",
-            "description_2": "Suitable for smaller wrists",
+            "description_2": "",
             "link_2": "shopify://collections/for-her",
             "image_3": "shopify://shop_images/Limited-Editions-600x800.jpg",
             "title_3": "Limited Editions",
-            "description_3": "Truly unique timepieces",
+            "description_3": "",
             "link_3": "shopify://collections/ltd",
             "image_4": "shopify://shop_images/Straps-600x800.jpg",
             "title_4": "Straps",
-            "description_4": "Find your next strap here",
-            "link_4": "shopify://collections/18mm-straps"
+            "description_4": "",
+            "link_4": "shopify://pages/our-strap-collections"
           },
           "blocks": {}
         }
@@ -1901,6 +1917,7 @@
     "section_Mck6GU",
     "product_list_j8AAHU",
     "1756909017f2797ec7",
+    "divider_pAJwfq",
     "collection_list_fgDPjN",
     "175706344114f7ecfb",
     "section_kAXyrR",

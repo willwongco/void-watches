@@ -19,7 +19,7 @@
           "name": "Announcement 1",
           "settings": {
             "text": "Free Shipping Options Available",
-            "link": "",
+            "link": "shopify://collections/all-watches",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
             "weight": "",
@@ -33,7 +33,7 @@
           "name": "Announcement 2",
           "settings": {
             "text": "SALE UP TO 50% OFF",
-            "link": "",
+            "link": "shopify://collections/end-of-life-sale",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
             "weight": "",

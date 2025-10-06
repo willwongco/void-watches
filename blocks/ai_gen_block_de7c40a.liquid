@@ -1,0 +1,1403 @@
+{% doc %}
+  @prompt
+    Create a comparison chart with 6 columns. At the top of each column should be an image. Below the image a text line and a call to action button. Below this there should be 4-6 lines of text. On mobile it should be horizontal and scrollable left to right. Also add a centered heading at the top of the section., Each row in the text segment under the CTA button should have two input fields. A label and a value., On desktop I want the culumns to be wider and extend outside the screen if needed. Add chevrons for scrolling. Images should be portrait format on both desktop and mobile., Make the heading centered on the visible area of the screen on both desktop and mobile., Remove heading, Add a heading that is centered on the visible area of the screen., Add a function so that more feature values can be added later., Make column width more adjustable. Add more padding options. Make CTA width adjustable., Keep everything as is but make it possible to add more columns in the future., Make it possible to adjust number of columns down to 4.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-comparison-chart-{{ ai_gen_id }} {
+    padding: {{ block.settings.section_padding_top }}px 0 {{ block.settings.section_padding_bottom }}px;
+    position: relative;
+  }
+
+  .ai-comparison-chart__heading-container-{{ ai_gen_id }} {
+    max-width: 100vw;
+    padding: 0 20px;
+    margin-bottom: {{ block.settings.heading_margin_bottom }}px;
+    text-align: center;
+  }
+
+  .ai-comparison-chart__heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.heading_color }};
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .ai-comparison-chart__wrapper-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-comparison-chart__container-{{ ai_gen_id }} {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: {{ block.settings.scrollbar_color }} transparent;
+    scroll-behavior: smooth;
+  }
+
+  .ai-comparison-chart__container-{{ ai_gen_id }}::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .ai-comparison-chart__container-{{ ai_gen_id }}::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .ai-comparison-chart__container-{{ ai_gen_id }}::-webkit-scrollbar-thumb {
+    background-color: {{ block.settings.scrollbar_color }};
+    border-radius: 3px;
+  }
+
+  .ai-comparison-chart__grid-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.column_gap }}px;
+    min-width: fit-content;
+    padding: 0 {{ block.settings.container_padding_horizontal }}px;
+  }
+
+  .ai-comparison-chart__column-{{ ai_gen_id }} {
+    flex: 0 0 {{ block.settings.mobile_column_width }}px;
+    background-color: {{ block.settings.column_bg_color }};
+    border: {{ block.settings.column_border_width }}px solid {{ block.settings.column_border_color }};
+    border-radius: {{ block.settings.column_border_radius }}px;
+    padding: {{ block.settings.column_padding_top }}px {{ block.settings.column_padding_horizontal }}px {{ block.settings.column_padding_bottom }}px;
+    text-align: center;
+    box-shadow: {{ block.settings.column_shadow_enabled | default: false | json }} ? '0 4px 12px rgba(0, 0, 0, 0.1)' : 'none';
+  }
+
+  .ai-comparison-chart__image-wrapper-{{ ai_gen_id }} {
+    margin-bottom: {{ block.settings.image_margin_bottom }}px;
+    height: {{ block.settings.image_height }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: {{ block.settings.image_border_radius }}px;
+  }
+
+  .ai-comparison-chart__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-comparison-chart__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-comparison-chart__image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-comparison-chart__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+    margin-bottom: {{ block.settings.title_margin_bottom }}px;
+    line-height: 1.3;
+  }
+
+  .ai-comparison-chart__button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_font_size }}px;
+    font-weight: 600;
+    margin-bottom: {{ block.settings.button_margin_bottom }}px;
+    transition: all 0.3s ease;
+    border: {{ block.settings.button_border_width }}px solid {{ block.settings.button_border_color }};
+    width: {{ block.settings.button_width }}%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .ai-comparison-chart__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_bg_color }};
+    color: {{ block.settings.button_hover_text_color }};
+    border-color: {{ block.settings.button_hover_border_color }};
+  }
+
+  .ai-comparison-chart__features-{{ ai_gen_id }} {
+    text-align: left;
+  }
+
+  .ai-comparison-chart__feature-row-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: {{ block.settings.feature_row_spacing }}px;
+    font-size: {{ block.settings.feature_font_size }}px;
+    line-height: 1.4;
+    gap: {{ block.settings.feature_gap }}px;
+  }
+
+  .ai-comparison-chart__feature-row-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-comparison-chart__feature-label-{{ ai_gen_id }} {
+    color: {{ block.settings.feature_label_color }};
+    font-weight: 600;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .ai-comparison-chart__feature-value-{{ ai_gen_id }} {
+    color: {{ block.settings.feature_value_color }};
+    text-align: right;
+    flex-shrink: 0;
+  }
+
+  .ai-comparison-chart__nav-button-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    background-color: {{ block.settings.nav_button_bg_color }};
+    border: 1px solid {{ block.settings.nav_button_border_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-comparison-chart__nav-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.nav_button_hover_bg_color }};
+    border-color: {{ block.settings.nav_button_hover_border_color }};
+  }
+
+  .ai-comparison-chart__nav-button-{{ ai_gen_id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .ai-comparison-chart__nav-button--left-{{ ai_gen_id }} {
+    left: 10px;
+  }
+
+  .ai-comparison-chart__nav-button--right-{{ ai_gen_id }} {
+    right: 10px;
+  }
+
+  .ai-comparison-chart__nav-button-{{ ai_gen_id }} svg {
+    width: 20px;
+    height: 20px;
+    color: {{ block.settings.nav_button_icon_color }};
+  }
+
+  .ai-comparison-chart__nav-button-{{ ai_gen_id }}:hover svg {
+    color: {{ block.settings.nav_button_hover_icon_color }};
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-comparison-chart__column-{{ ai_gen_id }} {
+      flex: 0 0 {{ block.settings.desktop_column_width }}px;
+      padding: {{ block.settings.desktop_column_padding_top }}px {{ block.settings.desktop_column_padding_horizontal }}px {{ block.settings.desktop_column_padding_bottom }}px;
+    }
+
+    .ai-comparison-chart__image-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.desktop_image_height }}px;
+      margin-bottom: {{ block.settings.desktop_image_margin_bottom }}px;
+    }
+
+    .ai-comparison-chart__heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size | times: 1.2 }}px;
+    }
+
+    .ai-comparison-chart__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.desktop_title_size }}px;
+      margin-bottom: {{ block.settings.desktop_title_margin_bottom }}px;
+    }
+
+    .ai-comparison-chart__button-{{ ai_gen_id }} {
+      padding: {{ block.settings.desktop_button_padding_vertical }}px {{ block.settings.desktop_button_padding_horizontal }}px;
+      font-size: {{ block.settings.desktop_button_font_size }}px;
+      margin-bottom: {{ block.settings.desktop_button_margin_bottom }}px;
+      width: {{ block.settings.desktop_button_width }}%;
+    }
+
+    .ai-comparison-chart__grid-{{ ai_gen_id }} {
+      padding: 0 {{ block.settings.desktop_container_padding_horizontal }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-comparison-chart__nav-button-{{ ai_gen_id }} {
+      display: none;
+    }
+  }
+{% endstyle %}
+
+<comparison-chart-{{ ai_gen_id }} class="ai-comparison-chart-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.heading != blank %}
+    <div class="ai-comparison-chart__heading-container-{{ ai_gen_id }}">
+      <h2 class="ai-comparison-chart__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    </div>
+  {% endif %}
+
+  <div class="ai-comparison-chart__wrapper-{{ ai_gen_id }}">
+    <button
+      class="ai-comparison-chart__nav-button-{{ ai_gen_id }} ai-comparison-chart__nav-button--left-{{ ai_gen_id }}"
+      aria-label="Scroll left"
+      data-direction="left"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <button
+      class="ai-comparison-chart__nav-button-{{ ai_gen_id }} ai-comparison-chart__nav-button--right-{{ ai_gen_id }}"
+      aria-label="Scroll right"
+      data-direction="right"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <div class="ai-comparison-chart__container-{{ ai_gen_id }}">
+      <div class="ai-comparison-chart__grid-{{ ai_gen_id }}">
+        {% assign max_columns = block.settings.max_columns | default: 6 %}
+        {% for i in (1..max_columns) %}
+          {% liquid
+            assign image_key = 'column_' | append: i | append: '_image'
+            assign title_key = 'column_' | append: i | append: '_title'
+            assign button_text_key = 'column_' | append: i | append: '_button_text'
+            assign button_url_key = 'column_' | append: i | append: '_button_url'
+            assign features_key = 'column_' | append: i | append: '_features'
+
+            assign image = block.settings[image_key]
+            assign title = block.settings[title_key]
+            assign button_text = block.settings[button_text_key]
+            assign button_url = block.settings[button_url_key]
+            assign features_text = block.settings[features_key]
+            
+            assign has_content = false
+            if image != blank or title != blank or button_text != blank or features_text != blank
+              assign has_content = true
+            endif
+          %}
+
+          {% if has_content or forloop.index <= 4 %}
+            <div class="ai-comparison-chart__column-{{ ai_gen_id }}">
+              <div class="ai-comparison-chart__image-wrapper-{{ ai_gen_id }}">
+                {% if image %}
+                  <img
+                    src="{{ image | image_url: width: 400 }}"
+                    alt="{{ image.alt | escape }}"
+                    class="ai-comparison-chart__image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="400"
+                    height="{{ block.settings.image_height }}"
+                  >
+                {% else %}
+                  <div class="ai-comparison-chart__image-placeholder-{{ ai_gen_id }}">
+                    {{ 'image' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+              </div>
+
+              {% if title != blank %}
+                <h3 class="ai-comparison-chart__title-{{ ai_gen_id }}">{{ title }}</h3>
+              {% endif %}
+
+              {% if button_text != blank %}
+                <a
+                  href="{{ button_url | default: '#' }}"
+                  class="ai-comparison-chart__button-{{ ai_gen_id }}"
+                >
+                  {{ button_text }}
+                </a>
+              {% endif %}
+
+              <div class="ai-comparison-chart__features-{{ ai_gen_id }}">
+                {% if features_text != blank %}
+                  {% assign feature_lines = features_text | newline_to_br | split: '<br />' %}
+                  {% for line in feature_lines %}
+                    {% assign trimmed_line = line | strip %}
+                    {% if trimmed_line != blank %}
+                      {% if trimmed_line contains ':' %}
+                        {% assign parts = trimmed_line | split: ':' %}
+                        {% assign label = parts[0] | strip %}
+                        {% assign value = parts[1] | strip %}
+                        <div class="ai-comparison-chart__feature-row-{{ ai_gen_id }}">
+                          <div class="ai-comparison-chart__feature-label-{{ ai_gen_id }}">{{ label }}</div>
+                          <div class="ai-comparison-chart__feature-value-{{ ai_gen_id }}">{{ value }}</div>
+                        </div>
+                      {% else %}
+                        <div class="ai-comparison-chart__feature-row-{{ ai_gen_id }}">
+                          <div class="ai-comparison-chart__feature-label-{{ ai_gen_id }}">{{ trimmed_line }}</div>
+                        </div>
+                      {% endif %}
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</comparison-chart-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ComparisonChart{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.container = this.querySelector('.ai-comparison-chart__container-{{ ai_gen_id }}');
+        this.leftButton = this.querySelector('.ai-comparison-chart__nav-button--left-{{ ai_gen_id }}');
+        this.rightButton = this.querySelector('.ai-comparison-chart__nav-button--right-{{ ai_gen_id }}');
+        this.scrollAmount = 300;
+      }
+
+      connectedCallback() {
+        this.setupEventListeners();
+        this.updateButtonStates();
+      }
+
+      setupEventListeners() {
+        this.leftButton.addEventListener('click', () => this.scroll('left'));
+        this.rightButton.addEventListener('click', () => this.scroll('right'));
+        this.container.addEventListener('scroll', () => this.updateButtonStates());
+        window.addEventListener('resize', () => this.updateButtonStates());
+      }
+
+      scroll(direction) {
+        const scrollLeft = this.container.scrollLeft;
+        const targetScroll = direction === 'left' 
+          ? scrollLeft - this.scrollAmount 
+          : scrollLeft + this.scrollAmount;
+        
+        this.container.scrollTo({
+          left: targetScroll,
+          behavior: 'smooth'
+        });
+      }
+
+      updateButtonStates() {
+        const scrollLeft = this.container.scrollLeft;
+        const maxScroll = this.container.scrollWidth - this.container.clientWidth;
+        
+        this.leftButton.disabled = scrollLeft <= 0;
+        this.rightButton.disabled = scrollLeft >= maxScroll - 1;
+      }
+    }
+
+    customElements.define('comparison-chart-{{ ai_gen_id }}', ComparisonChart{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Comparison chart",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "General settings"
+    },
+    {
+      "type": "range",
+      "id": "max_columns",
+      "min": 4,
+      "max": 12,
+      "step": 1,
+      "label": "Maximum columns",
+      "default": 6,
+      "info": "Set the maximum number of columns available. Additional columns beyond the default 4 will only show if they have content."
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "container_padding_horizontal",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Container horizontal padding (mobile)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "desktop_container_padding_horizontal",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Container horizontal padding (desktop)",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Compare Products"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "heading_margin_bottom",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Heading bottom margin",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Column dimensions"
+    },
+    {
+      "type": "range",
+      "id": "desktop_column_width",
+      "min": 250,
+      "max": 600,
+      "step": 10,
+      "unit": "px",
+      "label": "Column width (desktop)",
+      "default": 380
+    },
+    {
+      "type": "range",
+      "id": "mobile_column_width",
+      "min": 180,
+      "max": 350,
+      "step": 10,
+      "unit": "px",
+      "label": "Column width (mobile)",
+      "default": 260
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 5,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Column spacing",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Column padding (mobile)"
+    },
+    {
+      "type": "range",
+      "id": "column_padding_top",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "column_padding_bottom",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "column_padding_horizontal",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 25
+    },
+    {
+      "type": "header",
+      "content": "Column padding (desktop)"
+    },
+    {
+      "type": "range",
+      "id": "desktop_column_padding_top",
+      "min": 15,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "desktop_column_padding_bottom",
+      "min": 15,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "desktop_column_padding_horizontal",
+      "min": 15,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Column style"
+    },
+    {
+      "type": "color",
+      "id": "column_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "column_border_color",
+      "label": "Border color",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "range",
+      "id": "column_border_width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "column_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    },
+    {
+      "type": "checkbox",
+      "id": "column_shadow_enabled",
+      "label": "Enable shadow",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Images (mobile)"
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "min": 150,
+      "max": 450,
+      "step": 10,
+      "unit": "px",
+      "label": "Image height",
+      "default": 280
+    },
+    {
+      "type": "range",
+      "id": "image_margin_bottom",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Image bottom margin",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Images (desktop)"
+    },
+    {
+      "type": "range",
+      "id": "desktop_image_height",
+      "min": 200,
+      "max": 600,
+      "step": 25,
+      "unit": "px",
+      "label": "Image height",
+      "default": 350
+    },
+    {
+      "type": "range",
+      "id": "desktop_image_margin_bottom",
+      "min": 15,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Image bottom margin",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Titles (mobile)"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 14,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Title size",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_margin_bottom",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Title bottom margin",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Titles (desktop)"
+    },
+    {
+      "type": "range",
+      "id": "desktop_title_size",
+      "min": 16,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Title size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "desktop_title_margin_bottom",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Title bottom margin",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Buttons (mobile)"
+    },
+    {
+      "type": "range",
+      "id": "button_width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Button width",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "button_padding_vertical",
+      "min": 8,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "button_padding_horizontal",
+      "min": 15,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "button_margin_bottom",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom margin",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Buttons (desktop)"
+    },
+    {
+      "type": "range",
+      "id": "desktop_button_width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Button width",
+      "default": 85
+    },
+    {
+      "type": "range",
+      "id": "desktop_button_padding_vertical",
+      "min": 10,
+      "max": 25,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "desktop_button_padding_horizontal",
+      "min": 20,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Horizontal padding",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "desktop_button_font_size",
+      "min": 14,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "desktop_button_margin_bottom",
+      "min": 15,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Bottom margin",
+      "default": 25
+    },
+    {
+      "type": "header",
+      "content": "Button colors"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Hover background color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Border color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_border_color",
+      "label": "Hover border color",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "button_border_width",
+      "min": 0,
+      "max": 3,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Features"
+    },
+    {
+      "type": "paragraph",
+      "content": "Add features using the format 'Label: Value' on separate lines. Lines without colons will display as single labels."
+    },
+    {
+      "type": "range",
+      "id": "feature_font_size",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "feature_row_spacing",
+      "min": 4,
+      "max": 16,
+      "step": 2,
+      "unit": "px",
+      "label": "Row spacing",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "feature_gap",
+      "min": 5,
+      "max": 20,
+      "step": 5,
+      "unit": "px",
+      "label": "Label-value gap",
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "feature_label_color",
+      "label": "Label color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "feature_value_color",
+      "label": "Value color",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Navigation buttons"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_hover_bg_color",
+      "label": "Hover background color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_border_color",
+      "label": "Border color",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_hover_border_color",
+      "label": "Hover border color",
+      "default": "#cccccc"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_icon_color",
+      "label": "Icon color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "nav_button_hover_icon_color",
+      "label": "Hover icon color",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Mobile scrollbar"
+    },
+    {
+      "type": "color",
+      "id": "scrollbar_color",
+      "label": "Scrollbar color",
+      "default": "#cccccc"
+    },
+    {
+      "type": "header",
+      "content": "Column 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_1_title",
+      "label": "Title",
+      "default": "Product 1"
+    },
+    {
+      "type": "text",
+      "id": "column_1_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_1_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_1_features",
+      "label": "Features",
+      "default": "Quality: Premium\nWarranty: 2 years\nShipping: Free\nSupport: 24/7"
+    },
+    {
+      "type": "header",
+      "content": "Column 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_2_title",
+      "label": "Title",
+      "default": "Product 2"
+    },
+    {
+      "type": "text",
+      "id": "column_2_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_2_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_2_features",
+      "label": "Features",
+      "default": "Quality: Advanced\nWarranty: 3 years\nShipping: Express\nSupport: Priority"
+    },
+    {
+      "type": "header",
+      "content": "Column 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_3_title",
+      "label": "Title",
+      "default": "Product 3"
+    },
+    {
+      "type": "text",
+      "id": "column_3_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_3_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_3_features",
+      "label": "Features",
+      "default": "Quality: Eco-friendly\nWarranty: Lifetime\nShipping: Carbon neutral\nSupport: Expert"
+    },
+    {
+      "type": "header",
+      "content": "Column 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_4_title",
+      "label": "Title",
+      "default": "Product 4"
+    },
+    {
+      "type": "text",
+      "id": "column_4_button_text",
+      "label": "Button text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "column_4_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_4_features",
+      "label": "Features",
+      "default": "Quality: Compact\nWarranty: 1 year\nShipping: Standard\nSupport: Email"
+    },
+    {
+      "type": "header",
+      "content": "Column 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_5_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_5_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "column_5_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "column_5_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_5_features",
+      "label": "Features"
+    },
+    {
+      "type": "header",
+      "content": "Column 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_6_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_6_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "column_6_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "column_6_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_6_features",
+      "label": "Features"
+    },
+    {
+      "type": "header",
+      "content": "Column 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_7_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_7_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "column_7_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "column_7_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_7_features",
+      "label": "Features"
+    },
+    {
+      "type": "header",
+      "content": "Column 8"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_8_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_8_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "column_8_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "column_8_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_8_features",
+      "label": "Features"
+    },
+    {
+      "type": "header",
+      "content": "Column 9"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_9_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_9_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "column_9_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "column_9_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_9_features",
+      "label": "Features"
+    },
+    {
+      "type": "header",
+      "content": "Column 10"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_10_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_10_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "column_10_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "column_10_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_10_features",
+      "label": "Features"
+    },
+    {
+      "type": "header",
+      "content": "Column 11"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_11_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_11_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "column_11_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "column_11_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_11_features",
+      "label": "Features"
+    },
+    {
+      "type": "header",
+      "content": "Column 12"
+    },
+    {
+      "type": "image_picker",
+      "id": "column_12_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "column_12_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "column_12_button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "column_12_button_url",
+      "label": "Button link"
+    },
+    {
+      "type": "textarea",
+      "id": "column_12_features",
+      "label": "Features"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Comparison chart"
+    }
+  ]
+}
+{% endschema %}

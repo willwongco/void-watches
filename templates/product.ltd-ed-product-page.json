@@ -133,6 +133,15 @@
                   },
                   "blocks": {}
                 },
+                "stamped_reviews_star_rating_badge_A6LTtD": {
+                  "type": "shopify://apps/stamped-reviews/blocks/star-rating-badge/a103faaf-2125-4b0e-89fa-de5149736723",
+                  "settings": {
+                    "use_metafields": false,
+                    "sku_tagtype": "handle",
+                    "is_featured_product": false,
+                    "featured_product_handle": ""
+                  }
+                },
                 "price_tVjtKg": {
                   "type": "price",
                   "settings": {
@@ -158,34 +167,28 @@
               },
               "block_order": [
                 "text_xrnftG",
+                "stamped_reviews_star_rating_badge_A6LTtD",
                 "price_tVjtKg"
               ]
             },
-            "ai_gen_block_306cb2b_BxLDVe": {
-              "type": "ai_gen_block_306cb2b",
+            "ai_gen_block_df64e4a_NEjNME": {
+              "type": "ai_gen_block_df64e4a",
               "settings": {
                 "collection": "pkg01",
-                "thumbnail_size": 50,
+                "thumbnail_size": 52,
                 "grid_gap": 10,
-                "container_padding": 10,
-                "border_radius": 0,
-                "border_width": 1,
-                "border_color": "#e6e6e6",
-                "selected_border_width": 1,
-                "selected_border_color": "#000000",
-                "background_color": "#ffffff",
-                "text_color": "#000000",
+                "grid_padding": 0,
+                "container_padding": 0,
+                "grid_border_radius": 0,
+                "item_border_width": 1,
                 "hover_scale": 1.1,
-                "description_min_height": 40,
-                "description_padding": 10,
-                "description_font_size": 14,
-                "description_border_width": 1,
-                "description_bg_color": "#ffffff",
-                "description_text_color": "#000000",
-                "description_border_color": "#ffffff",
-                "show_product_title": true,
-                "placeholder_text": "No description available",
-                "placeholder_text_color": "#666666"
+                "show_overlay": false,
+                "overlay_padding": 8,
+                "overlay_text_size": 12,
+                "background_color": "#ffffff",
+                "grid_background_color": "#ffffff",
+                "item_background_color": "#0000000f",
+                "item_border_color": "#e6e6e6"
               },
               "blocks": {}
             },
@@ -215,6 +218,7 @@
               "blocks": {
                 "quantity": {
                   "type": "quantity",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
@@ -229,12 +233,23 @@
                 },
                 "accelerated-checkout": {
                   "type": "accelerated-checkout",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
                 }
               },
               "block_order": []
+            },
+            "klarna_on_site_messaging_app_block_mdQABp": {
+              "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+              "settings": {
+                "data_key": "credit-promotion-auto-size",
+                "theme": "default",
+                "topPadding": "0",
+                "bottomPadding": "0",
+                "messagePrefix": ""
+              }
             },
             "text_aEtTtq": {
               "type": "text",
@@ -408,9 +423,10 @@
           },
           "block_order": [
             "group_icgrde",
-            "ai_gen_block_306cb2b_BxLDVe",
+            "ai_gen_block_df64e4a_NEjNME",
             "divider_VJhene",
             "buy_buttons_eYQEYi",
+            "klarna_on_site_messaging_app_block_mdQABp",
             "text_aEtTtq",
             "accordion_hFcKk9"
           ]
@@ -768,7 +784,7 @@
                 "label": "Shop Straps",
                 "link": "shopify://collections/18mm-straps",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -784,7 +800,11 @@
           ]
         }
       },
-      "name": "Editorial V03D Straps",
+      "custom_css": [
+        "video::-webkit-media-controls {display: none !important;}",
+        "video::-moz-media-controls {display: none !important;}"
+      ],
+      "name": "Editorial PKG01 Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
@@ -946,6 +966,7 @@
             },
             "button_YcGCQV": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Learn More",
                 "link": "shopify://collections/all",
@@ -966,7 +987,7 @@
           ]
         }
       },
-      "name": "Editorial - V03D",
+      "name": "Editorial - Custom Components",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
@@ -1101,13 +1122,13 @@
                 "manual_link": "https://cdn.shopify.com/s/files/1/0698/5904/9517/files/VOID-Watches-PKG01-Instructions.pdf?v=1756379012",
                 "background_color": "#ffffff",
                 "text_color": "#000000",
-                "border_color": "#000000",
+                "border_color": "#ffffff",
                 "hover_background_color": "#333333",
                 "hover_text_color": "#ffffff",
                 "hover_border_color": "#333333",
-                "font_size": 16,
+                "font_size": 12,
                 "font_weight": "500",
-                "icon_size": 20,
+                "icon_size": 16,
                 "padding_vertical": 12,
                 "padding_horizontal": 20,
                 "border_width": 2,
@@ -1609,6 +1630,54 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "blocks_nptY93": {
+      "type": "_blocks",
+      "blocks": {
+        "stamped_reviews_main_widget_33adQ8": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "handle"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_33adQ8"
+      ],
+      "name": "Review Section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
@@ -1622,6 +1691,7 @@
     "hero_CkRK8x",
     "1756286557466a5e62",
     "product_recommendations_qggXJq",
-    "section_dJxqeg"
+    "section_dJxqeg",
+    "blocks_nptY93"
   ]
 }

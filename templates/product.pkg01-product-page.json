@@ -133,6 +133,15 @@
                   },
                   "blocks": {}
                 },
+                "stamped_reviews_star_rating_badge_igMxPe": {
+                  "type": "shopify://apps/stamped-reviews/blocks/star-rating-badge/a103faaf-2125-4b0e-89fa-de5149736723",
+                  "settings": {
+                    "use_metafields": false,
+                    "sku_tagtype": "handle",
+                    "is_featured_product": false,
+                    "featured_product_handle": ""
+                  }
+                },
                 "price_tVjtKg": {
                   "type": "price",
                   "settings": {
@@ -158,34 +167,28 @@
               },
               "block_order": [
                 "text_xrnftG",
+                "stamped_reviews_star_rating_badge_igMxPe",
                 "price_tVjtKg"
               ]
             },
-            "ai_gen_block_306cb2b_BxLDVe": {
-              "type": "ai_gen_block_306cb2b",
+            "ai_gen_block_df64e4a_h3JpTz": {
+              "type": "ai_gen_block_df64e4a",
               "settings": {
                 "collection": "pkg01",
-                "thumbnail_size": 50,
+                "thumbnail_size": 52,
                 "grid_gap": 10,
-                "container_padding": 10,
-                "border_radius": 0,
-                "border_width": 1,
-                "border_color": "#e6e6e6",
-                "selected_border_width": 1,
-                "selected_border_color": "#000000",
-                "background_color": "#ffffff",
-                "text_color": "#000000",
+                "grid_padding": 0,
+                "container_padding": 0,
+                "grid_border_radius": 0,
+                "item_border_width": 1,
                 "hover_scale": 1.1,
-                "description_min_height": 40,
-                "description_padding": 10,
-                "description_font_size": 14,
-                "description_border_width": 1,
-                "description_bg_color": "#ffffff",
-                "description_text_color": "#000000",
-                "description_border_color": "#ffffff",
-                "show_product_title": true,
-                "placeholder_text": "No description available",
-                "placeholder_text_color": "#666666"
+                "show_overlay": false,
+                "overlay_padding": 8,
+                "overlay_text_size": 12,
+                "background_color": "#ffffff",
+                "grid_background_color": "#ffffff",
+                "item_background_color": "#0000000f",
+                "item_border_color": "#e6e6e6"
               },
               "blocks": {}
             },
@@ -215,6 +218,7 @@
               "blocks": {
                 "quantity": {
                   "type": "quantity",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
@@ -229,12 +233,23 @@
                 },
                 "accelerated-checkout": {
                   "type": "accelerated-checkout",
+                  "disabled": true,
                   "static": true,
                   "settings": {},
                   "blocks": {}
                 }
               },
               "block_order": []
+            },
+            "klarna_on_site_messaging_app_block_6t7MTV": {
+              "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+              "settings": {
+                "data_key": "credit-promotion-auto-size",
+                "theme": "default",
+                "topPadding": "0",
+                "bottomPadding": "0",
+                "messagePrefix": ""
+              }
             },
             "text_aEtTtq": {
               "type": "text",
@@ -408,9 +423,10 @@
           },
           "block_order": [
             "group_icgrde",
-            "ai_gen_block_306cb2b_BxLDVe",
+            "ai_gen_block_df64e4a_h3JpTz",
             "divider_VJhene",
             "buy_buttons_eYQEYi",
+            "klarna_on_site_messaging_app_block_6t7MTV",
             "text_aEtTtq",
             "accordion_hFcKk9"
           ]
@@ -716,7 +732,7 @@
                 "label": "Shop Straps",
                 "link": "shopify://collections/18mm-straps",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -732,6 +748,10 @@
           ]
         }
       },
+      "custom_css": [
+        "video::-webkit-media-controls {display: none !important;}",
+        "video::-moz-media-controls {display: none !important;}"
+      ],
       "name": "Editorial PKG01 Straps",
       "settings": {
         "media_position": "left",
@@ -741,6 +761,190 @@
         "extend_media": true,
         "color_scheme": "scheme-2",
         "padding-block-start": 20,
+        "padding-block-end": 0
+      }
+    },
+    "media_with_content_wRzYJH": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/VOID-Watches-V03D-Components-2000x1333.jpg",
+            "link": "",
+            "video_loop": true,
+            "video_autoplay": false,
+            "image_position": "cover",
+            "video_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 24
+          },
+          "blocks": {
+            "text_Ef3AEf": {
+              "type": "text",
+              "name": "t:names.caption",
+              "disabled": true,
+              "settings": {
+                "text": "<p>Bestseller</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "group_HQYrET": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "placeholder": "",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_YhJjHH": {
+                  "type": "text",
+                  "name": "t:names.heading",
+                  "settings": {
+                    "text": "<h2>All Custom Components</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_cgiBDP": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
+                    "width": "fit-content",
+                    "max_width": "narrow",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_YhJjHH",
+                "text_cgiBDP"
+              ]
+            },
+            "button_BV9NUj": {
+              "type": "button",
+              "disabled": true,
+              "settings": {
+                "label": "Shop now",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_Ef3AEf",
+            "group_HQYrET",
+            "button_BV9NUj"
+          ]
+        }
+      },
+      "name": "t:names.editorial",
+      "settings": {
+        "media_position": "right",
+        "media_width": "medium",
+        "media_height": "60svh",
+        "section_width": "full-width",
+        "extend_media": true,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 0,
         "padding-block-end": 0
       }
     },
@@ -767,12 +971,13 @@
           "settings": {
             "horizontal_alignment_flex_direction_column": "center",
             "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 24
+            "gap": 0
           },
           "blocks": {
             "text_z666KE": {
               "type": "text",
               "name": "t:names.caption",
+              "disabled": true,
               "settings": {
                 "text": "<p>Attention to Detail</p>",
                 "width": "fit-content",
@@ -854,7 +1059,7 @@
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
-                    "padding-block-start": 0,
+                    "padding-block-start": 60,
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
@@ -894,6 +1099,7 @@
             },
             "button_YcGCQV": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Learn More",
                 "link": "shopify://collections/all",
@@ -914,7 +1120,8 @@
           ]
         }
       },
-      "name": "Editorial - V03D",
+      "disabled": true,
+      "name": "Editorial - Custom Components",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
@@ -1049,13 +1256,13 @@
                 "manual_link": "https://cdn.shopify.com/s/files/1/0698/5904/9517/files/VOID-Watches-PKG01-Instructions.pdf?v=1756379012",
                 "background_color": "#ffffff",
                 "text_color": "#000000",
-                "border_color": "#000000",
+                "border_color": "#ffffff",
                 "hover_background_color": "#333333",
                 "hover_text_color": "#ffffff",
                 "hover_border_color": "#333333",
-                "font_size": 16,
+                "font_size": 12,
                 "font_weight": "500",
-                "icon_size": 20,
+                "icon_size": 16,
                 "padding_vertical": 12,
                 "padding_horizontal": 20,
                 "border_width": 2,
@@ -1149,15 +1356,247 @@
         "padding-block-end": 40
       }
     },
+    "blocks_L4Fyeq": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_48b98fa_dNJGB9": {
+          "type": "ai_gen_block_48b98fa",
+          "settings": {
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "padding_left": 20,
+            "padding_right": 20,
+            "heading": "Compare Our Collections",
+            "columns_count": 6,
+            "column_width": 260,
+            "column_gap": 15,
+            "show_chevrons": true,
+            "chevron_style": "outline",
+            "chevron_size": 40,
+            "chevron_icon_size": 16,
+            "chevron_bg_color": "#ffffff",
+            "chevron_border_color": "#e6e6e6",
+            "chevron_border_width": 1,
+            "chevron_icon_color": "#000000",
+            "chevron_hover_bg_color": "#f5f5f5",
+            "chevron_hover_border_color": "#cccccc",
+            "chevron_hover_icon_color": "#333333",
+            "heading_size": 28,
+            "heading_color": "#000000",
+            "heading_padding_top": 0,
+            "heading_padding_bottom": 20,
+            "heading_padding_left": 0,
+            "heading_padding_right": 0,
+            "column_bg_color": "#ffffff",
+            "column_border_color": "#e6e6e6",
+            "column_border_width": 1,
+            "column_border_radius": 0,
+            "column_padding": 10,
+            "image_border_radius": 0,
+            "title_size": 18,
+            "title_color": "#000000",
+            "button_width": 100,
+            "button_text_size": 14,
+            "button_bg_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_border_width": 1,
+            "button_border_radius": 0,
+            "button_hover_bg_color": "#333333",
+            "button_hover_text_color": "#ffffff",
+            "button_hover_border_color": "#333333",
+            "feature_gap": 5,
+            "feature_padding": 5,
+            "feature_bg_color": "#ffffff",
+            "feature_border_color": "#e6e6e6",
+            "feature_border_width": 1,
+            "feature_border_radius": 0,
+            "feature_label_size_desktop": 12,
+            "feature_label_size_mobile": 10,
+            "feature_label_color": "#666666",
+            "feature_value_size_desktop": 12,
+            "feature_value_size_mobile": 10,
+            "feature_value_color": "#000000",
+            "scrollbar_color": "#cccccc",
+            "column_1_enabled": true,
+            "column_1_image": "shopify://shop_images/VOID-Watches-Compare-PKG01-250x350.jpg",
+            "column_1_title": "PKG01",
+            "column_1_button_text": "View Collection",
+            "column_1_button_url": "shopify://collections/pkg01",
+            "column_1_feature_1_label": "Size",
+            "column_1_feature_1_value": "Ø38mm",
+            "column_1_feature_2_label": "Strap Width",
+            "column_1_feature_2_value": "18mm",
+            "column_1_feature_3_label": "Movement",
+            "column_1_feature_3_value": "Analogue Quartz",
+            "column_1_feature_4_label": "Functions",
+            "column_1_feature_4_value": "Time / Date",
+            "column_1_feature_5_label": "Case Material",
+            "column_1_feature_5_value": "Stainless Steel",
+            "column_1_feature_6_label": "Warranty",
+            "column_1_feature_6_value": "2 Years",
+            "column_2_enabled": true,
+            "column_2_image": "shopify://shop_images/VOID-Watches-Compare-V03D-250x350.jpg",
+            "column_2_title": "V03D",
+            "column_2_button_text": "View Collection",
+            "column_2_button_url": "shopify://collections/v03d",
+            "column_2_feature_1_label": "Size",
+            "column_2_feature_1_value": "Ø38mm",
+            "column_2_feature_2_label": "Strap Width",
+            "column_2_feature_2_value": "18mm",
+            "column_2_feature_3_label": "Movement",
+            "column_2_feature_3_value": "Analogue Quartz",
+            "column_2_feature_4_label": "Functions",
+            "column_2_feature_4_value": "Time / Date",
+            "column_2_feature_5_label": "Case Material",
+            "column_2_feature_5_value": "Stainless Steel",
+            "column_2_feature_6_label": "Warranty",
+            "column_2_feature_6_value": "2 Years",
+            "column_3_enabled": true,
+            "column_3_image": "shopify://shop_images/VOID-Watches-Compare-V03P-250x350.jpg",
+            "column_3_title": "V03P",
+            "column_3_button_text": "View Collection",
+            "column_3_button_url": "shopify://collections/v03p",
+            "column_3_feature_1_label": "Size",
+            "column_3_feature_1_value": "Ø28mm",
+            "column_3_feature_2_label": "Strap Width",
+            "column_3_feature_2_value": "14mm",
+            "column_3_feature_3_label": "Movement",
+            "column_3_feature_3_value": "Analogue Quartz",
+            "column_3_feature_4_label": "Functions",
+            "column_3_feature_4_value": "Time",
+            "column_3_feature_5_label": "Case Material",
+            "column_3_feature_5_value": "Stainless Steel",
+            "column_3_feature_6_label": "Warranty",
+            "column_3_feature_6_value": "2 Years",
+            "column_4_enabled": true,
+            "column_4_image": "shopify://shop_images/VOID-Watches-Compare-V01MKII-250x350.jpg",
+            "column_4_title": "V01MKII",
+            "column_4_button_text": "View Collection",
+            "column_4_button_url": "shopify://collections/v01mkii",
+            "column_4_feature_1_label": "Size",
+            "column_4_feature_1_value": "36x42mm",
+            "column_4_feature_2_label": "Strap Width",
+            "column_4_feature_2_value": "22mm",
+            "column_4_feature_3_label": "Movement",
+            "column_4_feature_3_value": "Digital LCD",
+            "column_4_feature_4_label": "Functions",
+            "column_4_feature_4_value": "Time/Date/Light",
+            "column_4_feature_5_label": "Case Material",
+            "column_4_feature_5_value": "Stainless Steel",
+            "column_4_feature_6_label": "Warranty",
+            "column_4_feature_6_value": "2 Years",
+            "column_5_enabled": true,
+            "column_5_image": "shopify://shop_images/VOID-Watches-Compare-V02MKII-250x350.jpg",
+            "column_5_title": "V02MKII",
+            "column_5_button_text": "View Collection",
+            "column_5_button_url": "shopify://collections/v02mkii",
+            "column_5_feature_1_label": "Size",
+            "column_5_feature_1_value": "36x42mm",
+            "column_5_feature_2_label": "Strap Width",
+            "column_5_feature_2_value": "22mm",
+            "column_5_feature_3_label": "Movement",
+            "column_5_feature_3_value": "Analogue Quartz",
+            "column_5_feature_4_label": "Functions",
+            "column_5_feature_4_value": "Time",
+            "column_5_feature_5_label": "Case Material",
+            "column_5_feature_5_value": "Stainless Steel",
+            "column_5_feature_6_label": "Warranty",
+            "column_5_feature_6_value": "2 Years",
+            "column_6_enabled": true,
+            "column_6_image": "shopify://shop_images/VOID-Watches-Compare-PXR5-250x350.jpg",
+            "column_6_title": "PXR5",
+            "column_6_button_text": "View Collection",
+            "column_6_button_url": "shopify://collections/pxr5",
+            "column_6_feature_1_label": "Size",
+            "column_6_feature_1_value": "36x45",
+            "column_6_feature_2_label": "Strap Width",
+            "column_6_feature_2_value": "25mm",
+            "column_6_feature_3_label": "Movement",
+            "column_6_feature_3_value": "Digital LCD",
+            "column_6_feature_4_label": "Functions",
+            "column_6_feature_4_value": "Time/Date/Light",
+            "column_6_feature_5_label": "Case Material",
+            "column_6_feature_5_value": "Stainless Steel",
+            "column_6_feature_6_label": "Warranty",
+            "column_6_feature_6_value": "2 Years",
+            "column_7_enabled": false,
+            "column_7_title": "Product 7",
+            "column_7_button_text": "View Product",
+            "column_7_button_url": "",
+            "column_7_feature_1_label": "",
+            "column_7_feature_1_value": "",
+            "column_7_feature_2_label": "",
+            "column_7_feature_2_value": "",
+            "column_7_feature_3_label": "",
+            "column_7_feature_3_value": "",
+            "column_7_feature_4_label": "",
+            "column_7_feature_4_value": "",
+            "column_7_feature_5_label": "",
+            "column_7_feature_5_value": "",
+            "column_7_feature_6_label": "",
+            "column_7_feature_6_value": "",
+            "column_8_enabled": false,
+            "column_8_title": "Product 8",
+            "column_8_button_text": "View Product",
+            "column_8_button_url": "",
+            "column_8_feature_1_label": "",
+            "column_8_feature_1_value": "",
+            "column_8_feature_2_label": "",
+            "column_8_feature_2_value": "",
+            "column_8_feature_3_label": "",
+            "column_8_feature_3_value": "",
+            "column_8_feature_4_label": "",
+            "column_8_feature_4_value": "",
+            "column_8_feature_5_label": "",
+            "column_8_feature_5_value": "",
+            "column_8_feature_6_label": "",
+            "column_8_feature_6_value": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_48b98fa_dNJGB9"
+      ],
+      "name": "Comparison Chart",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "1756286557466a5e62": {
       "type": "_blocks",
       "blocks": {
         "ai_gen_block_3e9d852_xH7BKQ": {
           "type": "ai_gen_block_3e9d852",
           "settings": {
-            "section_padding": 60,
-            "grid_gap": 40,
-            "mobile_gap": 15,
+            "section_padding": 25,
+            "grid_gap": 20,
+            "mobile_gap": 10,
             "heading": "Unisex - One Size Fits All",
             "text": "The PKG01 is designed to fit both men and women. 38mm in diameter and only 7mm thick it's just the right size for most wrists.",
             "image_1": "shopify://shop_images/VOID-Watches-PKG01-SIBLWH-Him-2000x2000.jpg",
@@ -1170,10 +1609,10 @@
             "heading_size": 36,
             "text_size": 16,
             "heading_margin": 20,
-            "text_padding": 20,
+            "text_padding": 15,
             "mobile_heading_size": 22,
             "mobile_text_size": 14,
-            "mobile_text_padding": 15
+            "mobile_text_padding": 5
           },
           "blocks": {}
         }
@@ -1181,6 +1620,7 @@
       "block_order": [
         "ai_gen_block_3e9d852_xH7BKQ"
       ],
+      "name": "Unisex - PKG01",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1557,18 +1997,69 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "blocks_iqkHpg": {
+      "type": "_blocks",
+      "blocks": {
+        "stamped_reviews_main_widget_EmDwqH": {
+          "type": "shopify://apps/stamped-reviews/blocks/main-widget/a103faaf-2125-4b0e-89fa-de5149736723",
+          "settings": {
+            "animation": true,
+            "tags_exclude": "",
+            "tags_include": "",
+            "search": "",
+            "linkify": true,
+            "use_metafields": false,
+            "sku_tagtype": "handle"
+          }
+        }
+      },
+      "block_order": [
+        "stamped_reviews_main_widget_EmDwqH"
+      ],
+      "name": "Review Section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
     "main",
     "marquee_qFtLAt",
     "media_with_content_pabj4W",
+    "media_with_content_wRzYJH",
     "media_with_content_ME7Gpr",
     "section_J9XNjK",
     "divider_PjPbrQ",
     "hero_CkRK8x",
+    "blocks_L4Fyeq",
     "1756286557466a5e62",
     "product_recommendations_qggXJq",
-    "section_c3mftC"
+    "section_c3mftC",
+    "blocks_iqkHpg"
   ]
 }
