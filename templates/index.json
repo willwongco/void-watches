@@ -703,7 +703,7 @@
         "gap": 12,
         "color_scheme": "",
         "padding-block-start": 27,
-        "padding-block-end": 20
+        "padding-block-end": 14
       }
     },
     "175706344114f7ecfb": {
@@ -777,6 +777,187 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
+      }
+    },
+    "section_kAXyrR": {
+      "type": "section",
+      "blocks": {
+        "text_bqYzL8": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h4>AS SEEN IN</h4>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_bqYzL8"
+      ],
+      "name": "As Seen In",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "custom",
+        "section_height_custom": 0,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 29,
+        "padding-block-end": 0
+      }
+    },
+    "marquee_cHX9kt": {
+      "type": "marquee",
+      "blocks": {
+        "icon_NhYDNQ": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/GQ-Marquee_afbd2e50-3867-4468-a94a-9b947da89550.jpg",
+            "width": 114,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "icon_BxK3jQ": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Aesthetica-Marquee.jpg",
+            "width": 138,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "icon_E6MxeM": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/DesignMilk-Marquee_4fe8f924-e6b3-4c96-924b-4dd81a5f15f7.jpg",
+            "width": 142,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "icon_dzndK8": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Dezeen-Marquee_fd006d6e-ea5f-44bd-b70d-20573106023a.jpg",
+            "width": 140,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "icon_fg4qUa": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Elle-Marquee.jpg",
+            "width": 142,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "icon_4fqWdb": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Hypebeast-Marquee.jpg",
+            "width": 148,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "icon_pwhqMW": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Numero-Marquee.jpg",
+            "width": 136,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
+        "icon_g3RaR7": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/Worn-Wound-Marquee.jpg",
+            "width": 150,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "icon_NhYDNQ",
+        "icon_BxK3jQ",
+        "icon_E6MxeM",
+        "icon_dzndK8",
+        "icon_fg4qUa",
+        "icon_4fqWdb",
+        "icon_pwhqMW",
+        "icon_g3RaR7"
+      ],
+      "name": "Marquee - Press Logos",
+      "settings": {
+        "movement_direction": "reverse",
+        "color_scheme": "",
+        "padding-block-start": 10,
+        "padding-block-end": 14,
+        "gap_between_elements": 46
       }
     },
     "section_RB6RVF": {
@@ -947,187 +1128,6 @@
         "gradient_direction": "to top",
         "padding-block-start": 40,
         "padding-block-end": 40
-      }
-    },
-    "section_kAXyrR": {
-      "type": "section",
-      "blocks": {
-        "text_bqYzL8": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<h4>AS SEEN IN</h4>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_bqYzL8"
-      ],
-      "name": "As Seen In",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
-        "section_width": "page-width",
-        "section_height": "custom",
-        "section_height_custom": 0,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 29,
-        "padding-block-end": 6
-      }
-    },
-    "marquee_cHX9kt": {
-      "type": "marquee",
-      "blocks": {
-        "icon_NhYDNQ": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "price_tag",
-            "image_upload": "shopify://shop_images/GQ-Marquee_afbd2e50-3867-4468-a94a-9b947da89550.jpg",
-            "width": 114,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "icon_BxK3jQ": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "price_tag",
-            "image_upload": "shopify://shop_images/Aesthetica-Marquee.jpg",
-            "width": 138,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "icon_E6MxeM": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "price_tag",
-            "image_upload": "shopify://shop_images/DesignMilk-Marquee_4fe8f924-e6b3-4c96-924b-4dd81a5f15f7.jpg",
-            "width": 142,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "icon_dzndK8": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "price_tag",
-            "image_upload": "shopify://shop_images/Dezeen-Marquee_fd006d6e-ea5f-44bd-b70d-20573106023a.jpg",
-            "width": 140,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "icon_fg4qUa": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "price_tag",
-            "image_upload": "shopify://shop_images/Elle-Marquee.jpg",
-            "width": 142,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "icon_4fqWdb": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "price_tag",
-            "image_upload": "shopify://shop_images/Hypebeast-Marquee.jpg",
-            "width": 148,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "icon_pwhqMW": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "price_tag",
-            "image_upload": "shopify://shop_images/Numero-Marquee.jpg",
-            "width": 136,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "icon_g3RaR7": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "price_tag",
-            "image_upload": "shopify://shop_images/Worn-Wound-Marquee.jpg",
-            "width": 150,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "icon_NhYDNQ",
-        "icon_BxK3jQ",
-        "icon_E6MxeM",
-        "icon_dzndK8",
-        "icon_fg4qUa",
-        "icon_4fqWdb",
-        "icon_pwhqMW",
-        "icon_g3RaR7"
-      ],
-      "name": "Marquee - Press Logos",
-      "settings": {
-        "movement_direction": "reverse",
-        "color_scheme": "",
-        "padding-block-start": 10,
-        "padding-block-end": 24,
-        "gap_between_elements": 46
       }
     },
     "section_3Y6kTR": {
@@ -2090,9 +2090,9 @@
     "divider_pAJwfq",
     "collection_list_fgDPjN",
     "175706344114f7ecfb",
-    "section_RB6RVF",
     "section_kAXyrR",
     "marquee_cHX9kt",
+    "section_RB6RVF",
     "section_3Y6kTR",
     "product_list_fa6P9H",
     "section_9XpMrT",
