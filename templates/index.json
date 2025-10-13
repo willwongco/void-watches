@@ -928,6 +928,18 @@
           },
           "blocks": {}
         },
+        "icon_HFin6q": {
+          "type": "icon",
+          "name": "t:names.icon",
+          "settings": {
+            "icon": "price_tag",
+            "image_upload": "shopify://shop_images/TEDDY-Marquee.png",
+            "width": 114,
+            "link": "",
+            "open_in_new_tab": false
+          },
+          "blocks": {}
+        },
         "icon_g3RaR7": {
           "type": "icon",
           "name": "t:names.icon",
@@ -949,6 +961,7 @@
         "icon_fg4qUa",
         "icon_4fqWdb",
         "icon_pwhqMW",
+        "icon_HFin6q",
         "icon_g3RaR7"
       ],
       "name": "Marquee - Press Logos",
