@@ -1,14 +1,12 @@
-{%- doc -%}
-  Renders sale badges for the product card.
+{%- comment -%}
+  Robust product card badges for Horizon:
+  - Tries multiple variant fallbacks (selected_or_first_available_variant, first_available_variant, variants.first)
+  - Shows "XX% Off" when a valid discount (>0) is found
+  - Shows "Sold out" in top-right as a fallback when product.available == false
+  - Set DEBUG to true to display diagnostic values on the card (for testing only)
+{%- endcomment -%}
 
-  Note: Sold-out products are handled by Horizon overlays and are not displayed in this snippet.
-
-  @param {object} product - The product object.
-  @param {object} settings - The theme settings object.
-
-  @example
-  {% render 'product-card-badges', product: product, settings: settings %}
-{%- enddoc -%}
+{%- assign DEBUG = false -%} {%- comment -%} set to true to debug values on the storefront {%- endcomment -%}
 
 <div
   class="product-badges product-badges--{{ settings.badge_position }}"
@@ -19,54 +17,73 @@
     --badge-text-transform: {{ settings.badge_text_transform }};
   "
 >
-  {%- assign variant = product.selected_or_first_available_variant -%}
+  {%- comment -%} Resolve a usable variant object (try several fallbacks) {%- endcomment -%}
+  {%- assign variant = nil -%}
+  {%- if product.selected_or_first_available_variant %}
+    {%- assign variant = product.selected_or_first_available_variant -%}
+  {%- endif -%}
+  {%- if variant == nil and product.first_available_variant %}
+    {%- assign variant = product.first_available_variant -%}
+  {%- endif -%}
+  {%- if variant == nil and product.variants and product.variants.size > 0 %}
+    {%- assign variant = product.variants.first -%}
+  {%- endif -%}
 
-  {%- if variant.compare_at_price and variant.compare_at_price > variant.price -%}
-    {%- assign price_diff = variant.compare_at_price | minus: variant.price -%}
-    {%- assign discount = price_diff | divided_by: variant.compare_at_price | times: 100 -%}
-    {%- if discount > 0 -%}
-      <div
-        class="
-          product-badges__badge product-badges__badge--rectangle
-          color-{{ settings.badge_sale_color_scheme }}
-        "
-      >
-        {{ discount | round }}% Off
-      </div>
+  {%- comment -%} Prepare flags and values safely (no parentheses in filter chains) {%- endcomment -%}
+  {%- assign show_sale = false -%}
+  {%- assign sale_text = '' -%}
+  {%- assign show_soldout = false -%}
+
+  {%- if variant %}
+    {%- if variant.compare_at_price and variant.compare_at_price > variant.price -%}
+      {%- assign price_diff = variant.compare_at_price | minus: variant.price -%}
+      {%- assign discount = price_diff | divided_by: variant.compare_at_price | times: 100 -%}
+      {%- if discount > 0 -%}
+        {%- assign show_sale = true -%}
+        {%- assign sale_text = discount | round | append: '% Off' -%}
+      {%- endif -%}
     {%- endif -%}
+  {%- endif -%}
+
+  {%- if product.available == false -%}
+    {%- assign show_soldout = true -%}
+  {%- endif -%}
+
+  {%- comment -%} Render badges: sale preferred; if none, show sold-out fallback if product unavailable {%- endcomment -%}
+  {%- if show_sale -%}
+    <div
+      class="product-badges__badge product-badges__badge--rectangle color-{{ settings.badge_sale_color_scheme }}"
+    >
+      {{ sale_text }}
+    </div>
+
+  {%- elsif show_soldout -%}
+    <div
+      class="product-badges__badge product-badges__badge--rectangle color-{{ settings.badge_sold_out_color_scheme }}"
+      aria-hidden="true"
+    >
+      {{ 'content.product_badge_sold_out' | t }}
+    </div>
+  {%- endif -%}
+
+  {%- if DEBUG == true -%}
+    {%- comment -%} Small debug overlay (visible while testing) {%- endcomment -%}
+    <div style="position:absolute; left:0; bottom:0; background:rgba(0,0,0,0.7); color:#fff; font-size:11px; padding:6px; z-index:9999;">
+      <div>product.available: {{ product.available }}</div>
+      <div>product.compare_at_price_max: {{ product.compare_at_price_max }}</div>
+      <div>product.price: {{ product.price }}</div>
+      <div>variant present: {{ variant != nil }}</div>
+      {% if variant %}
+        <div>variant.id: {{ variant.id }}</div>
+        <div>variant.price: {{ variant.price }}</div>
+        <div>variant.compare_at_price: {{ variant.compare_at_price }}</div>
+      {% endif %}
+    </div>
   {%- endif -%}
 </div>
 
 {% stylesheet %}
-  .product-badges {
-    --badge-inset: max(var(--padding-xs), calc((var(--border-radius) + var(--padding-xs)) * (1 - cos(45deg))));
-    position: absolute;
-    z-index: var(--layer-flat);
-  }
-
-  .product-badges--top-right {
-    top: calc(var(--badge-inset) + var(--padding-block-start));
-    right: calc(var(--badge-inset) + var(--padding-inline-start));
-  }
-
-  .product-badges__badge {
-    --badge-font-size: var(--font-size--xs);
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: var(--color-foreground);
-    background: var(--color-background);
-    font-size: var(--badge-font-size);
-    font-family: var(--badge-font-family);
-    font-weight: var(--badge-font-weight);
-    text-transform: var(--badge-text-transform);
-    border-radius: var(--badge-border-radius);
-  }
-
-  .product-badges__badge--rectangle {
-    padding-block: var(--badge-rectangle-padding-block);
-    padding-inline: var(--badge-rectangle-padding-inline);
-  }
+  .product-badges { position:absolute; z-index:var(--layer-flat); }
+  .product-badges--top-right { top: calc(var(--padding-xs)); right: calc(var(--padding-xs)); }
+  .product-badges__badge { display:flex; align-items:center; justify-content:center; padding:0.25rem 0.5rem; border-radius:0.5rem; font-weight:600; font-size:0.85rem; color:var(--color-foreground); background:var(--color-background); }
 {% endstylesheet %}
