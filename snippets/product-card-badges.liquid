@@ -1,21 +1,19 @@
 <div class="product-badges product-badges--top-right">
-  {%- comment -%} Existing metafield / sale / sold-out badge {%- endcomment -%}
   {%- if product.metafields.custom.sale_percentage != blank -%}
-    <div class="product-badges__badge">
+    <div class="product-badges__badge product-badges__badge--rectangle">
       {{ product.metafields.custom.sale_percentage }}
     </div>
   {%- elsif product.available == false -%}
-    <div class="product-badges__badge">
+    <div class="product-badges__badge product-badges__badge--rectangle">
       {{ 'content.product_badge_sold_out' | t }}
     </div>
   {%- elsif product.compare_at_price > product.price -%}
-    <div class="product-badges__badge">
+    <div class="product-badges__badge product-badges__badge--rectangle">
       {{ 'content.product_badge_sale' | t }}
     </div>
   {%- endif -%}
 </div>
 
-{%- comment -%} Top-left “Only X Left” badge with original Horizon styling {%- endcomment -%}
 {%- assign variant = product.selected_or_first_available_variant -%}
 {%- if variant.available and variant.inventory_quantity <= 5 and variant.inventory_quantity > 0 -%}
   <div class="product-badges product-badges--top-left">
@@ -32,12 +30,12 @@
 }
 
 .product-badges--top-right {
-  top: 8px;
+  top: 12px; /* more padding from top edge */
   right: 8px;
 }
 
 .product-badges--top-left {
-  top: 8px;
+  top: 12px; /* more padding from top edge */
   left: 8px;
 }
 
@@ -57,6 +55,6 @@
 
 .product-badges__badge--rectangle {
   padding-block: var(--badge-rectangle-padding-block);
-  padding-inline: var(--badge-rectangle-padding-inline);
+  padding-inline: calc(var(--badge-rectangle-padding-inline) * 1.5); /* increase horizontal padding */
 }
 {% endstylesheet %}
