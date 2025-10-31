@@ -4,11 +4,6 @@
     <div class="product-badges__badge">
       {{ sale_badge }}
     </div>
-  {%- elsif product.compare_at_price_max and product.compare_at_price_max > product.price -%}
-    {%- comment -%} Optional default badge if metafield is empty but product is on sale {%- endcomment -%}
-    <div class="product-badges__badge">
-      On Sale
-    </div>
   {%- endif -%}
 </div>
 
