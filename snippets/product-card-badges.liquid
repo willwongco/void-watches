@@ -14,7 +14,8 @@
     {%- assign show_badge = true -%}
     {%- assign badge_text = 'content.product_badge_sold_out' | t -%}
   {%- elsif product.compare_at_price and product.compare_at_price > product.price -%}
-    {%- assign discount = (product.compare_at_price | minus: product.price) | divided_by: product.compare_at_price | times: 100 -%}
+    {%- assign price_diff = product.compare_at_price | minus: product.price -%}
+    {%- assign discount = price_diff | divided_by: product.compare_at_price | times: 100 -%}
     {%- if discount > 0 -%}
       {%- assign show_badge = true -%}
       {%- assign badge_text = discount | round | append: '% Off' -%}
