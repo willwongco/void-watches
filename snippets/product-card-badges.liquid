@@ -17,11 +17,11 @@
   {%- endif -%}
 </div>
 
-{%- comment -%} Top-left badge: Low-stock badge (transparent background, simplified text) {%- endcomment -%}
+{%- comment -%} Top-left badge: Low-stock badge (transparent background) {%- endcomment -%}
 {%- if variant.available and variant.inventory_quantity <= 5 and variant.inventory_quantity > 0 -%}
   <div class="product-badges product-badges--top-left">
     <div class="product-badges__badge product-badges__badge--rectangle product-badges__badge--transparent">
-      {{ variant.inventory_quantity }} LEFT
+      ONLY {{ variant.inventory_quantity }} LEFT
     </div>
   </div>
 {%- endif -%}
@@ -65,5 +65,12 @@
 .product-badges__badge--transparent {
   background: transparent;
   color: var(--color-foreground); /* keeps text visible */
+}
+
+/* Make ONLY X LEFT smaller on mobile */
+@media screen and (max-width: 480px) {
+  .product-badges--top-left .product-badges__badge {
+    font-size: 0.7rem; /* smaller text for mobile */
+  }
 }
 {% endstylesheet %}
