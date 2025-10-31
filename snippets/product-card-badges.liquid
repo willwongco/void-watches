@@ -1,3 +1,15 @@
+{%- doc -%}
+  Renders sale badges for the product card.
+
+  Note: Sold-out products are handled by Horizon overlays and are not displayed in this snippet.
+
+  @param {object} product - The product object.
+  @param {object} settings - The theme settings object.
+
+  @example
+  {% render 'product-card-badges', product: product, settings: settings %}
+{%- enddoc -%}
+
 <div
   class="product-badges product-badges--{{ settings.badge_position }}"
   style="
@@ -7,9 +19,11 @@
     --badge-text-transform: {{ settings.badge_text_transform }};
   "
 >
-  {%- if product.available and product.compare_at_price_max and product.compare_at_price_max > product.price -%}
-    {%- assign price_diff = product.compare_at_price_max | minus: product.price -%}
-    {%- assign discount = price_diff | divided_by: product.compare_at_price_max | times: 100 -%}
+  {%- assign variant = product.selected_or_first_available_variant -%}
+
+  {%- if variant.compare_at_price and variant.compare_at_price > variant.price -%}
+    {%- assign price_diff = variant.compare_at_price | minus: variant.price -%}
+    {%- assign discount = price_diff | divided_by: variant.compare_at_price | times: 100 -%}
     {%- if discount > 0 -%}
       <div
         class="
@@ -22,3 +36,37 @@
     {%- endif -%}
   {%- endif -%}
 </div>
+
+{% stylesheet %}
+  .product-badges {
+    --badge-inset: max(var(--padding-xs), calc((var(--border-radius) + var(--padding-xs)) * (1 - cos(45deg))));
+    position: absolute;
+    z-index: var(--layer-flat);
+  }
+
+  .product-badges--top-right {
+    top: calc(var(--badge-inset) + var(--padding-block-start));
+    right: calc(var(--badge-inset) + var(--padding-inline-start));
+  }
+
+  .product-badges__badge {
+    --badge-font-size: var(--font-size--xs);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-foreground);
+    background: var(--color-background);
+    font-size: var(--badge-font-size);
+    font-family: var(--badge-font-family);
+    font-weight: var(--badge-font-weight);
+    text-transform: var(--badge-text-transform);
+    border-radius: var(--badge-border-radius);
+  }
+
+  .product-badges__badge--rectangle {
+    padding-block: var(--badge-rectangle-padding-block);
+    padding-inline: var(--badge-rectangle-padding-inline);
+  }
+{% endstylesheet %}
