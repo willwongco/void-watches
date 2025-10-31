@@ -1,3 +1,12 @@
+<pre style="position:absolute; top:0; left:0; z-index:9999; background:#fff; color:#000; font-size:12px;">
+product.available: {{ product.available }}
+product.price: {{ product.price }}
+product.compare_at_price_max: {{ product.compare_at_price_max }}
+variants: {{ product.variants | size }}
+{% assign v = product.selected_or_first_available_variant %}
+variant.price: {% if v %}{{ v.price }}{% else %}nil{% endif %}
+variant.compare_at_price: {% if v %}{{ v.compare_at_price }}{% else %}nil{% endif %}
+</pre>
 {%- comment -%}
   Horizon product card badges:
   - Sale badge shows XX% Off using product.compare_at_price_max
