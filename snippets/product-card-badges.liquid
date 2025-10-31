@@ -44,7 +44,7 @@
 
 .product-badges__badge {
   display: flex;
-  align-items: center;
+  align-items: center; /* vertical centering */
   justify-content: center;
   text-align: center;
   color: var(--color-foreground);
@@ -70,14 +70,14 @@
 /* Mobile adjustments */
 @media screen and (max-width: 480px) {
   .product-badges--top-left {
-    top: 8px;   /* same as left for equal spacing */
-    left: 8px;
+    top: 12px;   /* increased top offset to account for internal padding and flex centering */
+    left: 8px;   /* same left offset */
   }
 
   .product-badges--top-left .product-badges__badge {
     font-size: 0.7rem;  
-    padding-block: 0px;  /* remove vertical padding to align with top edge */
-    padding-inline: 6px; /* horizontal padding */
+    padding-block: 2px; /* smaller vertical padding for compact look */
+    padding-inline: 6px;
   }
 }
 {% endstylesheet %}
