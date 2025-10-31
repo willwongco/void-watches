@@ -577,17 +577,6 @@
         "gap_between_elements": 11
       }
     },
-    "custom_liquid_KYxCiC": {
-      "type": "custom-liquid",
-      "name": "t:names.custom_liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"autoplay-video\">\n  <video \n    autoplay \n    muted \n    loop \n    playsinline \n    webkit-playsinline\n    controlslist=\"nodownload nofullscreen noremoteplayback\"\n    disablePictureInPicture\n  >\n    <source src=\"{{ 'https://cdn.shopify.com/videos/c/o/v/63b1bbb691224d949e3f08e85942c1b7.mp4' | asset_url }}\" type=\"video/mp4\">\n  </video>\n</div>\n\n<style>\n/* Hide controls for autoplay videos only */\n.autoplay-video video::-webkit-media-controls,\n.autoplay-video video::-webkit-media-controls-enclosure {\n  display: none !important;\n}\n@supports (-webkit-touch-callout: none) {\n  .autoplay-video video::-webkit-media-controls {\n    display: none !important;\n  }\n}\n</style>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  setTimeout(() => {\n    document.querySelectorAll('.autoplay-video video').forEach(video => {\n      video.removeAttribute('controls');             // Remove controls\n      video.setAttribute('playsinline', '');         // Inline playback iPhone\n      video.setAttribute('webkit-playsinline', ''); // Inline playback Safari\n      video.setAttribute('controlsList', 'nodownload nofullscreen noremoteplayback');\n      video.setAttribute('disablePictureInPicture', '');\n    });\n  }, 500); // Slight delay to ensure Shopify media script finishes\n});\n</script>",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
     "media_with_content_pabj4W": {
       "type": "media-with-content",
       "blocks": {
@@ -771,6 +760,17 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-2",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "custom_liquid_KYxCiC": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"autoplay-video\">\n  <video \n    autoplay \n    muted \n    loop \n    playsinline \n    webkit-playsinline\n    controlslist=\"nodownload nofullscreen noremoteplayback\"\n    disablePictureInPicture\n  >\n    <source src=\"{{ 'https://cdn.shopify.com/videos/c/o/v/63b1bbb691224d949e3f08e85942c1b7.mp4' | asset_url }}\" type=\"video/mp4\">\n  </video>\n</div>\n\n<style>\n/* Hide controls for autoplay videos only */\n.autoplay-video video::-webkit-media-controls,\n.autoplay-video video::-webkit-media-controls-enclosure {\n  display: none !important;\n}\n@supports (-webkit-touch-callout: none) {\n  .autoplay-video video::-webkit-media-controls {\n    display: none !important;\n  }\n}\n</style>\n\n<script>\ndocument.addEventListener('DOMContentLoaded', function() {\n  setTimeout(() => {\n    document.querySelectorAll('.autoplay-video video').forEach(video => {\n      video.removeAttribute('controls');             // Remove controls\n      video.setAttribute('playsinline', '');         // Inline playback iPhone\n      video.setAttribute('webkit-playsinline', ''); // Inline playback Safari\n      video.setAttribute('controlsList', 'nodownload nofullscreen noremoteplayback');\n      video.setAttribute('disablePictureInPicture', '');\n    });\n  }, 500); // Slight delay to ensure Shopify media script finishes\n});\n</script>",
+        "color_scheme": "",
+        "section_width": "page-width",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -1854,8 +1854,8 @@
   "order": [
     "main",
     "marquee_gEDzac",
-    "custom_liquid_KYxCiC",
     "media_with_content_pabj4W",
+    "custom_liquid_KYxCiC",
     "media_with_content_ME7Gpr",
     "section_J9XNjK",
     "divider_PjPbrQ",
