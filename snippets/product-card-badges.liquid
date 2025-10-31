@@ -1,94 +1,28 @@
-<pre style="position:absolute; top:0; left:0; z-index:9999; background:#fff; color:#000; font-size:12px;">
-product.available: {{ product.available }}
-product.price: {{ product.price }}
-product.compare_at_price_max: {{ product.compare_at_price_max }}
-variants: {{ product.variants | size }}
-{% assign v = product.selected_or_first_available_variant %}
-variant.price: {% if v %}{{ v.price }}{% else %}nil{% endif %}
-variant.compare_at_price: {% if v %}{{ v.compare_at_price }}{% else %}nil{% endif %}
-</pre>
-{%- comment -%}
-  Horizon product card badges:
-  - Sale badge shows XX% Off using product.compare_at_price_max
-  - Sold-out badge shows if product is unavailable
-  - Proper top-right positioning
-  - Optional debug mode
-{%- endcomment -%}
-
-{%- assign DEBUG = false -%} {%- comment -%} set true for debug overlay {%- endcomment -%}
-
 <div
-  class="product-badges product-badges--{{ settings.badge_position }}"
+  class="product-badges product-badges--top-right"
   style="
-    --badge-border-radius: {{ settings.badge_corner_radius }}px;
-    --badge-font-family: var(--font-{{ settings.badge_font_family }}--family);
-    --badge-font-weight: var(--font-{{ settings.badge_font_family }}--weight);
-    --badge-text-transform: {{ settings.badge_text_transform }};
+    --badge-border-radius: 4px;
   "
 >
-  {%- assign show_sale = false -%}
-  {%- assign sale_text = '' -%}
-  {%- assign show_soldout = false -%}
+  {%- assign show_badge = false -%}
+  {%- assign badge_text = '' -%}
 
-  {%- comment -%} Sale badge logic using compare_at_price_max {%- endcomment -%}
-  {%- if product.available and product.compare_at_price_max and product.compare_at_price_max > product.price -%}
-    {%- assign price_diff = product.compare_at_price_max | minus: product.price -%}
-    {%- assign discount = price_diff | divided_by: product.compare_at_price_max | times: 100 -%}
+  {%- if product.available == false -%}
+    {%- assign show_badge = true -%}
+    {%- assign badge_text = 'content.product_badge_sold_out' | t -%}
+  {%- elsif product.compare_at_price_max and product.compare_at_price_max > product.price -%}
+    {%- assign discount = product.compare_at_price_max | minus: product.price -%}
+    {%- assign discount = discount | divided_by: product.compare_at_price_max | times: 100 -%}
+    {%- assign discount = discount | round -%}
     {%- if discount > 0 -%}
-      {%- assign show_sale = true -%}
-      {%- assign sale_text = discount | round | append: '% Off' -%}
+      {%- assign show_badge = true -%}
+      {%- assign badge_text = discount | append: '% Off' -%}
     {%- endif -%}
   {%- endif -%}
 
-  {%- if product.available == false -%}
-    {%- assign show_soldout = true -%}
-  {%- endif -%}
-
-  {%- if show_sale -%}
-    <div
-      class="product-badges__badge product-badges__badge--rectangle color-{{ settings.badge_sale_color_scheme }}"
-    >
-      {{ sale_text }}
-    </div>
-  {%- elsif show_soldout -%}
-    <div
-      class="product-badges__badge product-badges__badge--rectangle color-{{ settings.badge_sold_out_color_scheme }}"
-      aria-hidden="true"
-    >
-      {{ 'content.product_badge_sold_out' | t }}
-    </div>
-  {%- endif -%}
-
-  {%- if DEBUG == true -%}
-    <div style="position:absolute; left:0; bottom:0; background:rgba(0,0,0,0.7); color:#fff; font-size:11px; padding:6px; z-index:9999;">
-      <div>product.available: {{ product.available }}</div>
-      <div>product.price: {{ product.price }}</div>
-      <div>product.compare_at_price_max: {{ product.compare_at_price_max }}</div>
+  {%- if show_badge -%}
+    <div class="product-badges__badge" style="background: #000; color:#fff; padding: 0.25rem 0.5rem; border-radius:4px; font-weight:600; font-size:0.85rem;">
+      {{ badge_text }}
     </div>
   {%- endif -%}
 </div>
-
-{% stylesheet %}
-.product-badges {
-  position: absolute;
-  z-index: var(--layer-flat);
-}
-
-/* Top-right with padding inset */
-.product-badges--top-right {
-  top: 8px;
-  right: 8px;
-}
-
-.product-badges__badge {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  font-size: 0.85rem;
-  color: var(--color-foreground);
-  background: var(--color-background);
-}
-{% endstylesheet %}
