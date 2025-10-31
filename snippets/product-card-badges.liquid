@@ -1,12 +1,11 @@
 {%- comment -%}
   Robust product card badges for Horizon:
-  - Tries multiple variant fallbacks (selected_or_first_available_variant, first_available_variant, variants.first)
-  - Shows "XX% Off" when a valid discount (>0) is found
-  - Shows "Sold out" in top-right as a fallback when product.available == false
-  - Set DEBUG to true to display diagnostic values on the card (for testing only)
+  - Shows sale percentage if applicable
+  - Shows fallback sold-out badge if product is unavailable
+  - Optional debug overlay for testing values
 {%- endcomment -%}
 
-{%- assign DEBUG = false -%} {%- comment -%} set to true to debug values on the storefront {%- endcomment -%}
+{%- assign DEBUG = false -%} {%- comment -%} set to true for debug info {%- endcomment -%}
 
 <div
   class="product-badges product-badges--{{ settings.badge_position }}"
@@ -17,19 +16,15 @@
     --badge-text-transform: {{ settings.badge_text_transform }};
   "
 >
-  {%- comment -%} Resolve a usable variant object (try several fallbacks) {%- endcomment -%}
   {%- assign variant = nil -%}
   {%- if product.selected_or_first_available_variant %}
     {%- assign variant = product.selected_or_first_available_variant -%}
-  {%- endif -%}
-  {%- if variant == nil and product.first_available_variant %}
+  {%- elsif product.first_available_variant %}
     {%- assign variant = product.first_available_variant -%}
-  {%- endif -%}
-  {%- if variant == nil and product.variants and product.variants.size > 0 %}
+  {%- elsif product.variants.size > 0 %}
     {%- assign variant = product.variants.first -%}
   {%- endif -%}
 
-  {%- comment -%} Prepare flags and values safely (no parentheses in filter chains) {%- endcomment -%}
   {%- assign show_sale = false -%}
   {%- assign sale_text = '' -%}
   {%- assign show_soldout = false -%}
@@ -49,14 +44,12 @@
     {%- assign show_soldout = true -%}
   {%- endif -%}
 
-  {%- comment -%} Render badges: sale preferred; if none, show sold-out fallback if product unavailable {%- endcomment -%}
   {%- if show_sale -%}
     <div
       class="product-badges__badge product-badges__badge--rectangle color-{{ settings.badge_sale_color_scheme }}"
     >
       {{ sale_text }}
     </div>
-
   {%- elsif show_soldout -%}
     <div
       class="product-badges__badge product-badges__badge--rectangle color-{{ settings.badge_sold_out_color_scheme }}"
@@ -67,17 +60,17 @@
   {%- endif -%}
 
   {%- if DEBUG == true -%}
-    {%- comment -%} Small debug overlay (visible while testing) {%- endcomment -%}
     <div style="position:absolute; left:0; bottom:0; background:rgba(0,0,0,0.7); color:#fff; font-size:11px; padding:6px; z-index:9999;">
       <div>product.available: {{ product.available }}</div>
       <div>product.compare_at_price_max: {{ product.compare_at_price_max }}</div>
       <div>product.price: {{ product.price }}</div>
-      <div>variant present: {{ variant != nil }}</div>
-      {% if variant %}
+      {%- if variant -%}
         <div>variant.id: {{ variant.id }}</div>
         <div>variant.price: {{ variant.price }}</div>
         <div>variant.compare_at_price: {{ variant.compare_at_price }}</div>
-      {% endif %}
+      {%- else -%}
+        <div>No variant found</div>
+      {%- endif -%}
     </div>
   {%- endif -%}
 </div>
