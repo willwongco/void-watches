@@ -38,8 +38,8 @@
 }
 
 .product-badges--top-left {
-  top: 20px;   /* top offset from image edge */
-  left: 8px;
+  top: 20px;   /* default top offset from image edge */
+  left: 8px;   /* default left offset from image edge */
 }
 
 .product-badges__badge {
@@ -69,10 +69,14 @@
 
 /* Mobile adjustments */
 @media screen and (max-width: 480px) {
-  /* Smaller font for "ONLY X LEFT" */
+  .product-badges--top-left {
+    top: 8px;   /* top padding equal to left padding */
+    left: 8px;  /* left padding equal to top padding */
+  }
+
   .product-badges--top-left .product-badges__badge {
-    font-size: 0.7rem;
-    padding-block: 2px;   /* reduce vertical padding so it sits closer to image edge */
+    font-size: 0.7rem;  /* smaller text for mobile */
+    padding-block: 2px; /* reduced vertical padding for compactness */
   }
 }
 {% endstylesheet %}
