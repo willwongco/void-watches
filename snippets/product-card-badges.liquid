@@ -25,8 +25,7 @@
       {%- if product.available == false -%}
         {{ 'content.product_badge_sold_out' | t }}
       {%- elsif product.compare_at_price > product.price -%}
-        {% assign discount = product.compare_at_price | minus: product.price | divided_by: product.compare_at_price | times: 100 %}
-{{ discount | round }}% Off
+        {{ 'content.product_badge_sale' | t }}
       {%- endif -%}
     </div>
   {%- endif -%}
