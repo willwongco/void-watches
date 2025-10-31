@@ -1,11 +1,12 @@
 {%- comment -%}
-  Robust product card badges for Horizon:
-  - Shows sale percentage if applicable
-  - Shows fallback sold-out badge if product is unavailable
-  - Optional debug overlay for testing values
+  Horizon product card badges:
+  - Sale badge shows XX% Off using product.compare_at_price_max
+  - Sold-out badge shows if product is unavailable
+  - Proper top-right positioning
+  - Optional debug mode
 {%- endcomment -%}
 
-{%- assign DEBUG = false -%} {%- comment -%} set to true for debug info {%- endcomment -%}
+{%- assign DEBUG = false -%} {%- comment -%} set true for debug overlay {%- endcomment -%}
 
 <div
   class="product-badges product-badges--{{ settings.badge_position }}"
@@ -16,27 +17,17 @@
     --badge-text-transform: {{ settings.badge_text_transform }};
   "
 >
-  {%- assign variant = nil -%}
-  {%- if product.selected_or_first_available_variant %}
-    {%- assign variant = product.selected_or_first_available_variant -%}
-  {%- elsif product.first_available_variant %}
-    {%- assign variant = product.first_available_variant -%}
-  {%- elsif product.variants.size > 0 %}
-    {%- assign variant = product.variants.first -%}
-  {%- endif -%}
-
   {%- assign show_sale = false -%}
   {%- assign sale_text = '' -%}
   {%- assign show_soldout = false -%}
 
-  {%- if variant %}
-    {%- if variant.compare_at_price and variant.compare_at_price > variant.price -%}
-      {%- assign price_diff = variant.compare_at_price | minus: variant.price -%}
-      {%- assign discount = price_diff | divided_by: variant.compare_at_price | times: 100 -%}
-      {%- if discount > 0 -%}
-        {%- assign show_sale = true -%}
-        {%- assign sale_text = discount | round | append: '% Off' -%}
-      {%- endif -%}
+  {%- comment -%} Sale badge logic using compare_at_price_max {%- endcomment -%}
+  {%- if product.available and product.compare_at_price_max and product.compare_at_price_max > product.price -%}
+    {%- assign price_diff = product.compare_at_price_max | minus: product.price -%}
+    {%- assign discount = price_diff | divided_by: product.compare_at_price_max | times: 100 -%}
+    {%- if discount > 0 -%}
+      {%- assign show_sale = true -%}
+      {%- assign sale_text = discount | round | append: '% Off' -%}
     {%- endif -%}
   {%- endif -%}
 
@@ -62,21 +53,33 @@
   {%- if DEBUG == true -%}
     <div style="position:absolute; left:0; bottom:0; background:rgba(0,0,0,0.7); color:#fff; font-size:11px; padding:6px; z-index:9999;">
       <div>product.available: {{ product.available }}</div>
-      <div>product.compare_at_price_max: {{ product.compare_at_price_max }}</div>
       <div>product.price: {{ product.price }}</div>
-      {%- if variant -%}
-        <div>variant.id: {{ variant.id }}</div>
-        <div>variant.price: {{ variant.price }}</div>
-        <div>variant.compare_at_price: {{ variant.compare_at_price }}</div>
-      {%- else -%}
-        <div>No variant found</div>
-      {%- endif -%}
+      <div>product.compare_at_price_max: {{ product.compare_at_price_max }}</div>
     </div>
   {%- endif -%}
 </div>
 
 {% stylesheet %}
-  .product-badges { position:absolute; z-index:var(--layer-flat); }
-  .product-badges--top-right { top: calc(var(--padding-xs)); right: calc(var(--padding-xs)); }
-  .product-badges__badge { display:flex; align-items:center; justify-content:center; padding:0.25rem 0.5rem; border-radius:0.5rem; font-weight:600; font-size:0.85rem; color:var(--color-foreground); background:var(--color-background); }
+.product-badges {
+  position: absolute;
+  z-index: var(--layer-flat);
+}
+
+/* Top-right with padding inset */
+.product-badges--top-right {
+  top: 8px;
+  right: 8px;
+}
+
+.product-badges__badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--color-foreground);
+  background: var(--color-background);
+}
 {% endstylesheet %}
