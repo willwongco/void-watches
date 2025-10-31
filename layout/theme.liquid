@@ -37,13 +37,6 @@
 
     {% render 'hr-datalayer-head' %}
   </head>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelectorAll('.autoplay-video video').forEach(video => {
-    video.removeAttribute('controls');
-  });
-});
-</script>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
