@@ -33,13 +33,13 @@
 }
 
 .product-badges--top-right {
-  top: 20px;   /* top offset from image edge */
+  top: 20px;
   right: 8px;
 }
 
 .product-badges--top-left {
-  top: 20px;   /* default top offset from image edge */
-  left: 8px;   /* default left offset from image edge */
+  top: 20px;
+  left: 8px;
 }
 
 .product-badges__badge {
@@ -57,26 +57,27 @@
 }
 
 .product-badges__badge--rectangle {
-  padding-block: 4px;   /* vertical padding inside badge */
-  padding-inline: 8px;  /* horizontal padding inside badge */
+  padding-block: 4px;
+  padding-inline: 8px;
 }
 
 /* Transparent badge for low-stock */
 .product-badges__badge--transparent {
   background: transparent;
-  color: var(--color-foreground); /* keeps text visible */
+  color: var(--color-foreground);
 }
 
 /* Mobile adjustments */
 @media screen and (max-width: 480px) {
   .product-badges--top-left {
-    top: 8px;   /* top padding equal to left padding */
-    left: 8px;  /* left padding equal to top padding */
+    top: 6px;   /* adjusted so visual top spacing equals left spacing */
+    left: 6px;  /* left offset */
   }
 
   .product-badges--top-left .product-badges__badge {
-    font-size: 0.7rem;  /* smaller text for mobile */
-    padding-block: 2px; /* reduced vertical padding for compactness */
+    font-size: 0.7rem;
+    padding-block: 2px; /* vertical padding inside badge */
+    padding-inline: 6px; /* slightly smaller horizontal padding to match top-left spacing */
   }
 }
 {% endstylesheet %}
