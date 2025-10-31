@@ -17,10 +17,10 @@
   {%- endif -%}
 </div>
 
-{%- comment -%} Top-left badge: Low-stock badge (transparent background) {%- endcomment -%}
+{%- comment -%} Top-left badge: Low-stock badge (transparent background, red text) {%- endcomment -%}
 {%- if variant.available and variant.inventory_quantity <= 5 and variant.inventory_quantity > 0 -%}
   <div class="product-badges product-badges--top-left">
-    <div class="product-badges__badge product-badges__badge--rectangle product-badges__badge--transparent">
+    <div class="product-badges__badge product-badges__badge--rectangle product-badges__badge--low-stock">
       ONLY {{ variant.inventory_quantity }} LEFT
     </div>
   </div>
@@ -38,13 +38,13 @@
 }
 
 .product-badges--top-left {
-  top: 20px;
+  top: 12px;  /* adjusted for mobile alignment */
   left: 8px;
 }
 
 .product-badges__badge {
   display: flex;
-  align-items: center; /* vertical centering */
+  align-items: center;
   justify-content: center;
   text-align: center;
   color: var(--color-foreground);
@@ -57,26 +57,21 @@
 }
 
 .product-badges__badge--rectangle {
-  padding-block: 4px;   /* vertical padding inside badge */
-  padding-inline: 8px;  /* horizontal padding inside badge */
+  padding-block: 4px;
+  padding-inline: 8px;
 }
 
-/* Transparent badge for low-stock */
-.product-badges__badge--transparent {
+/* Low-stock badge styling */
+.product-badges__badge--low-stock {
   background: transparent;
-  color: var(--color-foreground);
+  color: #c0392b; /* muted red */
 }
 
 /* Mobile adjustments */
 @media screen and (max-width: 480px) {
-  .product-badges--top-left {
-    top: 12px;   /* increased top offset to account for internal padding and flex centering */
-    left: 8px;   /* same left offset */
-  }
-
   .product-badges--top-left .product-badges__badge {
-    font-size: 0.7rem;  
-    padding-block: 2px; /* smaller vertical padding for compact look */
+    font-size: 0.7rem;
+    padding-block: 2px;
     padding-inline: 6px;
   }
 }
