@@ -1,28 +1,42 @@
-<div
-  class="product-badges product-badges--top-right"
-  style="
-    --badge-border-radius: 4px;
-  "
->
-  {%- assign show_badge = false -%}
-  {%- assign badge_text = '' -%}
+{%- comment -%}
+  Horizon product card badge snippet:
+  - Shows "XX% Off" for available products on sale
+  - Works for single and multi-variant products using product.compare_at_price_max
+  - Sold-out products remain using the default Horizon overlay below the image
+{%- endcomment -%}
 
-  {%- if product.available == false -%}
-    {%- assign show_badge = true -%}
-    {%- assign badge_text = 'content.product_badge_sold_out' | t -%}
-  {%- elsif product.compare_at_price_max and product.compare_at_price_max > product.price -%}
-    {%- assign discount = product.compare_at_price_max | minus: product.price -%}
-    {%- assign discount = discount | divided_by: product.compare_at_price_max | times: 100 -%}
-    {%- assign discount = discount | round -%}
+<div class="product-badges product-badges--top-right">
+  {%- if product.available and product.compare_at_price_max and product.compare_at_price_max > product.price -%}
+    {%- assign price_diff = product.compare_at_price_max | minus: product.price -%}
+    {%- assign discount = price_diff | divided_by: product.compare_at_price_max | times: 100 | round -%}
     {%- if discount > 0 -%}
-      {%- assign show_badge = true -%}
-      {%- assign badge_text = discount | append: '% Off' -%}
+      <div class="product-badges__badge">
+        {{ discount }}% Off
+      </div>
     {%- endif -%}
   {%- endif -%}
-
-  {%- if show_badge -%}
-    <div class="product-badges__badge" style="background: #000; color:#fff; padding: 0.25rem 0.5rem; border-radius:4px; font-weight:600; font-size:0.85rem;">
-      {{ badge_text }}
-    </div>
-  {%- endif -%}
 </div>
+
+{% stylesheet %}
+.product-badges {
+  position: absolute;
+  z-index: 10;
+}
+
+.product-badges--top-right {
+  top: 8px;
+  right: 8px;
+}
+
+.product-badges__badge {
+  background: #000;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+{% endstylesheet %}
