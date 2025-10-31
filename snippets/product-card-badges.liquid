@@ -67,10 +67,12 @@
   color: var(--color-foreground); /* keeps text visible */
 }
 
-/* Make ONLY X LEFT smaller on mobile */
+/* Mobile adjustments */
 @media screen and (max-width: 480px) {
+  /* Smaller font for "ONLY X LEFT" */
   .product-badges--top-left .product-badges__badge {
-    font-size: 0.7rem; /* smaller text for mobile */
+    font-size: 0.7rem;
+    padding-block: 2px;   /* reduce vertical padding so it sits closer to image edge */
   }
 }
 {% endstylesheet %}
