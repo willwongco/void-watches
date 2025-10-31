@@ -17,11 +17,11 @@
   {%- endif -%}
 </div>
 
-{%- comment -%} Top-left badge: Only X Left for low-stock products (transparent background) {%- endcomment -%}
+{%- comment -%} Top-left badge: Low-stock badge (transparent background, simplified text) {%- endcomment -%}
 {%- if variant.available and variant.inventory_quantity <= 5 and variant.inventory_quantity > 0 -%}
   <div class="product-badges product-badges--top-left">
     <div class="product-badges__badge product-badges__badge--rectangle product-badges__badge--transparent">
-      Only {{ variant.inventory_quantity }} Left
+      {{ variant.inventory_quantity }} LEFT
     </div>
   </div>
 {%- endif -%}
@@ -61,7 +61,7 @@
   padding-inline: 8px;  /* horizontal padding inside badge */
 }
 
-/* Transparent badge for "Only X Left" */
+/* Transparent badge for low-stock */
 .product-badges__badge--transparent {
   background: transparent;
   color: var(--color-foreground); /* keeps text visible */
