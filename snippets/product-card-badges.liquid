@@ -57,8 +57,8 @@
 }
 
 .product-badges__badge--rectangle {
-  padding-block: 4px;
-  padding-inline: 8px;
+  padding-block: 4px;   /* vertical padding inside badge */
+  padding-inline: 8px;  /* horizontal padding inside badge */
 }
 
 /* Transparent badge for low-stock */
@@ -70,14 +70,14 @@
 /* Mobile adjustments */
 @media screen and (max-width: 480px) {
   .product-badges--top-left {
-    top: 6px;   /* adjusted so visual top spacing equals left spacing */
-    left: 6px;  /* left offset */
+    top: 8px;   /* same as left for equal spacing */
+    left: 8px;
   }
 
   .product-badges--top-left .product-badges__badge {
-    font-size: 0.7rem;
-    padding-block: 2px; /* vertical padding inside badge */
-    padding-inline: 6px; /* slightly smaller horizontal padding to match top-left spacing */
+    font-size: 0.7rem;  
+    padding-block: 0px;  /* remove vertical padding to align with top edge */
+    padding-inline: 6px; /* horizontal padding */
   }
 }
 {% endstylesheet %}
