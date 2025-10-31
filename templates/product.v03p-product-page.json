@@ -583,7 +583,7 @@
         ".autoplay-video video::-webkit-media-controls,.autoplay-video video::-webkit-media-controls-enclosure {display: none !important;}",
         "@supports (-webkit-touch-callout: none) {.autoplay-video video::-webkit-media-controls {display: none !important; }}"
       ],
-      "name": "t:names.custom_liquid",
+      "name": "Custom Liquid (Remove Video Navigation)",
       "settings": {
         "custom_liquid": "<div class=\"autoplay-video\">\n  <video \n    autoplay \n    muted \n    loop \n    playsinline \n    webkit-playsinline\n    controlslist=\"nodownload nofullscreen noremoteplayback\"\n    disablePictureInPicture\n  >\n    <source src=\"{{ 'VOID-Watches-V03P-Straps-Video.mp4' | asset_url }}\" type=\"video/mp4\">\n  </video>\n</div>",
         "color_scheme": "",
