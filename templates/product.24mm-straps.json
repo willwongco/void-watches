@@ -788,7 +788,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Fits V01MKII & V02MKII</h2>",
+                    "text": "<h2>Fits V01 & V02</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -813,7 +813,7 @@
                 "text_qUxQ4F": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Our 22mm straps and bracelets fit our V01MKII and V02MKII collections.</p>",
+                    "text": "<p>Our 24mm straps and bracelets fit our legacy V01 and V02 collections.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
