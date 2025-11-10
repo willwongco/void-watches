@@ -124,7 +124,8 @@
           "14mm-straps",
           "18mm-straps",
           "22mm-straps",
-          "pxr5-straps"
+          "pxr5-straps",
+          "sl24"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
