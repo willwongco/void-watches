@@ -72,7 +72,7 @@
         "text_Nh7RMe": {
           "type": "text",
           "settings": {
-            "text": "<p>Secure an extra 10% off orders above 100 EUR/USD/GBP</p>",
+            "text": "<h4>Secure an extra 10% off orders above 100 EUR/USD/GBP</h4>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
