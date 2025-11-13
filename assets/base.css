@@ -4260,3 +4260,14 @@ text-component {
     font-size: max(1rem, 100%);
   }
 }
+/* --- Fix for square videos zooming on desktop (Horizon theme) --- */
+@media screen and (min-width: 750px) {
+  .product-media-container video,
+  .product__media video,
+  .product-media video {
+    object-fit: contain !important;
+    width: 100% !important;
+    height: auto !important;
+    max-height: 100% !important;
+  }
+}
