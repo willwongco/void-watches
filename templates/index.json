@@ -217,6 +217,7 @@
         "ai_gen_block_6ffe6b9_CHDcCn"
       ],
       "disabled": true,
+      "name": "BFCM 2025 Banner",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
