@@ -26,6 +26,7 @@
       "block_order": [
         "ai_gen_block_c590eda_VVADzp"
       ],
+      "disabled": true,
       "name": "Hero Section",
       "settings": {
         "content_direction": "column",
@@ -404,6 +405,7 @@
         "text_f49ecV",
         "button_EmL6zC"
       ],
+      "disabled": true,
       "name": "Hero Text",
       "settings": {
         "content_direction": "column",
