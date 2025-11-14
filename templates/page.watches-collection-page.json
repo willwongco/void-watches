@@ -63,7 +63,7 @@
             "vertical_alignment": "flex-start",
             "collection_card_gap": 8,
             "inherit_color_scheme": false,
-            "color_scheme": "",
+            "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -86,7 +86,7 @@
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
                 "background": true,
-                "background_color": "#ffffff",
+                "background_color": "#fbfbfb",
                 "corner_radius": 0,
                 "padding-block-start": 4,
                 "padding-block-end": 21,
@@ -121,11 +121,13 @@
       "name": "t:names.collections_grid",
       "settings": {
         "collection_list": [
-          "14mm-straps",
-          "18mm-straps",
-          "22mm-straps",
-          "pxr5-straps",
-          "sl24"
+          "pkg01",
+          "v03d",
+          "v03p",
+          "pxr5",
+          "v01mkii",
+          "v02mkii",
+          "ltd"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
@@ -140,7 +142,7 @@
         "icons_shape": "none",
         "section_width": "page-width",
         "gap": 12,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "padding-block-start": 20,
         "padding-block-end": 48
       }
