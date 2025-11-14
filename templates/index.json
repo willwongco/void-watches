@@ -169,6 +169,88 @@
         "ai_gen_block_6ffe6b9_CHDcCn": {
           "type": "ai_gen_block_6ffe6b9",
           "settings": {
+            "image_desktop": "shopify://shop_images/2025-11-Banner-_2000x1000_a29580c5-d1d0-4677-b99d-79a574cf11a7.jpg",
+            "image_mobile": "shopify://shop_images/2025-11-Banner-1000x1429.jpg",
+            "preheader": "",
+            "preheader_color": "#ffffff",
+            "preheader_size_desktop": 16,
+            "preheader_size_mobile": 16,
+            "preheader_spacing": 0,
+            "heading": "Tools that Tell Time",
+            "heading_color": "#ffffff",
+            "heading_size_desktop": 56,
+            "heading_size_mobile": 32,
+            "heading_spacing": 0,
+            "subheader": "Minimal Watches for Creative Minds",
+            "subheader_color": "#ffffff",
+            "subheader_size_desktop": 18,
+            "subheader_size_mobile": 14,
+            "subheader_spacing": 20,
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/all-watches",
+            "button_background_color": "#000000",
+            "button_text_color": "#ffffff",
+            "button_border_color": "#000000",
+            "button_hover_background_color": "#333333",
+            "button_hover_text_color": "#ffffff",
+            "button_hover_border_color": "#333333",
+            "button_font_size": 16,
+            "button_border_radius": 0,
+            "button_border_width": 1,
+            "text_alignment_desktop": "left",
+            "button_alignment_desktop": "left",
+            "padding_top_desktop": 300,
+            "padding_bottom_desktop": 60,
+            "padding_left_desktop": 60,
+            "padding_right_desktop": 60,
+            "text_alignment_mobile": "center",
+            "button_alignment_mobile": "center",
+            "padding_top_mobile": 284,
+            "padding_bottom_mobile": 0,
+            "padding_left_mobile": 20,
+            "padding_right_mobile": 20
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_6ffe6b9_CHDcCn"
+      ],
+      "name": "Hero Section w. text/CTA",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
+    "blocks_KXdkHi": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_6ffe6b9_9NiFjg": {
+          "type": "ai_gen_block_6ffe6b9",
+          "settings": {
             "image_desktop": "shopify://shop_images/2025-BFCM-OptionC-2000x1000.jpg",
             "image_mobile": "shopify://shop_images/2025-BFCM-OptionC-1000x1429.jpg",
             "preheader": "19 November - 3 December",
@@ -214,7 +296,7 @@
         }
       },
       "block_order": [
-        "ai_gen_block_6ffe6b9_CHDcCn"
+        "ai_gen_block_6ffe6b9_9NiFjg"
       ],
       "disabled": true,
       "name": "BFCM 2025 Banner",
@@ -2181,6 +2263,7 @@
     "17570595836fc7b034",
     "hero_wJMymL",
     "1763116661c5558ad7",
+    "blocks_KXdkHi",
     "section_Mck6GU",
     "product_list_j8AAHU",
     "1756909017f2797ec7",
