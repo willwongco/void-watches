@@ -1317,7 +1317,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/VOID-Watches-V02MKII-BL-MB-2000x2000-Him.jpg",
-            "link": "",
+            "link": "shopify://products/v02mkii-bl-mb",
             "image_ratio": "square",
             "width": "fill",
             "custom_width": 100,
@@ -1453,7 +1453,7 @@
       ],
       "name": "V02MKII Feature",
       "settings": {
-        "content_direction": "column",
+        "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-end",
         "vertical_alignment": "center",
