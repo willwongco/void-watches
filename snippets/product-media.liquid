@@ -32,7 +32,6 @@
       assign fetch_priority = 'high'
     endif
   %}
-  <div class="product-media-wrapper" style="position: relative;">
   {{
     media.preview_image
     | image_url: width: 3840
@@ -46,10 +45,6 @@
       data_max_resolution: high_res_url,
       fetchpriority: fetch_priority
   }}
-
-  {% render 'pdp-sale-badge' %}
-</div>
-
 
   {% unless preview_image_only %}
     {%- case media.media_type -%}
