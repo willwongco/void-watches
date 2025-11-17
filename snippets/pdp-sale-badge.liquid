@@ -1,0 +1,10 @@
+{% comment %}
+  Universal PDP Sale Badge for all images on product pages.
+  Displays the metafield "Sale Badge" over each product image.
+{% endcomment %}
+
+{% if product.metafields.custom.sale_badge != blank %}
+  <div class="pdp-sale-badge">
+    {{ product.metafields.custom.sale_badge }}
+  </div>
+{% endif %}
