@@ -33,7 +33,7 @@
           "name": "Announcement 2",
           "settings": {
             "text": "Black Week - 20% Off All Watches",
-            "link": "shopify://collections/end-of-life-sale",
+            "link": "shopify://collections/all-watches",
             "font": "var(--font-subheading--family)",
             "font_size": "0.75rem",
             "weight": "",
