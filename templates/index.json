@@ -217,6 +217,7 @@
       "block_order": [
         "ai_gen_block_6ffe6b9_CHDcCn"
       ],
+      "disabled": true,
       "name": "Hero Section w. text/CTA",
       "settings": {
         "content_direction": "column",
@@ -299,7 +300,6 @@
       "block_order": [
         "ai_gen_block_6ffe6b9_9NiFjg"
       ],
-      "disabled": true,
       "name": "BFCM 2025 Banner",
       "settings": {
         "content_direction": "column",
