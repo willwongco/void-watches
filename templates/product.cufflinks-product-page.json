@@ -149,7 +149,7 @@
                     "case": "none",
                     "wrap": "pretty",
                     "color": "var(--color-foreground)",
-                    "background": true,
+                    "background": false,
                     "background_color": "#dc2525",
                     "corner_radius": 0,
                     "padding-block-start": 0,
