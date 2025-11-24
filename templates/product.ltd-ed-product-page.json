@@ -601,6 +601,7 @@
         "icon_c9WmBi",
         "text_epFzxP"
       ],
+      "disabled": true,
       "name": "Icons - Marquee",
       "settings": {
         "movement_direction": "normal",
