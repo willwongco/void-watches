@@ -1,6 +1,390 @@
+{% doc %}
+  @prompt
+    I want one row with three icons. Each icon should have text on the right. I want to be able to either chose shopifys default icons or upload my own. Icon size and text size should be editable. Padding should be editable.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-icon-row-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding }}px;
+  }
+
+  .ai-icon-row__container-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-icon-row__item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 1 1 auto;
+    min-width: 200px;
+  }
+
+  .ai-icon-row__icon-wrapper-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-icon-row__icon-wrapper-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-icon-row__icon-wrapper-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .ai-icon-row__text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.4;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-icon-row__container-{{ ai_gen_id }} {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .ai-icon-row__item-{{ ai_gen_id }} {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-icon-row-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-icon-row__container-{{ ai_gen_id }}">
+    {% for i in (1..3) %}
+      {% liquid
+        assign icon_type_key = 'icon_' | append: i | append: '_type'
+        assign shopify_icon_key = 'icon_' | append: i | append: '_shopify'
+        assign custom_icon_key = 'icon_' | append: i | append: '_custom'
+        assign text_key = 'icon_' | append: i | append: '_text'
+
+        assign icon_type = block.settings[icon_type_key]
+        assign shopify_icon = block.settings[shopify_icon_key]
+        assign custom_icon = block.settings[custom_icon_key]
+        assign text = block.settings[text_key]
+      %}
+
+      {% if text != blank %}
+        <div class="ai-icon-row__item-{{ ai_gen_id }}">
+          <div class="ai-icon-row__icon-wrapper-{{ ai_gen_id }}">
+            {% if icon_type == 'shopify' %}
+              {% render 'icon', icon: shopify_icon %}
+            {% elsif icon_type == 'custom' and custom_icon != blank %}
+              <img
+                src="{{ custom_icon | image_url: width: 200 }}"
+                alt="{{ text | escape }}"
+                loading="lazy"
+                width="200"
+                height="200"
+              >
+            {% else %}
+              {% render 'icon', icon: 'checkmark' %}
+            {% endif %}
+          </div>
+          <div class="ai-icon-row__text-{{ ai_gen_id }}">
+            {{ text }}
+          </div>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Icon row",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 16,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Icon 1"
+    },
+    {
+      "type": "select",
+      "id": "icon_1_type",
+      "label": "Icon type",
+      "options": [
+        {
+          "value": "shopify",
+          "label": "Shopify icon"
+        },
+        {
+          "value": "custom",
+          "label": "Custom image"
+        }
+      ],
+      "default": "shopify"
+    },
+    {
+      "type": "select",
+      "id": "icon_1_shopify",
+      "label": "Shopify icon",
+      "options": [
+        {
+          "value": "checkmark",
+          "label": "Checkmark"
+        },
+        {
+          "value": "truck",
+          "label": "Truck"
+        },
+        {
+          "value": "box",
+          "label": "Box"
+        },
+        {
+          "value": "shield",
+          "label": "Shield"
+        },
+        {
+          "value": "heart",
+          "label": "Heart"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "leaf",
+          "label": "Leaf"
+        },
+        {
+          "value": "lock",
+          "label": "Lock"
+        },
+        {
+          "value": "globe",
+          "label": "Globe"
+        },
+        {
+          "value": "award",
+          "label": "Award"
+        }
+      ],
+      "default": "checkmark"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_1_custom",
+      "label": "Custom icon"
+    },
+    {
+      "type": "text",
+      "id": "icon_1_text",
+      "label": "Text",
+      "default": "Free shipping"
+    },
+    {
+      "type": "header",
+      "content": "Icon 2"
+    },
+    {
+      "type": "select",
+      "id": "icon_2_type",
+      "label": "Icon type",
+      "options": [
+        {
+          "value": "shopify",
+          "label": "Shopify icon"
+        },
+        {
+          "value": "custom",
+          "label": "Custom image"
+        }
+      ],
+      "default": "shopify"
+    },
+    {
+      "type": "select",
+      "id": "icon_2_shopify",
+      "label": "Shopify icon",
+      "options": [
+        {
+          "value": "checkmark",
+          "label": "Checkmark"
+        },
+        {
+          "value": "truck",
+          "label": "Truck"
+        },
+        {
+          "value": "box",
+          "label": "Box"
+        },
+        {
+          "value": "shield",
+          "label": "Shield"
+        },
+        {
+          "value": "heart",
+          "label": "Heart"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "leaf",
+          "label": "Leaf"
+        },
+        {
+          "value": "lock",
+          "label": "Lock"
+        },
+        {
+          "value": "globe",
+          "label": "Globe"
+        },
+        {
+          "value": "award",
+          "label": "Award"
+        }
+      ],
+      "default": "shield"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_2_custom",
+      "label": "Custom icon"
+    },
+    {
+      "type": "text",
+      "id": "icon_2_text",
+      "label": "Text",
+      "default": "Secure payment"
+    },
+    {
+      "type": "header",
+      "content": "Icon 3"
+    },
+    {
+      "type": "select",
+      "id": "icon_3_type",
+      "label": "Icon type",
+      "options": [
+        {
+          "value": "shopify",
+          "label": "Shopify icon"
+        },
+        {
+          "value": "custom",
+          "label": "Custom image"
+        }
+      ],
+      "default": "shopify"
+    },
+    {
+      "type": "select",
+      "id": "icon_3_shopify",
+      "label": "Shopify icon",
+      "options": [
+        {
+          "value": "checkmark",
+          "label": "Checkmark"
+        },
+        {
+          "value": "truck",
+          "label": "Truck"
+        },
+        {
+          "value": "box",
+          "label": "Box"
+        },
+        {
+          "value": "shield",
+          "label": "Shield"
+        },
+        {
+          "value": "heart",
+          "label": "Heart"
+        },
+        {
+          "value": "star",
+          "label": "Star"
+        },
+        {
+          "value": "leaf",
+          "label": "Leaf"
+        },
+        {
+          "value": "lock",
+          "label": "Lock"
+        },
+        {
+          "value": "globe",
+          "label": "Globe"
+        },
+        {
+          "value": "award",
+          "label": "Award"
+        }
+      ],
+      "default": "box"
+    },
+    {
+      "type": "image_picker",
+      "id": "icon_3_custom",
+      "label": "Custom icon"
+    },
+    {
+      "type": "text",
+      "id": "icon_3_text",
+      "label": "Text",
+      "default": "Easy returns"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon row"
+    }
+  ]
+}
 {% endschema %}
