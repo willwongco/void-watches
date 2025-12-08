@@ -1481,7 +1481,7 @@
           "settings": {
             "media_type": "image",
             "image": "shopify://shop_images/Gift-Guide.jpg",
-            "link": "",
+            "link": "shopify://collections/gift-guide",
             "video_loop": true,
             "video_autoplay": false,
             "image_position": "cover",
