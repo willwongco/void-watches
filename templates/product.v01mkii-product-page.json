@@ -1147,7 +1147,7 @@
           "name": "t:names.video",
           "settings": {
             "source": "uploaded",
-            "video": "shopify://files/videos/VOID-Watches-V01MKII-Video.mp4",
+            "video": "shopify://files/videos/VOID-Watches-V01MKII-Video_e7d8ee38-5848-4ac5-9757-241e7be09a15.mp4",
             "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
