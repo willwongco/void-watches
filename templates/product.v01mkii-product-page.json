@@ -1641,6 +1641,7 @@
         "video_kBRV8n",
         "group_UB6yGA"
       ],
+      "disabled": true,
       "custom_css": [
         "video::-webkit-media-controls {display: none !important;}",
         "video::-moz-media-controls {display: none !important;}"
