@@ -1774,7 +1774,7 @@
               "type": "text",
               "name": "Description",
               "settings": {
-                "text": "<p>Free Shipping above 100 EUR/USD/GBP. Order before 17 December for Christmas delivery.</p>",
+                "text": "<p>Free Shipping above 100 EUR/USD/GBP. Order before 16 December for Christmas delivery.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
