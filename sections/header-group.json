@@ -27,10 +27,25 @@
             "case": "uppercase"
           },
           "blocks": {}
+        },
+        "announcement_PmEN8c": {
+          "type": "_announcement",
+          "name": "Announcement 2",
+          "settings": {
+            "text": "Up to 50% off selected styles.",
+            "link": "shopify://collections/end-of-life-sale",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.75rem",
+            "weight": "",
+            "letter_spacing": "loose",
+            "case": "uppercase"
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "announcement_BxgCk9"
+        "announcement_BxgCk9",
+        "announcement_PmEN8c"
       ],
       "name": "t:names.announcement_bar",
       "settings": {
