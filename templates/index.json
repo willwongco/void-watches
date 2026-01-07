@@ -1519,7 +1519,8 @@
           ]
         }
       },
-      "name": "t:names.editorial_jumbo_text",
+      "disabled": true,
+      "name": "Gift Guide",
       "settings": {
         "media_position": "right",
         "media_width": "wide",
