@@ -878,7 +878,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Plenty of Strap Options</p>",
+                "text": "<p>Gift Set: 3 Strap Options</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -968,7 +968,7 @@
                 "text_qUxQ4F": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All watches are fitted with a quick release system for the straps and bracelets. You can easily change between straps or bracelets to give your watch a whole new look. No tools required.</p>",
+                    "text": "<p>This set comes with three different strap options. The straps and bracelet are all fitted with a quick release system. You can easily change between straps or bracelet to give your watch a whole new look. No tools required.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1022,7 +1022,7 @@
         "video::-webkit-media-controls {display: none !important;}",
         "video::-moz-media-controls {display: none !important;}"
       ],
-      "name": "Editorial V02MKII Straps",
+      "name": "Editorial V02MKII - Gift Set - Straps",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
