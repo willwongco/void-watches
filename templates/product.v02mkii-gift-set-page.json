@@ -854,8 +854,8 @@
           "type": "_media-without-appearance",
           "static": true,
           "settings": {
-            "media_type": "video",
-            "image": "shopify://shop_images/VOID-Watches-PXR5-2000x1453.jpg",
+            "media_type": "image",
+            "image": "shopify://shop_images/VOID-V02MKII-SILVER-SET-1080x1800-Straps.gif",
             "link": "",
             "video": "shopify://files/videos/VOID-Watches-V02MKII-Straps-Video.mp4",
             "video_loop": true,
