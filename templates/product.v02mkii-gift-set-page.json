@@ -1000,7 +1000,7 @@
               "type": "button",
               "settings": {
                 "label": "More Gift Sets",
-                "link": "shopify://collections/22mm-straps",
+                "link": "shopify://collections/gift-sets",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
