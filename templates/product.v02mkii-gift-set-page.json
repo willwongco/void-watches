@@ -855,7 +855,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-V02MKII-SILVER-SET-1080x1800-Straps.gif",
+            "image": "{{ closest.product.metafields.custom.lifestyle_image_1.value }}",
             "link": "",
             "video": "shopify://files/videos/VOID-Watches-V02MKII-Straps-Video.mp4",
             "video_loop": true,
