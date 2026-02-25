@@ -878,7 +878,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Gift Set: 3 Strap Options</p>",
+                "text": "<p>Gift Set: 3 Straps Included</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
