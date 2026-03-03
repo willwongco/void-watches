@@ -756,6 +756,7 @@
             },
             "button_XMjf98": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Learn More",
                 "link": "shopify://blogs/news/straps-a-size-guide",
