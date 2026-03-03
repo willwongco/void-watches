@@ -549,7 +549,7 @@
             "vertical_alignment": "center",
             "gap": 30,
             "mobile_gap": 20,
-            "image_metafield": "shopify://shop_images/Strap-SL18-TLBR-800x500-Still-Life.jpg",
+            "image_metafield": "{{ closest.product.metafields.custom.lifestyle_image_1.value }}",
             "image_border_radius": 0,
             "heading": "Swedish Leather",
             "heading_size": 32,
