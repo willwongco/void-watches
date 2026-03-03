@@ -1749,7 +1749,7 @@
               "type": "text",
               "name": "Heading",
               "settings": {
-                "text": "<h2>Shipping</h2>",
+                "text": "<h2>Free Shipping*</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
@@ -1775,7 +1775,7 @@
               "type": "text",
               "name": "Description",
               "settings": {
-                "text": "<p>Free Shipping above 100 EUR/USD/GBP.</p>",
+                "text": "<p>*On orders above 100 EUR/USD/GBP.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
