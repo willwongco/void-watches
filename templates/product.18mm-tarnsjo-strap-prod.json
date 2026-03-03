@@ -537,6 +537,74 @@
         "gap_between_elements": 11
       }
     },
+    "17725426049eed2602": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_05b81d6_PRYMcY": {
+          "type": "ai_gen_block_05b81d6",
+          "settings": {
+            "layout": "image_left",
+            "mobile_stack_order": "image_top",
+            "desktop_width_percent": 100,
+            "vertical_alignment": "center",
+            "gap": 30,
+            "mobile_gap": 20,
+            "image_metafield": "shopify://shop_images/Strap-SL18-TLBR-800x500-Still-Life.jpg",
+            "image_border_radius": 0,
+            "heading": "Swedish Leather",
+            "heading_size": 32,
+            "heading_font_weight": "400",
+            "heading_color": "#000000",
+            "heading_spacing": 16,
+            "text": "<p>This strap is made from a solid piece of vegetable tanned leather from Swedish tannery Tärnsjö. The strap will age beautifully and darken over time. Note that leather is a natural material and some scratches and imperfections might appear.</p>",
+            "text_size": 16,
+            "text_line_height": 1.5,
+            "text_color": "#000000",
+            "text_horizontal_alignment": "flex-start",
+            "text_vertical_alignment": "center",
+            "padding_top": 10,
+            "padding_bottom": 10,
+            "padding_left": 10,
+            "padding_right": 60,
+            "mobile_padding_top": 10,
+            "mobile_padding_bottom": 20,
+            "mobile_padding_left": 10,
+            "mobile_padding_right": 10
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_05b81d6_PRYMcY"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "17725388339f74bf74": {
       "type": "_blocks",
       "blocks": {
@@ -1600,6 +1668,7 @@
   "order": [
     "main",
     "marquee_UdTUDk",
+    "17725426049eed2602",
     "17725388339f74bf74",
     "section_J9XNjK",
     "media_with_content_pabj4W",
