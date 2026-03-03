@@ -2005,6 +2005,7 @@
         "group_6XbA6k",
         "group_xdnNXb"
       ],
+      "disabled": true,
       "name": "t:names.multicolumn",
       "settings": {
         "content_direction": "row",
@@ -2071,6 +2072,7 @@
       "block_order": [
         "ai_gen_block_7c1e73a_T8jVKi"
       ],
+      "name": "Instagram Marquee",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
