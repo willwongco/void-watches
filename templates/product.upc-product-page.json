@@ -175,7 +175,7 @@
             "ai_gen_block_df64e4a_h3JpTz": {
               "type": "ai_gen_block_df64e4a",
               "settings": {
-                "collection": "pkg01",
+                "collection": "archive-sale",
                 "thumbnail_size": 52,
                 "grid_gap": 10,
                 "grid_padding": 0,
