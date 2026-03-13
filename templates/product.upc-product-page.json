@@ -427,7 +427,7 @@
                     "text_Q9nMNM": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>NOTE: This is a sale item from our archive and has a 6 month warranty.</p>",
+                        "text": "<p>NOTE: This is a sale item from our archive and it has a 6 month warranty.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
