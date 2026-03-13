@@ -1291,34 +1291,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "ai_gen_block_bdcbbf7_R3QVF7": {
-              "type": "ai_gen_block_bdcbbf7",
-              "name": "Download Manual",
-              "settings": {
-                "button_text": "Download Manual",
-                "manual_link": "https://cdn.shopify.com/s/files/1/0698/5904/9517/files/VOID-Watches-PKG01-Instructions.pdf?v=1756379012",
-                "background_color": "#ffffff",
-                "text_color": "#000000",
-                "border_color": "#ffffff",
-                "hover_background_color": "#333333",
-                "hover_text_color": "#ffffff",
-                "hover_border_color": "#333333",
-                "font_size": 12,
-                "font_weight": "500",
-                "icon_size": 16,
-                "padding_vertical": 12,
-                "padding_horizontal": 20,
-                "border_width": 2,
-                "border_radius": 0
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_4aAqif",
-            "text_EHaHKr",
-            "ai_gen_block_bdcbbf7_R3QVF7"
+            "text_EHaHKr"
           ]
         }
       },
@@ -1367,37 +1344,6 @@
         "alignment_horizontal": "center",
         "padding-block-start": 16,
         "padding-block-end": 16
-      }
-    },
-    "hero_CkRK8x": {
-      "type": "hero",
-      "name": "t:names.hero",
-      "settings": {
-        "media_type_1": "image",
-        "image_1": "{{ product.metafields.custom.product_featured_image_hero.value }}",
-        "media_type_2": "image",
-        "link": "",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "full-width",
-        "section_height": "auto",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-1",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "gradient",
-        "gradient_direction": "to top",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 40,
-        "padding-block-end": 40
       }
     },
     "blocks_L4Fyeq": {
@@ -2080,7 +2026,6 @@
     "media_with_content_ME7Gpr",
     "section_J9XNjK",
     "divider_PjPbrQ",
-    "hero_CkRK8x",
     "blocks_L4Fyeq",
     "product_recommendations_qggXJq",
     "section_c3mftC",
