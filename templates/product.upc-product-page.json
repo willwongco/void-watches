@@ -1632,67 +1632,6 @@
         "padding-block-end": 0
       }
     },
-    "1756286557466a5e62": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_3e9d852_xH7BKQ": {
-          "type": "ai_gen_block_3e9d852",
-          "settings": {
-            "section_padding": 25,
-            "grid_gap": 20,
-            "mobile_gap": 10,
-            "heading": "Unisex - One Size Fits All",
-            "text": "The PKG01 is designed to fit both men and women. 38mm in diameter and only 7mm thick it's just the right size for most wrists.",
-            "image_1": "shopify://shop_images/VOID-Watches-PKG01-SIBLWH-Him-2000x2000.jpg",
-            "image_2": "shopify://shop_images/VOID-Watches-PKG01-SIBLWH-Her-2000x2000.jpg",
-            "image_aspect_ratio": "1/1",
-            "image_border_radius": 0,
-            "background_color": "#ffffff",
-            "heading_color": "#000000",
-            "text_color": "#666666",
-            "heading_size": 36,
-            "text_size": 16,
-            "heading_margin": 20,
-            "text_padding": 15,
-            "mobile_heading_size": 22,
-            "mobile_text_size": 14,
-            "mobile_text_padding": 5
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_3e9d852_xH7BKQ"
-      ],
-      "name": "Unisex - PKG01",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
       "blocks": {
@@ -1882,10 +1821,50 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "accordion_row_wKJwEN": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Are taxes included in the price?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_BwMhpF": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Taxes are included in the price if you order from the EU or UK. For all other countries (including the USA) you are responsible for all import charges that will be handled by UPS.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_BwMhpF"
+              ]
+            },
             "accordion_row_9bxPHN": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What is your return policy?",
+                "heading": "What is your return policy for the archive sale?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1894,7 +1873,7 @@
                 "text_jkNLER": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>You can return the watch for a full refund within 30 days. The watch has to be unworn and in it's complete original packaging.</p>",
+                    "text": "<p>We do not accept returns of items from the archive sale. Please read the description and view the images carefully.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1924,7 +1903,7 @@
             "accordion_row_XgQcC3": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Is the PKG01 waterproof?",
+                "heading": "Are the items previously used?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1934,7 +1913,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Yes, the PKG01 is rated 5ATM. This means you can take it for a swim or wear it in the shower occasionally but we strongly recommend keeping it as dry as possible to make it last longer.</p>",
+                    "text": "<p>The archive sale contains items that are unworn samples and watches that has been previously worn. Please read the product descriptions carefully.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1964,7 +1943,7 @@
             "accordion_row_DEQzEG": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are the straps interchangable?",
+                "heading": "What condition are the watches in?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -1974,7 +1953,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Yes, you can use any of our 18mm straps with the PKG01.</p>",
+                    "text": "<p>Some watches are completely unworn and in new condition. Some watches have seen a lot of use. Please read the descriptions carefully before placing an order.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2003,6 +1982,7 @@
             }
           },
           "block_order": [
+            "accordion_row_wKJwEN",
             "accordion_row_9bxPHN",
             "accordion_row_XgQcC3",
             "accordion_row_DEQzEG"
@@ -2102,7 +2082,6 @@
     "divider_PjPbrQ",
     "hero_CkRK8x",
     "blocks_L4Fyeq",
-    "1756286557466a5e62",
     "product_recommendations_qggXJq",
     "section_c3mftC",
     "blocks_iqkHpg"
