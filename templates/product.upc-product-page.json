@@ -801,7 +801,7 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-1",
-        "padding-block-start": 0,
+        "padding-block-start": 15,
         "padding-block-end": 0
       }
     },
@@ -1081,7 +1081,7 @@
                 "text_qUxQ4F": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All watches in the archive sale have a different story. Some are unworn and some have some heavy milage (but still plenty of miles to go). This is an image of the actual watch where we've done our best to highlight any imperfections.</p>",
+                    "text": "<p>All watches in the archive sale have a different story. Some are unworn and some have heavy milage (but still plenty of miles to go). This is an image of the actual watch where we've done our best to highlight any imperfections.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1120,7 +1120,7 @@
         "video::-webkit-media-controls {display: none !important;}",
         "video::-moz-media-controls {display: none !important;}"
       ],
-      "name": "Editorial PKG01 Straps",
+      "name": "Unfiltered View",
       "settings": {
         "media_position": "left",
         "media_width": "medium",
