@@ -297,6 +297,46 @@
                 "padding-inline-end": 0
               },
               "blocks": {
+                "accordion_row_RemPc7": {
+                  "type": "_accordion-row",
+                  "name": "t:names.accordion_row",
+                  "settings": {
+                    "heading": "TERMS OF SALE",
+                    "open_by_default": false,
+                    "icon": "none",
+                    "width": 20
+                  },
+                  "blocks": {
+                    "text_jXMM6P": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>This is an item from our archive sale, it has a warranty of 6 months and all sales are final (no exchanges or returns). Taxes are included in the EU and UK. <em><strong>Note: </strong></em><em>Taxes are not included to the rest of the world including the USA.</em></p>",
+                        "width": "100%",
+                        "max_width": "normal",
+                        "alignment": "left",
+                        "type_preset": "rte",
+                        "font": "var(--font-body--family)",
+                        "font_size": "1rem",
+                        "line_height": "normal",
+                        "letter_spacing": "normal",
+                        "case": "none",
+                        "wrap": "pretty",
+                        "color": "var(--color-foreground)",
+                        "background": false,
+                        "background_color": "#00000026",
+                        "corner_radius": 0,
+                        "padding-block-start": 0,
+                        "padding-block-end": 0,
+                        "padding-inline-start": 0,
+                        "padding-inline-end": 0
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_jXMM6P"
+                  ]
+                },
                 "accordion_row_jtgghK": {
                   "type": "_accordion-row",
                   "settings": {
@@ -348,7 +388,7 @@
                     "text_DNtjaj": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>We will ship your order within 1-2 working days. We use DHL or UPS for international shipments and Postnord for shipments within Sweden. Once your order has shipped, you will receive an email with tracking information. Delivery times vary depending on your location but are typically 2-4 days.</p>",
+                        "text": "<p>We will ship your order within 1-2 working days. We use UPS for international shipments and Postnord for shipments within Sweden. Once your order has shipped, you will receive an email with tracking information. Delivery times vary depending on your location but are typically 3-7 days.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -387,7 +427,7 @@
                     "text_Q9nMNM": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>We offer a 2 year warranty on all watches.</p>",
+                        "text": "<p>NOTE: This is a sale item from our archive and has a 6 month warranty.</p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
@@ -416,6 +456,7 @@
                 }
               },
               "block_order": [
+                "accordion_row_RemPc7",
                 "accordion_row_jtgghK",
                 "accordion_row_Y8GdGt",
                 "accordion_row_cxc9cP"
@@ -499,6 +540,7 @@
         "text_UtnVmU": {
           "type": "text",
           "name": "t:names.text",
+          "disabled": true,
           "settings": {
             "text": "<p>30-Day Returns</p>",
             "width": "fit-content",
@@ -525,6 +567,7 @@
         "icon_knqGFY": {
           "type": "icon",
           "name": "t:names.icon",
+          "disabled": true,
           "settings": {
             "icon": "price_tag",
             "image_upload": "shopify://shop_images/Warranty-Icon-100x100.png",
@@ -538,7 +581,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>2 Year Warranty</p>",
+            "text": "<p>6 Months Warranty</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -1202,7 +1245,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Technical Specifications</h2>",
+                "text": "<h2>Specifications</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
