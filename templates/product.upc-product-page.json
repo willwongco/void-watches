@@ -33,9 +33,9 @@
             "zoom": true,
             "video_loop": false,
             "hide_variants": true,
-            "padding-block-start": 10,
-            "padding-block-end": 10,
-            "padding-inline-start": 10,
+            "padding-block-start": 15,
+            "padding-block-end": 15,
+            "padding-inline-start": 15,
             "padding-inline-end": 9
           },
           "blocks": {}
@@ -1116,6 +1116,7 @@
           ]
         }
       },
+      "disabled": true,
       "custom_css": [
         "video::-webkit-media-controls {display: none !important;}",
         "video::-moz-media-controls {display: none !important;}"
