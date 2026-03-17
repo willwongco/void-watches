@@ -742,7 +742,7 @@
                 "text_cgiBDP": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We've cleared out duplicates from our archive of previously produced watches and made them available in this temporary sale. Stock is very limited and you will not see these items on the site again. All watches are checked for function and we have done our best to describe and photograph them all. All watches come with their own stories so please read the information before placing an order!</p>",
+                    "text": "<p>We've cleared out duplicates from our archive of previously produced watches and made them available in this temporary sale. Stock is very limited and you will not see these items on the site again. All watches are checked for function and we have done our best to describe and photograph them all. All watches come with their own stories so please read the information before placing an order! More details in the FAQ below.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
