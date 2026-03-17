@@ -1766,7 +1766,7 @@
                 "text_BwMhpF": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Taxes are included in the price if you order from the EU or UK. For all other countries (including the USA) you are responsible for all import charges that will be handled by UPS.</p>",
+                    "text": "<p>Taxes are included in the price if you order from the EU or UK. For all other countries (including the USA) you are responsible for all import charges that will be handled by UPS. Since taxes/tariffs are changing from time to time it is your responsibility to check what the current rates are in your country.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
