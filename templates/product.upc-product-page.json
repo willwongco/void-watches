@@ -1885,7 +1885,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Some watches are completely unworn and in new condition. Some watches have seen a lot of use. Please read the descriptions carefully before placing an order.</p>",
+                    "text": "<p>Some watches are completely unworn and in new condition. Some watches have seen a lot of use. Please read the descriptions carefully before placing an order. Note: Some images are for reference only but we always have some that show the actual watch.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
