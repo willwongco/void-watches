@@ -310,7 +310,7 @@
                     "text_jXMM6P": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>This is an item from our archive sale, it has a warranty of 6 months and all sales are final (no exchanges or returns). Taxes are included in the EU and UK. <em><strong>Note: </strong></em><em>Taxes are not included to the rest of the world including the USA.</em></p>",
+                        "text": "<p>This is an item from our archive sale, it has a warranty of 6 months and a reduced return window of 14 days. Taxes are included in the EU and UK. <em><strong>Note: </strong></em><em>Taxes are not included to the rest of the world including the USA.</em></p>",
                         "width": "100%",
                         "max_width": "normal",
                         "alignment": "left",
