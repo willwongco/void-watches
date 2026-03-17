@@ -540,9 +540,8 @@
         "text_UtnVmU": {
           "type": "text",
           "name": "t:names.text",
-          "disabled": true,
           "settings": {
-            "text": "<p>30-Day Returns</p>",
+            "text": "<p>14-Day Returns</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -567,7 +566,6 @@
         "icon_knqGFY": {
           "type": "icon",
           "name": "t:names.icon",
-          "disabled": true,
           "settings": {
             "icon": "price_tag",
             "image_upload": "shopify://shop_images/Warranty-Icon-100x100.png",
