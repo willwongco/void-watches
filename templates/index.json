@@ -1539,7 +1539,7 @@
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/Archive-Sale-1000x1000.jpg",
-            "link": "shopify://collections/end-of-life-sale",
+            "link": "shopify://collections/archive-sale",
             "image_ratio": "square",
             "width": "fill",
             "custom_width": 100,
