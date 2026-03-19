@@ -1538,7 +1538,7 @@
         "image_7qXkyk": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/VOID-Watches-Collection-SALE-2000x2000.jpg",
+            "image": "shopify://shop_images/Archive-Sale-1000x1000.jpg",
             "link": "shopify://collections/end-of-life-sale",
             "image_ratio": "square",
             "width": "fill",
@@ -1600,7 +1600,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>End of Line Sale</h2>",
+                "text": "<h2>Archive Sale</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1625,7 +1625,7 @@
             "text_fhQLyj": {
               "type": "text",
               "settings": {
-                "text": "<p>We're discontiuing some styles to make room for something new. Up to 50% off.</p>",
+                "text": "<p>Last chance to get some truly unique pieces from our archive mixed with some discontinued items. At great prices.</p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
@@ -1651,7 +1651,7 @@
               "type": "button",
               "settings": {
                 "label": "Shop The Sale",
-                "link": "shopify://collections/end-of-life-sale",
+                "link": "shopify://collections/archive-sale",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "fit-content",
