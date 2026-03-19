@@ -1044,7 +1044,7 @@
               "type": "text",
               "name": "Description",
               "settings": {
-                "text": "<p>Always 30 days returns.</p>",
+                "text": "<p>30 day returns on regular items.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "center",
