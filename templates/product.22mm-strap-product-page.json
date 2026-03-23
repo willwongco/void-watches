@@ -1246,6 +1246,46 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "accordion_row_k8VBtH": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_row",
+              "settings": {
+                "heading": "Are taxes included in the price?",
+                "open_by_default": false,
+                "icon": "none",
+                "width": 20
+              },
+              "blocks": {
+                "text_DzyNyf": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Taxes are included in the price if you order from the EU or UK. For all other countries (including the USA) you are responsible for all import charges that will be handled by UPS. Since taxes/tariffs are changing from time to time it is your responsibility to check what the current rates are in your country.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_DzyNyf"
+              ]
+            },
             "accordion_row_9bxPHN": {
               "type": "_accordion-row",
               "settings": {
@@ -1446,6 +1486,7 @@
             }
           },
           "block_order": [
+            "accordion_row_k8VBtH",
             "accordion_row_9bxPHN",
             "accordion_row_PxMbPm",
             "accordion_row_XgQcC3",
