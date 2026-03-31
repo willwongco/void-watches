@@ -1506,8 +1506,8 @@
             "image": "{{ closest.product.metafields.custom.lifestyle_image_2.value }}",
             "link": "",
             "image_ratio": "square",
-            "width": "fill",
-            "custom_width": 100,
+            "width": "custom",
+            "custom_width": 64,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
@@ -1565,10 +1565,10 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Our signature product.</h2>",
-                "width": "fit-content",
+                "text": "<h2>Swedish Leather</h2>",
+                "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "h3",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -1590,10 +1590,10 @@
             "text_XqmHrW": {
               "type": "text",
               "settings": {
-                "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
-                "width": "fit-content",
+                "text": "<p>One of the straps in the gift set is this beautiful vegetable tan strap made from a single piece of leather from Swedish tannery Tärnsjö.</p>",
+                "width": "100%",
                 "max_width": "narrow",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -1611,26 +1611,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
-            },
-            "button_xttFtq": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_gdrW99",
-            "text_XqmHrW",
-            "button_xttFtq"
+            "text_XqmHrW"
           ]
         }
       },
@@ -1663,37 +1648,6 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 40
-      }
-    },
-    "hero_CkRK8x": {
-      "type": "hero",
-      "name": "t:names.hero",
-      "settings": {
-        "media_type_1": "image",
-        "image_1": "{{ product.metafields.custom.product_featured_image_hero.value }}",
-        "media_type_2": "image",
-        "link": "",
-        "open_in_new_tab": false,
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "full-width",
-        "section_height": "auto",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-1",
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "gradient",
-        "gradient_direction": "to top",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
         "padding-block-start": 40,
         "padding-block-end": 40
       }
@@ -2440,7 +2394,6 @@
     "section_6TNqWR",
     "divider_PjPbrQ",
     "section_bBh9bt",
-    "hero_CkRK8x",
     "blocks_L4Fyeq",
     "1756286557466a5e62",
     "product_recommendations_qggXJq",
