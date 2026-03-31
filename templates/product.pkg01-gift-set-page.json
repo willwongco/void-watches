@@ -1405,7 +1405,7 @@
             "text_rMVgTT": {
               "type": "text",
               "settings": {
-                "text": "<p>The gift set comes in a thick cardboard gift box hand made in central Stockholm, Sweden.</p>",
+                "text": "<p>The gift set comes in a cardboard gift box with traditional corner staples. Hand made in central Stockholm, Sweden.</p>",
                 "width": "fit-content",
                 "max_width": "narrow",
                 "alignment": "left",
