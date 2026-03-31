@@ -772,7 +772,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-V03D-Components-2000x1333.jpg",
+            "image": "{{ closest.product.metafields.custom.lifestyle_image_2.value }}",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
