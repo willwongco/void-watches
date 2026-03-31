@@ -608,7 +608,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Wide Selection of Straps</p>",
+                "text": "<p>Gift Set: 3 Straps Included</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -673,7 +673,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>New Look in Seconds</h2>",
+                    "text": "<h2>Three Looks in Seconds</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -698,7 +698,7 @@
                 "text_qUxQ4F": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All watches are fitted with a quick release system for the straps and bracelets. You can easily change between straps or bracelets to give your watch a whole new look. No tools required.</p>",
+                    "text": "<p>This is a gift set that comes with three different straps. One matching Milanese bracelet, one black leather strap and one natural tan Swedish leather strap. You can easily change between straps or bracelets to give your watch a whole new look.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -728,6 +728,7 @@
             },
             "button_XMjf98": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Shop Straps",
                 "link": "shopify://collections/18mm-straps",
@@ -860,7 +861,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>All Custom Components</h2>",
+                    "text": "<h2>No Tools Required</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -885,7 +886,7 @@
                 "text_cgiBDP": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>All our watches are designed and developed by us. No shortcuts.</p>",
+                    "text": "<p>All straps and bracelets come with \"quick release\" spring bars. Switch in seconds without tools.</p>",
                     "width": "fit-content",
                     "max_width": "narrow",
                     "alignment": "left",
