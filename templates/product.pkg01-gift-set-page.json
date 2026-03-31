@@ -1503,6 +1503,7 @@
         "image_Bmg3Ry": {
           "type": "image",
           "settings": {
+            "image": "{{ closest.product.metafields.custom.lifestyle_image_2.value }}",
             "link": "",
             "image_ratio": "square",
             "width": "fill",
