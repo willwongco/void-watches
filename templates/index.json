@@ -1215,8 +1215,22 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 30,
+        "padding-block-end": 30
+      }
+    },
+    "divider_zNdiAY": {
+      "type": "divider",
+      "name": "t:names.divider_section",
+      "settings": {
+        "color_scheme": "",
+        "section_width": "full-width",
+        "thickness": 1,
+        "corner_radius": "square",
+        "width_percent": 100,
+        "alignment_horizontal": "center",
+        "padding-block-start": 10,
+        "padding-block-end": 10
       }
     },
     "175706344114f7ecfb": {
@@ -3249,6 +3263,7 @@
     "collection_list_fgDPjN",
     "divider_RDLtH7",
     "section_MGfpf8",
+    "divider_zNdiAY",
     "175706344114f7ecfb",
     "section_kAXyrR",
     "marquee_cHX9kt",
