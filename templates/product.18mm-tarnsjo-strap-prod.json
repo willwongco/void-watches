@@ -789,7 +789,7 @@
         "padding-block-end": 0
       }
     },
-    "media_with_content_KKLz8B": {
+    "media_with_content_t8XneA": {
       "type": "media-with-content",
       "blocks": {
         "media": {
@@ -797,7 +797,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/VOID-Watches-How-to-change-a-watch-strap-Main-1800x1200.jpg",
+            "image": "shopify://shop_images/TEMP-Strap-No-Tools-Required-2.gif",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -810,16 +810,17 @@
           "type": "_content-without-appearance",
           "static": true,
           "settings": {
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "space-between",
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
             "gap": 24
           },
           "blocks": {
-            "text_hNDW4F": {
+            "text_fhYaMd": {
               "type": "text",
               "name": "t:names.caption",
+              "disabled": true,
               "settings": {
-                "text": "<p>Instructions</p>",
+                "text": "<p>Bestseller</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -841,7 +842,7 @@
               },
               "blocks": {}
             },
-            "group_rYUXDi": {
+            "group_PYHb4U": {
               "type": "group",
               "settings": {
                 "link": "",
@@ -880,11 +881,11 @@
                 "padding-inline-end": 0
               },
               "blocks": {
-                "text_tPz3GR": {
+                "text_TFR7CD": {
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>How to change your strap</h2>",
+                    "text": "<h2>No Tools Required</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -906,10 +907,10 @@
                   },
                   "blocks": {}
                 },
-                "text_Lb6dTW": {
+                "text_KwTe7Y": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Changing your watch strap is not rocket science. This article will guide you.</p>",
+                    "text": "<p>All straps and bracelets come with \"quick release\" spring bars. Switch in seconds without tools.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -933,17 +934,18 @@
                 }
               },
               "block_order": [
-                "text_tPz3GR",
-                "text_Lb6dTW"
+                "text_TFR7CD",
+                "text_KwTe7Y"
               ]
             },
-            "button_6NUXq3": {
+            "button_HkMcTC": {
               "type": "button",
+              "disabled": true,
               "settings": {
-                "label": "Learn More",
-                "link": "shopify://blogs/news/how-to-change-your-watch-strap",
+                "label": "Shop now",
+                "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "button",
+                "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
@@ -953,20 +955,20 @@
             }
           },
           "block_order": [
-            "text_hNDW4F",
-            "group_rYUXDi",
-            "button_6NUXq3"
+            "text_fhYaMd",
+            "group_PYHb4U",
+            "button_HkMcTC"
           ]
         }
       },
-      "name": "Editorial - Change Strap",
+      "name": "No Tools Req. Editorial",
       "settings": {
         "media_position": "right",
         "media_width": "medium",
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -1692,7 +1694,7 @@
     "marquee_UdTUDk",
     "17725426049eed2602",
     "media_with_content_pabj4W",
-    "media_with_content_KKLz8B",
+    "media_with_content_t8XneA",
     "section_J9XNjK",
     "product_recommendations_qggXJq",
     "section_c3mftC",
