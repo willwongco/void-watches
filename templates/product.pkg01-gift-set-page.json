@@ -728,10 +728,9 @@
             },
             "button_XMjf98": {
               "type": "button",
-              "disabled": true,
               "settings": {
-                "label": "Shop Straps",
-                "link": "shopify://collections/18mm-straps",
+                "label": "More Gift Sets",
+                "link": "shopify://collections/gift-sets",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
