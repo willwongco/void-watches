@@ -943,7 +943,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>New look in seconds</h2>",
+                    "text": "<h2>Three Looks - In Seconds</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
