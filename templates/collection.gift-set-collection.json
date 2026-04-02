@@ -463,26 +463,11 @@
                 "text_xEwHAf",
                 "text_RQNHAE"
               ]
-            },
-            "button_8LUCPm": {
-              "type": "button",
-              "settings": {
-                "label": "More Gift Sets",
-                "link": "shopify://collections/gift-sets",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
             "text_9tw948",
-            "group_X9inBe",
-            "button_8LUCPm"
+            "group_X9inBe"
           ]
         }
       },
