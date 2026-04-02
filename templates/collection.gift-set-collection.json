@@ -510,7 +510,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "{{ closest.product.metafields.custom.lifestyle_image_1.value }}",
+            "image": "{{ closest.collection.metafields.custom.image_1.value }}",
             "link": "",
             "video": "shopify://files/videos/VOID-Watches-PKG01-Straps-Video.mp4",
             "video_loop": true,
