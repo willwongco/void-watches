@@ -764,6 +764,71 @@
         "padding-block-end": 0
       }
     },
+    "1776861803fb611fc8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_f4d7b81_q8UyAg": {
+          "type": "ai_gen_block_f4d7b81",
+          "settings": {
+            "heading": "No Tools Required",
+            "description": "<p>All straps and bracelets come with \"quick release\" spring bars. Switch in seconds without tools.</p>",
+            "text_alignment": "center",
+            "heading_color": "#000000",
+            "text_color": "#000000",
+            "heading_size": 38,
+            "text_size": 15,
+            "text_gap": 16,
+            "image": "shopify://shop_images/Quick-Release.jpg",
+            "rotating_graphic": "shopify://shop_images/Quick-Release-Rotation.png",
+            "image_padding_desktop": 0,
+            "image_padding_mobile": 0,
+            "graphic_size": 100,
+            "graphic_offset": 20,
+            "rotation_speed": 10,
+            "image_border_radius": 0,
+            "desktop_width_percent": 100,
+            "gap": 60,
+            "section_padding_desktop": 40,
+            "section_padding_mobile": 20,
+            "background_color": "#ffffff",
+            "mobile_image_larger": true,
+            "mobile_image_first": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_f4d7b81_q8UyAg"
+      ],
+      "name": "No Tools Required",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "media_with_content_wRzYJH": {
       "type": "media-with-content",
       "blocks": {
@@ -936,6 +1001,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "No Tools Req. Editorial",
       "settings": {
         "media_position": "right",
@@ -1302,70 +1368,6 @@
         "gradient_direction": "to top",
         "padding-block-start": 40,
         "padding-block-end": 40
-      }
-    },
-    "1776861803fb611fc8": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_f4d7b81_q8UyAg": {
-          "type": "ai_gen_block_f4d7b81",
-          "settings": {
-            "heading": "No Tools Required",
-            "description": "<p>All straps and bracelets come with \"quick release\" spring bars. Switch in seconds without tools.</p>",
-            "text_alignment": "center",
-            "heading_color": "#000000",
-            "text_color": "#000000",
-            "heading_size": 38,
-            "text_size": 15,
-            "text_gap": 16,
-            "image": "shopify://shop_images/Quick-Release.jpg",
-            "rotating_graphic": "shopify://shop_images/Quick-Release-Rotation.png",
-            "image_padding_desktop": 0,
-            "image_padding_mobile": 0,
-            "graphic_size": 100,
-            "graphic_offset": 20,
-            "rotation_speed": 10,
-            "image_border_radius": 0,
-            "desktop_width_percent": 100,
-            "gap": 60,
-            "section_padding_desktop": 40,
-            "section_padding_mobile": 20,
-            "background_color": "#ffffff",
-            "mobile_image_larger": true,
-            "mobile_image_first": false
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_f4d7b81_q8UyAg"
-      ],
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 12,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 0,
-        "padding-block-end": 0
       }
     },
     "section_J9XNjK": {
@@ -2451,10 +2453,10 @@
     "main",
     "marquee_qFtLAt",
     "media_with_content_pabj4W",
+    "1776861803fb611fc8",
     "media_with_content_wRzYJH",
     "media_with_content_ME7Gpr",
     "section_6TNqWR",
-    "1776861803fb611fc8",
     "section_J9XNjK",
     "divider_PjPbrQ",
     "section_bBh9bt",
