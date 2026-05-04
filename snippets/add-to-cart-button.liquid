@@ -11,6 +11,10 @@
 
 {%- liquid
   assign default_add_to_cart_text = 'actions.add_to_cart' | t
+  assign metafield_cta = product.metafields.custom.cta_label.value
+  if metafield_cta != blank
+    assign default_add_to_cart_text = metafield_cta
+  endif
   assign product_variant_media = product.selected_or_first_available_variant.featured_media.preview_image | image_url: width: 100
   if product.selected_or_first_available_variant.featured_media.preview_image == blank
     assign product_variant_media = product.featured_media.preview_image | image_url: width: 100
